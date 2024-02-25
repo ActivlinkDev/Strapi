@@ -420,6 +420,39 @@ export interface ApiDeviceEntryDeviceEntry extends Schema.SingleType {
   };
 }
 
+export interface ApiLocaleInfoLocaleInfo extends Schema.CollectionType {
+  collectionName: 'locale_infos';
+  info: {
+    singularName: 'locale-info';
+    pluralName: 'locale-infos';
+    displayName: 'Locale_Info';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Lang_Code: Attribute.String;
+    API_Locale: Attribute.String;
+    DescriptionEN: Attribute.String;
+    Strapi_Locale: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::locale-info.locale-info',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::locale-info.locale-info',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface PluginUploadFile extends Schema.CollectionType {
   collectionName: 'files';
   info: {
@@ -837,6 +870,7 @@ declare module '@strapi/types' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'api::device-entry.device-entry': ApiDeviceEntryDeviceEntry;
+      'api::locale-info.locale-info': ApiLocaleInfoLocaleInfo;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::content-releases.release': PluginContentReleasesRelease;

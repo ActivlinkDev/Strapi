@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "locale_infos",
+  "info": {
+    "singularName": "locale-info",
+    "pluralName": "locale-infos",
+    "displayName": "Locale_Info"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Lang_Code": {
+      "type": "string"
+    },
+    "API_Locale": {
+      "type": "string"
+    },
+    "DescriptionEN": {
+      "type": "string"
+    },
+    "Strapi_Locale": {
+      "type": "string"
+    }
+  }
+}
