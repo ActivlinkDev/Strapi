@@ -1,10 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "device_entries",
+  "collectionName": "device_inputs",
   "info": {
-    "singularName": "device-entry",
-    "pluralName": "device-entries",
-    "displayName": "Device-Entry"
+    "singularName": "device-input",
+    "pluralName": "device-inputs",
+    "displayName": "Device-input"
   },
   "options": {
     "draftAndPublish": true
