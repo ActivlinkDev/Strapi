@@ -362,97 +362,6 @@ export interface AdminTransferTokenPermission extends Schema.CollectionType {
   };
 }
 
-export interface ApiDeviceEntryDeviceEntry extends Schema.SingleType {
-  collectionName: 'device_entries';
-  info: {
-    singularName: 'device-entry';
-    pluralName: 'device-entries';
-    displayName: 'Device-Entry';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  pluginOptions: {
-    i18n: {
-      localized: true;
-    };
-  };
-  attributes: {
-    Make: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Model: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Search: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::device-entry.device-entry',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::device-entry.device-entry',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    localizations: Attribute.Relation<
-      'api::device-entry.device-entry',
-      'oneToMany',
-      'api::device-entry.device-entry'
-    >;
-    locale: Attribute.String;
-  };
-}
-
-export interface ApiLocaleInfoLocaleInfo extends Schema.CollectionType {
-  collectionName: 'locale_infos';
-  info: {
-    singularName: 'locale-info';
-    pluralName: 'locale-infos';
-    displayName: 'Locale_Info';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    Lang_Code: Attribute.String;
-    API_Locale: Attribute.String;
-    DescriptionEN: Attribute.String;
-    Strapi_Locale: Attribute.String;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::locale-info.locale-info',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::locale-info.locale-info',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
 export interface PluginUploadFile extends Schema.CollectionType {
   collectionName: 'files';
   info: {
@@ -859,6 +768,132 @@ export interface PluginI18NLocale extends Schema.CollectionType {
   };
 }
 
+export interface ApiClientClient extends Schema.CollectionType {
+  collectionName: 'clients';
+  info: {
+    singularName: 'client';
+    pluralName: 'clients';
+    displayName: 'Client';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Client_Key: Attribute.String;
+    Client_Name: Attribute.String;
+    Client_Primary: Attribute.String;
+    Client_Font: Attribute.String;
+    Client_Button: Attribute.String;
+    Client_Logo: Attribute.Media;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::client.client',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::client.client',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiDeviceEntryDeviceEntry extends Schema.SingleType {
+  collectionName: 'device_entries';
+  info: {
+    singularName: 'device-entry';
+    pluralName: 'device-entries';
+    displayName: 'Device-Entry';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    Make: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Model: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Search: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::device-entry.device-entry',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::device-entry.device-entry',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::device-entry.device-entry',
+      'oneToMany',
+      'api::device-entry.device-entry'
+    >;
+    locale: Attribute.String;
+  };
+}
+
+export interface ApiLocaleInfoLocaleInfo extends Schema.CollectionType {
+  collectionName: 'locale_infos';
+  info: {
+    singularName: 'locale-info';
+    pluralName: 'locale-infos';
+    displayName: 'Locale_Info';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Lang_Code: Attribute.String;
+    API_Locale: Attribute.String;
+    DescriptionEN: Attribute.String;
+    Strapi_Locale: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::locale-info.locale-info',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::locale-info.locale-info',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -869,8 +904,6 @@ declare module '@strapi/types' {
       'admin::api-token-permission': AdminApiTokenPermission;
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
-      'api::device-entry.device-entry': ApiDeviceEntryDeviceEntry;
-      'api::locale-info.locale-info': ApiLocaleInfoLocaleInfo;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::content-releases.release': PluginContentReleasesRelease;
@@ -879,6 +912,9 @@ declare module '@strapi/types' {
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'plugin::i18n.locale': PluginI18NLocale;
+      'api::client.client': ApiClientClient;
+      'api::device-entry.device-entry': ApiDeviceEntryDeviceEntry;
+      'api::locale-info.locale-info': ApiLocaleInfoLocaleInfo;
     }
   }
 }
