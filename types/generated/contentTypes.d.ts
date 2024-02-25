@@ -803,6 +803,64 @@ export interface ApiClientClient extends Schema.CollectionType {
   };
 }
 
+export interface ApiDeviceInputDeviceInput extends Schema.SingleType {
+  collectionName: 'device_inputs';
+  info: {
+    singularName: 'device-input';
+    pluralName: 'device-inputs';
+    displayName: 'Device-input';
+    description: '';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    Make: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Model: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Search: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::device-input.device-input',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::device-input.device-input',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::device-input.device-input',
+      'oneToMany',
+      'api::device-input.device-input'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 export interface ApiLocaleInfoLocaleInfo extends Schema.CollectionType {
   collectionName: 'locale_infos';
   info: {
@@ -855,6 +913,7 @@ declare module '@strapi/types' {
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'plugin::i18n.locale': PluginI18NLocale;
       'api::client.client': ApiClientClient;
+      'api::device-input.device-input': ApiDeviceInputDeviceInput;
       'api::locale-info.locale-info': ApiLocaleInfoLocaleInfo;
     }
   }
