@@ -1070,6 +1070,12 @@ export interface ApiPropProp extends Schema.CollectionType {
           localized: true;
         };
       }>;
+    Product_ID: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<'api::prop.prop', 'oneToOne', 'admin::user'> &

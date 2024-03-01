@@ -81,14 +81,15 @@
       "type": "string"
     },
     "TermsLink": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
       ],
-      "type": "media",
-      "multiple": false,
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -107,6 +108,14 @@
       "pluginOptions": {
         "i18n": {
           "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "Product_ID": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
         }
       },
       "type": "string"
