@@ -55,6 +55,14 @@
         }
       },
       "type": "string"
+    },
+    "Heading": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }

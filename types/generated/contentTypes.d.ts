@@ -850,6 +850,12 @@ export interface ApiDeviceInputDeviceInput extends Schema.SingleType {
           localized: true;
         };
       }>;
+    Heading: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -1050,18 +1056,6 @@ export interface ApiPropProp extends Schema.CollectionType {
         };
       }>;
     Exclusions: Attribute.JSON &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Total_Price: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Monthly_Price: Attribute.String &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
