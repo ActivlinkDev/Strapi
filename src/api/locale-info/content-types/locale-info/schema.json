@@ -26,6 +26,9 @@
     },
     "Description_Local": {
       "type": "string"
+    },
+    "Change_Lang": {
+      "type": "string"
     }
   }
 }

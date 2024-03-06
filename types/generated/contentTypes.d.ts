@@ -989,6 +989,7 @@ export interface ApiLocaleInfoLocaleInfo extends Schema.CollectionType {
     DescriptionEN: Attribute.String;
     Strapi_Locale: Attribute.String;
     Description_Local: Attribute.String;
+    Change_Lang: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
