@@ -4,7 +4,8 @@
   "info": {
     "singularName": "locale-info",
     "pluralName": "locale-infos",
-    "displayName": "Locale_Info"
+    "displayName": "Locale_Info",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,6 +22,9 @@
       "type": "string"
     },
     "Strapi_Locale": {
+      "type": "string"
+    },
+    "Description_Local": {
       "type": "string"
     }
   }

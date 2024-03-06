@@ -966,6 +966,7 @@ export interface ApiLocaleInfoLocaleInfo extends Schema.CollectionType {
     singularName: 'locale-info';
     pluralName: 'locale-infos';
     displayName: 'Locale_Info';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -975,6 +976,7 @@ export interface ApiLocaleInfoLocaleInfo extends Schema.CollectionType {
     API_Locale: Attribute.String;
     DescriptionEN: Attribute.String;
     Strapi_Locale: Attribute.String;
+    Description_Local: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

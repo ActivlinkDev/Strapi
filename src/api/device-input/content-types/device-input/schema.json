@@ -39,6 +39,14 @@
         }
       },
       "type": "string"
+    },
+    "Model_Selected": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }
