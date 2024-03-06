@@ -64,22 +64,6 @@
       },
       "type": "json"
     },
-    "Total_Price": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
-    },
-    "Monthly_Price": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
-    },
     "TermsLink": {
       "type": "media",
       "multiple": false,
