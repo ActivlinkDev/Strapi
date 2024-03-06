@@ -838,6 +838,12 @@ export interface ApiDeviceInputDeviceInput extends Schema.SingleType {
           localized: true;
         };
       }>;
+    Model_Selected: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<

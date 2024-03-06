@@ -47,6 +47,14 @@
         }
       },
       "type": "string"
+    },
+    "Reset": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }
