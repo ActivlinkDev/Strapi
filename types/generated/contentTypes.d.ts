@@ -978,6 +978,81 @@ export interface ApiDisplayDeviceDisplayDevice extends Schema.SingleType {
   };
 }
 
+export interface ApiDisplayOfferDisplayOffer extends Schema.SingleType {
+  collectionName: 'display_offers';
+  info: {
+    singularName: 'display-offer';
+    pluralName: 'display-offers';
+    displayName: 'Display_Offer';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    Heading: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Sub_Heading: Attribute.Text &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Benefits: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Exclusions: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Terms: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Buy_Button: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::display-offer.display-offer',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::display-offer.display-offer',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::display-offer.display-offer',
+      'oneToMany',
+      'api::display-offer.display-offer'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 export interface ApiLocaleInfoLocaleInfo extends Schema.CollectionType {
   collectionName: 'locale_infos';
   info: {
@@ -1121,6 +1196,7 @@ declare module '@strapi/types' {
       'api::client.client': ApiClientClient;
       'api::device-input.device-input': ApiDeviceInputDeviceInput;
       'api::display-device.display-device': ApiDisplayDeviceDisplayDevice;
+      'api::display-offer.display-offer': ApiDisplayOfferDisplayOffer;
       'api::locale-info.locale-info': ApiLocaleInfoLocaleInfo;
       'api::prop.prop': ApiPropProp;
     }
