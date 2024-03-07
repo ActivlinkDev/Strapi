@@ -29,6 +29,12 @@
     },
     "Change_Lang": {
       "type": "string"
+    },
+    "Currency_Name": {
+      "type": "string"
+    },
+    "Currency_Icon": {
+      "type": "string"
     }
   }
 }
