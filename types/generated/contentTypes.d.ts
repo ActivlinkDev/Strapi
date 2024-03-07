@@ -1071,6 +1071,8 @@ export interface ApiLocaleInfoLocaleInfo extends Schema.CollectionType {
     Strapi_Locale: Attribute.String;
     Description_Local: Attribute.String;
     Change_Lang: Attribute.String;
+    Currency_Name: Attribute.String;
+    Currency_Icon: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

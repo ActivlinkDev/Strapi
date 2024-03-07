@@ -4,7 +4,8 @@
   "info": {
     "singularName": "display-offer",
     "pluralName": "display-offers",
-    "displayName": "Display_Offer"
+    "displayName": "Display_Offer",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -56,6 +57,22 @@
       "type": "string"
     },
     "Buy_Button": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "Fee_Description": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "Only": {
       "pluginOptions": {
         "i18n": {
           "localized": true
