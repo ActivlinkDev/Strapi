@@ -4,7 +4,8 @@
   "info": {
     "singularName": "client",
     "pluralName": "clients",
-    "displayName": "Client"
+    "displayName": "Client",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -27,14 +28,18 @@
       "type": "string"
     },
     "Client_Logo": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "Logo_URL": {
+      "type": "string"
     }
   }
 }

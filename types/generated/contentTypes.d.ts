@@ -774,6 +774,7 @@ export interface ApiClientClient extends Schema.CollectionType {
     singularName: 'client';
     pluralName: 'clients';
     displayName: 'Client';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -785,6 +786,7 @@ export interface ApiClientClient extends Schema.CollectionType {
     Client_Font: Attribute.String;
     Client_Button: Attribute.String;
     Client_Logo: Attribute.Media;
+    Logo_URL: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -984,6 +986,7 @@ export interface ApiDisplayOfferDisplayOffer extends Schema.SingleType {
     singularName: 'display-offer';
     pluralName: 'display-offers';
     displayName: 'Display_Offer';
+    description: '';
   };
   options: {
     draftAndPublish: false;
@@ -1025,6 +1028,18 @@ export interface ApiDisplayOfferDisplayOffer extends Schema.SingleType {
         };
       }>;
     Buy_Button: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Fee_Description: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Only: Attribute.String &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
