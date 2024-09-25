@@ -10,10 +10,10 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-i18n": "4.7.0",
-    "@strapi/plugin-users-permissions": "4.7.0",
-    "@strapi/provider-upload-cloudinary": "4.7.0",
-    "@strapi/strapi": "4.7.0",
+    "@strapi/plugin-i18n": "4.25.12",
+    "@strapi/plugin-users-permissions": "4.25.12",
+    "@strapi/provider-upload-cloudinary": "4.25.12",
+    "@strapi/strapi": "4.25.12",
     "pg": "8.11.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

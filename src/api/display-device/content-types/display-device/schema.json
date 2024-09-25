@@ -4,8 +4,7 @@
   "info": {
     "singularName": "display-device",
     "pluralName": "display-devices",
-    "displayName": "Display_Device",
-    "description": ""
+    "displayName": "Display_Device"
   },
   "options": {
     "draftAndPublish": false
@@ -89,14 +88,6 @@
       "type": "string"
     },
     "Button_No": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
-    },
-    "Manual_Link": {
       "pluginOptions": {
         "i18n": {
           "localized": true
