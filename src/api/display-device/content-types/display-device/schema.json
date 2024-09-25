@@ -96,7 +96,7 @@
       },
       "type": "string"
     },
-    "Manual": {
+    "Manual_Link": {
       "pluginOptions": {
         "i18n": {
           "localized": true
