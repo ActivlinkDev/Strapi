@@ -910,6 +910,7 @@ export interface ApiDisplayDeviceDisplayDevice extends Schema.SingleType {
     singularName: 'display-device';
     pluralName: 'display-devices';
     displayName: 'Display_Device';
+    description: '';
   };
   options: {
     draftAndPublish: false;
@@ -975,6 +976,12 @@ export interface ApiDisplayDeviceDisplayDevice extends Schema.SingleType {
         };
       }>;
     Button_No: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Manual: Attribute.String &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
