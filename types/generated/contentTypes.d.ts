@@ -893,6 +893,12 @@ export interface ApiDeviceInputDeviceInput extends Schema.SingleType {
           localized: true;
         };
       }>;
+    or: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
