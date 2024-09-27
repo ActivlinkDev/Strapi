@@ -981,7 +981,7 @@ export interface ApiDisplayDeviceDisplayDevice extends Schema.SingleType {
           localized: true;
         };
       }>;
-    Manual: Attribute.String &
+    Where_to_buy_google: Attribute.String &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;

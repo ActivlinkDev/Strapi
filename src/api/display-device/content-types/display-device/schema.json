@@ -96,7 +96,7 @@
       },
       "type": "string"
     },
-    "Manual": {
+    "Where_to_buy_google": {
       "pluginOptions": {
         "i18n": {
           "localized": true
