@@ -899,6 +899,12 @@ export interface ApiDeviceInputDeviceInput extends Schema.SingleType {
           localized: true;
         };
       }>;
+    Continue_Button: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -1006,6 +1012,12 @@ export interface ApiDisplayDeviceDisplayDevice extends Schema.SingleType {
         };
       }>;
     Loading: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Manual_Link: Attribute.String &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;

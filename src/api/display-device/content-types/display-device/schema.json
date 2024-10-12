@@ -111,6 +111,14 @@
         }
       },
       "type": "string"
+    },
+    "Manual_Link": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }
