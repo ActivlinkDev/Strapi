@@ -119,6 +119,14 @@
         }
       },
       "type": "string"
+    },
+    "Custom_Data_Header": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }
