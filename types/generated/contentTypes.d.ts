@@ -810,6 +810,8 @@ export interface ApiClientClient extends Schema.CollectionType {
       true
     >;
     Logo_URL: Attribute.String;
+    web_hook_url: Attribute.String;
+    redirect_url: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

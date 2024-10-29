@@ -40,6 +40,12 @@
     },
     "Logo_URL": {
       "type": "string"
+    },
+    "web_hook_url": {
+      "type": "string"
+    },
+    "redirect_url": {
+      "type": "string"
     }
   }
 }
