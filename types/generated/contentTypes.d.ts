@@ -1119,6 +1119,12 @@ export interface ApiDisplayOfferDisplayOffer extends Schema.SingleType {
           localized: true;
         };
       }>;
+    back_button: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
