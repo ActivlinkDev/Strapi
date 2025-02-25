@@ -35,6 +35,9 @@
     },
     "Currency_Icon": {
       "type": "string"
+    },
+    "Stripe_Locale": {
+      "type": "string"
     }
   }
 }
