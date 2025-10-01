@@ -104,7 +104,7 @@
       },
       "type": "string"
     },
-    "Loading": {
+    "Loading_page": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -209,6 +209,14 @@
       "type": "string"
     },
     "Product_fiche": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "Loading": {
       "pluginOptions": {
         "i18n": {
           "localized": true
