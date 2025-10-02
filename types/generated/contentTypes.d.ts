@@ -1013,7 +1013,7 @@ export interface ApiDisplayDeviceDisplayDevice extends Schema.SingleType {
           localized: true;
         };
       }>;
-    Loading: Attribute.String &
+    Loading_page: Attribute.String &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -1092,6 +1092,12 @@ export interface ApiDisplayDeviceDisplayDevice extends Schema.SingleType {
         };
       }>;
     Product_fiche: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Loading: Attribute.String &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -1222,6 +1228,18 @@ export interface ApiDisplayOfferDisplayOffer extends Schema.SingleType {
         };
       }>;
     Term_description: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Year_cover: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Years_cover: Attribute.String &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
