@@ -223,6 +223,14 @@
         }
       },
       "type": "string"
+    },
+    "Device_ready_confirmation": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }
