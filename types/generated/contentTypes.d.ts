@@ -1103,6 +1103,12 @@ export interface ApiDisplayDeviceDisplayDevice extends Schema.SingleType {
           localized: true;
         };
       }>;
+    Device_ready_confirmation: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -1268,6 +1274,50 @@ export interface ApiDisplayOfferDisplayOffer extends Schema.SingleType {
   };
 }
 
+export interface ApiGdprGdpr extends Schema.CollectionType {
+  collectionName: 'gdprs';
+  info: {
+    singularName: 'gdpr';
+    pluralName: 'gdprs';
+    displayName: 'GDPR';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    GDPR_Text: Attribute.Text &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Client: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<'api::gdpr.gdpr', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<'api::gdpr.gdpr', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::gdpr.gdpr',
+      'oneToMany',
+      'api::gdpr.gdpr'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 export interface ApiLocaleInfoLocaleInfo extends Schema.CollectionType {
   collectionName: 'locale_infos';
   info: {
@@ -1423,6 +1473,101 @@ export interface ApiPropProp extends Schema.CollectionType {
   };
 }
 
+export interface ApiValidateCustomerValidateCustomer extends Schema.SingleType {
+  collectionName: 'validate_customers';
+  info: {
+    singularName: 'validate-customer';
+    pluralName: 'validate-customers';
+    displayName: 'Validate_Customer';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    Header_banner: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Confirm_details: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Header_prompt: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    First_name: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Last_name: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Email: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Email_placeholder: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Telephone_Number: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    OTP_Message: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::validate-customer.validate-customer',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::validate-customer.validate-customer',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::validate-customer.validate-customer',
+      'oneToMany',
+      'api::validate-customer.validate-customer'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -1445,8 +1590,10 @@ declare module '@strapi/types' {
       'api::device-input.device-input': ApiDeviceInputDeviceInput;
       'api::display-device.display-device': ApiDisplayDeviceDisplayDevice;
       'api::display-offer.display-offer': ApiDisplayOfferDisplayOffer;
+      'api::gdpr.gdpr': ApiGdprGdpr;
       'api::locale-info.locale-info': ApiLocaleInfoLocaleInfo;
       'api::prop.prop': ApiPropProp;
+      'api::validate-customer.validate-customer': ApiValidateCustomerValidateCustomer;
     }
   }
 }

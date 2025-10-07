@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gdprs",
+  "info": {
+    "singularName": "gdpr",
+    "pluralName": "gdprs",
+    "displayName": "GDPR"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "GDPR_Text": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text"
+    },
+    "Client": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    }
+  }
+}
