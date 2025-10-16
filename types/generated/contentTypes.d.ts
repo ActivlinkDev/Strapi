@@ -830,6 +830,160 @@ export interface ApiClientClient extends Schema.CollectionType {
   };
 }
 
+export interface ApiCustomerHubCustomerHub extends Schema.SingleType {
+  collectionName: 'customer_hubs';
+  info: {
+    singularName: 'customer-hub';
+    pluralName: 'customer-hubs';
+    displayName: 'Customer_hub';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    Header: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Sub_Heading: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Telephone: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Send_code: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Please_wait: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Verify: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Verify_phone_header: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    We_sent_a_code_to: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Enter_below: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Resend: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Contact: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Email: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Phone: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Address: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Contracts: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Type: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Status: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Devices: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    View: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::customer-hub.customer-hub',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::customer-hub.customer-hub',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::customer-hub.customer-hub',
+      'oneToMany',
+      'api::customer-hub.customer-hub'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 export interface ApiDeviceInputDeviceInput extends Schema.SingleType {
   collectionName: 'device_inputs';
   info: {
@@ -1447,6 +1601,70 @@ export interface ApiLocaleInfoLocaleInfo extends Schema.CollectionType {
   };
 }
 
+export interface ApiLookupLookup extends Schema.SingleType {
+  collectionName: 'lookups';
+  info: {
+    singularName: 'lookup';
+    pluralName: 'lookups';
+    displayName: 'Lookup';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    Header: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    ClientKey: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Make_Model: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Scan: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::lookup.lookup',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::lookup.lookup',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::lookup.lookup',
+      'oneToMany',
+      'api::lookup.lookup'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 export interface ApiPropProp extends Schema.CollectionType {
   collectionName: 'props';
   info: {
@@ -1725,11 +1943,13 @@ declare module '@strapi/types' {
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'plugin::i18n.locale': PluginI18NLocale;
       'api::client.client': ApiClientClient;
+      'api::customer-hub.customer-hub': ApiCustomerHubCustomerHub;
       'api::device-input.device-input': ApiDeviceInputDeviceInput;
       'api::display-device.display-device': ApiDisplayDeviceDisplayDevice;
       'api::display-offer.display-offer': ApiDisplayOfferDisplayOffer;
       'api::gdpr.gdpr': ApiGdprGdpr;
       'api::locale-info.locale-info': ApiLocaleInfoLocaleInfo;
+      'api::lookup.lookup': ApiLookupLookup;
       'api::prop.prop': ApiPropProp;
       'api::validate-customer.validate-customer': ApiValidateCustomerValidateCustomer;
     }
