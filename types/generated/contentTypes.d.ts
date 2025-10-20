@@ -1671,6 +1671,7 @@ export interface ApiPromotionPromotion extends Schema.CollectionType {
     singularName: 'promotion';
     pluralName: 'promotions';
     displayName: 'Promotion';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1730,6 +1731,12 @@ export interface ApiPromotionPromotion extends Schema.CollectionType {
         };
       }>;
     Image: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Checkbox: Attribute.String &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
