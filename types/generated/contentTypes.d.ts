@@ -1299,6 +1299,18 @@ export interface ApiDisplayDeviceDisplayDevice extends Schema.SingleType {
           localized: true;
         };
       }>;
+    Show_details: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Hide_details: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
