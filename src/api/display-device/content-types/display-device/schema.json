@@ -311,6 +311,14 @@
         }
       },
       "type": "string"
+    },
+    "Loading_offers": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }
