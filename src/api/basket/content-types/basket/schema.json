@@ -4,7 +4,8 @@
   "info": {
     "singularName": "basket",
     "pluralName": "baskets",
-    "displayName": "Basket"
+    "displayName": "Basket",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -96,6 +97,14 @@
       "type": "string"
     },
     "Back": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "Empty_basket": {
       "pluginOptions": {
         "i18n": {
           "localized": true
