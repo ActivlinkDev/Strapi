@@ -303,6 +303,14 @@
         }
       },
       "type": "string"
+    },
+    "Looking_up_appliance": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }
