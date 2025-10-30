@@ -1650,6 +1650,18 @@ export interface ApiDisplayOfferDisplayOffer extends Schema.SingleType {
           localized: true;
         };
       }>;
+    Adding_to_basket: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Selected: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
