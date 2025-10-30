@@ -295,6 +295,14 @@
         }
       },
       "type": "string"
+    },
+    "Creating_registration": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }
