@@ -232,7 +232,7 @@
       },
       "type": "string"
     },
-    "Banner_Home": {
+    "Nav_Home": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -240,7 +240,7 @@
       },
       "type": "string"
     },
-    "Banner_Support": {
+    "Nav_Support": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -248,7 +248,7 @@
       },
       "type": "string"
     },
-    "Banner_Contact": {
+    "Nav_Contact": {
       "pluginOptions": {
         "i18n": {
           "localized": true

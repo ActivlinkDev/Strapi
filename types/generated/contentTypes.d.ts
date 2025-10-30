@@ -1263,19 +1263,19 @@ export interface ApiDisplayDeviceDisplayDevice extends Schema.SingleType {
           localized: true;
         };
       }>;
-    Banner_Home: Attribute.String &
+    Nav_Home: Attribute.String &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
         };
       }>;
-    Banner_Support: Attribute.String &
+    Nav_Support: Attribute.String &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
         };
       }>;
-    Banner_Contact: Attribute.String &
+    Nav_Contact: Attribute.String &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -1312,6 +1312,12 @@ export interface ApiDisplayDeviceDisplayDevice extends Schema.SingleType {
         };
       }>;
     Creating_registration: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Looking_up_appliance: Attribute.String &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
