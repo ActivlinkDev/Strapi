@@ -1662,6 +1662,18 @@ export interface ApiDisplayOfferDisplayOffer extends Schema.SingleType {
           localized: true;
         };
       }>;
+    Terms_Link_Text: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    IPID: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
