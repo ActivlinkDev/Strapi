@@ -1,0 +1,168 @@
+{
+  "kind": "singleType",
+  "collectionName": "portal_admins",
+  "info": {
+    "singularName": "portal-admin",
+    "pluralName": "portal-admins",
+    "displayName": "Portal Admin",
+    "description": "Labels and copy for the portal admin login and dashboard"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Heading": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "Login_Heading": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "Username_Label": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "Password_Label": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "Login_Button": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "Logout_Button": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "Locale_Label": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "Tab_Create_SKU": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "Tab_Search_Edit": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "Tab_Manage_Users": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "ClientKey_Label": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "Source_Label": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "SKU_Label": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "GTIN_Label": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "Make_Label": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "Model_Label": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "Category_Label": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "Global_Promotion_Label": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "Add_SERP_Label": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "Locale_Details_Heading": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "Title_Label": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "Price_Label": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "GTL_Label": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "GTP_Label": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "Promo_Code_Label": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "Custom_Links_Heading": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "Link_Type_Label": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "Link_URL_Label": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "Add_Link_Button": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "Remove_Link_Button": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "Search_Label": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "Search_Button": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "Save_Button": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "Submit_Button": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "New_Username_Label": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "New_Password_Label": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "Create_User_Button": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    }
+  }
+}
