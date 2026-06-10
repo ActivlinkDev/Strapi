@@ -2678,6 +2678,118 @@ export interface ApiPropProp extends Schema.CollectionType {
   };
 }
 
+export interface ApiStartPageStartPage extends Schema.SingleType {
+  collectionName: 'start_pages';
+  info: {
+    singularName: 'start-page';
+    pluralName: 'start-pages';
+    displayName: 'Start_page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    Heading: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Client_Input_Placeholder: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Client_Load_Button: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Scan_Button: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Search_Placeholder: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    No_Client_Text: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Searching_Text: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Select_Button: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Confirm_Heading: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Confirm_Subtext: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Search_Again_Button: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Continue_Button: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::start-page.start-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::start-page.start-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::start-page.start-page',
+      'oneToMany',
+      'api::start-page.start-page'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 export interface ApiValidateCustomerValidateCustomer extends Schema.SingleType {
   collectionName: 'validate_customers';
   info: {
@@ -2853,6 +2965,7 @@ declare module '@strapi/types' {
       'api::my-contracts.my-contracts': ApiMyContractsMyContracts;
       'api::promotion.promotion': ApiPromotionPromotion;
       'api::prop.prop': ApiPropProp;
+      'api::start-page.start-page': ApiStartPageStartPage;
       'api::validate-customer.validate-customer': ApiValidateCustomerValidateCustomer;
     }
   }
