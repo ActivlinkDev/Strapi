@@ -144,6 +144,20 @@ const VALUES = {
     Search_Again_Button: 'Opnieuw zoeken',
     Continue_Button: 'Ja – Doorgaan',
   },
+  tr: {
+    Heading: 'Ürününüzü bulun',
+    Client_Input_Placeholder: 'Devam etmek için clientKey girin',
+    Client_Load_Button: 'Yükle',
+    Scan_Button: 'Barkod tara',
+    Search_Placeholder: 'Marka veya modele göre arayın…',
+    No_Client_Text: 'Aramayı etkinleştirmek için önce bir müşteri girin veya kurtarın.',
+    Searching_Text: 'Aranıyor…',
+    Select_Button: 'Seç',
+    Confirm_Heading: 'Seçimi onayla',
+    Confirm_Subtext: 'Devam etmeden önce lütfen marka, model ve tanımlayıcıları kontrol edin.',
+    Search_Again_Button: 'Tekrar ara',
+    Continue_Button: 'Evet – Devam et',
+  },
   pt: {
     Heading: 'Encontre o seu produto',
     Client_Input_Placeholder: 'Introduza a clientKey para continuar',
@@ -201,6 +215,8 @@ async function main() {
     const pubRes = await request('POST', `${cmBase}/actions/publish?locale=${locale.code}`, {}, token);
     if (pubRes.status >= 200 && pubRes.status < 300) {
       console.log(`✓ ${locale.code} — published.`);
+    } else if (pubRes.body?.error?.message === 'already.published') {
+      console.log(`✓ ${locale.code} — already published (updated in place).`);
     } else {
       console.warn(`✗ ${locale.code} publish failed:`, JSON.stringify(pubRes.body, null, 2));
     }

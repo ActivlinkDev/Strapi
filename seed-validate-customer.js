@@ -223,6 +223,33 @@ const VALUES = {
     Creating_Customer: 'Klant wordt aangemaakt…',
     Register_Another: 'Nog een product registreren',
   },
+  tr: {
+    Header_banner: 'Müşteri Doğrulama',
+    Confirm_details: 'Bilgilerinizi onaylayın',
+    Header_prompt: 'Tek kullanımlık kod almak için telefon numaranızı ve aşağıya e-posta adresinizi girin.',
+    First_name: 'Ad',
+    Last_name: 'Soyad',
+    Email: 'E-posta Adresi',
+    Email_placeholder: 'siz@ornek.com',
+    Telephone_Number: 'Telefon Numarası',
+    OTP_Message: 'Kodu Girin',
+    Send_Code: 'Kodu Gönder →',
+    Back: 'Geri',
+    Please_Wait: 'Lütfen bekleyin…',
+    We_Sent_Label: 'Şu numaraya bir kod gönderdik:',
+    Enter_Below: 'Aşağıya girin.',
+    Verify: 'Doğrula →',
+    Resend_Code: 'Kodu tekrar gönder',
+    Use_Different_Number: 'Farklı bir numara kullan',
+    Verifying: 'Doğrulanıyor…',
+    Resend_Wait: 'Kodu {seconds} saniye içinde tekrar gönderebilirsiniz',
+    Continue: 'Devam et →',
+    Validated_Heading: 'Doğrulandı',
+    Validated_Message_Phone: 'Teşekkürler. Telefon numaranız doğrulandı.',
+    Validated_Message_Email: 'Teşekkürler. E-posta adresiniz doğrulandı.',
+    Creating_Customer: 'Müşteri oluşturuluyor…',
+    Register_Another: 'Başka bir ürün kaydedin',
+  },
   pt: {
     Header_banner: 'Validar cliente',
     Confirm_details: 'Confirme os seus dados',
@@ -312,6 +339,8 @@ async function main() {
     const pubRes = await request('POST', `${cmBase}/actions/publish?locale=${locale.code}`, {}, token);
     if (pubRes.status >= 200 && pubRes.status < 300) {
       console.log(`✓ ${locale.code} — published.`);
+    } else if (pubRes.body?.error?.message === 'already.published') {
+      console.log(`✓ ${locale.code} — already published (updated in place).`);
     } else {
       console.warn(`✗ ${locale.code} publish failed:`, JSON.stringify(pubRes.body, null, 2));
     }
