@@ -14,7 +14,7 @@
     "@strapi/plugin-users-permissions": "5.48.0",
     "@strapi/provider-upload-cloudinary": "5.48.0",
     "@strapi/strapi": "5.48.0",
-    "pg": "8.11.3",
+    "pg": "8.21.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^5.3.4",
