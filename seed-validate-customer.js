@@ -79,6 +79,14 @@ const VALUES = {
     Verify: 'Verify →',
     Resend_Code: 'Resend code',
     Use_Different_Number: 'Use a different number',
+    Verifying: 'Verifying…',
+    Resend_Wait: 'Resend code in {seconds}s',
+    Continue: 'Continue →',
+    Validated_Heading: 'Validated',
+    Validated_Message_Phone: 'Thank you. Your phone number has been validated.',
+    Validated_Message_Email: 'Thank you. Your email has been validated.',
+    Creating_Customer: 'Creating customer…',
+    Register_Another: 'Register another product',
   },
   es: {
     Header_banner: 'Validar cliente',
@@ -98,6 +106,14 @@ const VALUES = {
     Verify: 'Verificar →',
     Resend_Code: 'Reenviar código',
     Use_Different_Number: 'Usar otro número',
+    Verifying: 'Verificando…',
+    Resend_Wait: 'Reenviar código en {seconds}s',
+    Continue: 'Continuar →',
+    Validated_Heading: 'Validado',
+    Validated_Message_Phone: 'Gracias. Tu número de teléfono ha sido validado.',
+    Validated_Message_Email: 'Gracias. Tu correo electrónico ha sido validado.',
+    Creating_Customer: 'Creando cliente…',
+    Register_Another: 'Registrar otro producto',
   },
   it: {
     Header_banner: 'Convalida cliente',
@@ -117,6 +133,14 @@ const VALUES = {
     Verify: 'Verifica →',
     Resend_Code: 'Invia di nuovo il codice',
     Use_Different_Number: 'Usa un altro numero',
+    Verifying: 'Verifica in corso…',
+    Resend_Wait: 'Invia di nuovo il codice tra {seconds}s',
+    Continue: 'Continua →',
+    Validated_Heading: 'Convalidato',
+    Validated_Message_Phone: 'Grazie. Il tuo numero di telefono è stato convalidato.',
+    Validated_Message_Email: 'Grazie. Il tuo indirizzo email è stato convalidato.',
+    Creating_Customer: 'Creazione del cliente…',
+    Register_Another: 'Registra un altro prodotto',
   },
   fr: {
     Header_banner: 'Validation du client',
@@ -136,6 +160,14 @@ const VALUES = {
     Verify: 'Vérifier →',
     Resend_Code: 'Renvoyer le code',
     Use_Different_Number: 'Utiliser un autre numéro',
+    Verifying: 'Vérification…',
+    Resend_Wait: 'Renvoyer le code dans {seconds}s',
+    Continue: 'Continuer →',
+    Validated_Heading: 'Validé',
+    Validated_Message_Phone: 'Merci. Votre numéro de téléphone a été validé.',
+    Validated_Message_Email: 'Merci. Votre adresse e-mail a été validée.',
+    Creating_Customer: 'Création du client…',
+    Register_Another: 'Enregistrer un autre produit',
   },
   de: {
     Header_banner: 'Kunde bestätigen',
@@ -155,6 +187,14 @@ const VALUES = {
     Verify: 'Bestätigen →',
     Resend_Code: 'Code erneut senden',
     Use_Different_Number: 'Andere Nummer verwenden',
+    Verifying: 'Wird überprüft…',
+    Resend_Wait: 'Code erneut senden in {seconds}s',
+    Continue: 'Weiter →',
+    Validated_Heading: 'Bestätigt',
+    Validated_Message_Phone: 'Vielen Dank. Ihre Telefonnummer wurde bestätigt.',
+    Validated_Message_Email: 'Vielen Dank. Ihre E-Mail-Adresse wurde bestätigt.',
+    Creating_Customer: 'Kunde wird angelegt…',
+    Register_Another: 'Weiteres Produkt registrieren',
   },
   nl: {
     Header_banner: 'Klant valideren',
@@ -174,6 +214,14 @@ const VALUES = {
     Verify: 'Verifiëren →',
     Resend_Code: 'Code opnieuw verzenden',
     Use_Different_Number: 'Een ander nummer gebruiken',
+    Verifying: 'Bezig met verifiëren…',
+    Resend_Wait: 'Code opnieuw verzenden over {seconds}s',
+    Continue: 'Doorgaan →',
+    Validated_Heading: 'Gevalideerd',
+    Validated_Message_Phone: 'Bedankt. Uw telefoonnummer is gevalideerd.',
+    Validated_Message_Email: 'Bedankt. Uw e-mailadres is gevalideerd.',
+    Creating_Customer: 'Klant wordt aangemaakt…',
+    Register_Another: 'Nog een product registreren',
   },
   pt: {
     Header_banner: 'Validar cliente',
@@ -193,6 +241,14 @@ const VALUES = {
     Verify: 'Verificar →',
     Resend_Code: 'Reenviar código',
     Use_Different_Number: 'Usar outro número',
+    Verifying: 'A verificar…',
+    Resend_Wait: 'Reenviar código em {seconds}s',
+    Continue: 'Continuar →',
+    Validated_Heading: 'Validado',
+    Validated_Message_Phone: 'Obrigado. O seu número de telefone foi validado.',
+    Validated_Message_Email: 'Obrigado. O seu endereço de e-mail foi validado.',
+    Creating_Customer: 'A criar cliente…',
+    Register_Another: 'Registar outro produto',
   },
 };
 
@@ -220,14 +276,33 @@ async function main() {
   console.log(`Default locale: ${defaultLocale.code}`);
   console.log(`All locales: ${locales.map(l => l.code).join(', ')}`);
 
+  const uid = 'api::validate-customer.validate-customer';
+
+  // 2b. Only send fields that exist on the target instance's schema, so the
+  // script also works against instances that haven't deployed newer fields yet.
+  let knownAttrs = null;
+  const ctRes = await request('GET', `/content-type-builder/content-types/${uid}`, null, token);
+  const attrs = ctRes.body?.data?.schema?.attributes;
+  if (attrs && typeof attrs === 'object') {
+    knownAttrs = new Set(Object.keys(attrs));
+    const missing = Object.keys(VALUES.en).filter(k => !knownAttrs.has(k));
+    if (missing.length) {
+      console.warn(`Skipping fields not present on this instance: ${missing.join(', ')}`);
+    }
+  }
+  const filterValues = (values) => {
+    if (!knownAttrs) return values;
+    return Object.fromEntries(Object.entries(values).filter(([k]) => knownAttrs.has(k)));
+  };
+
   // 3. Save then publish values for every locale, default first
-  const cmBase = '/content-manager/single-types/api::validate-customer.validate-customer';
+  const cmBase = `/content-manager/single-types/${uid}`;
   const ordered = [defaultLocale, ...locales.filter(l => l.code !== defaultLocale.code)];
   for (const locale of ordered) {
     const values = valuesForLocale(locale.code);
     const translated = values !== VALUES.en || String(locale.code).toLowerCase().startsWith('en');
     console.log(`\nWriting ${translated ? 'translated' : 'English fallback'} values to ${locale.code}…`);
-    const saveRes = await request('PUT', `${cmBase}?locale=${locale.code}`, values, token);
+    const saveRes = await request('PUT', `${cmBase}?locale=${locale.code}`, filterValues(values), token);
     if (saveRes.status >= 200 && saveRes.status < 300) {
       console.log(`✓ ${locale.code} — saved.`);
     } else {
