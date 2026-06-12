@@ -319,6 +319,14 @@
         }
       },
       "type": "string"
+    },
+    "Compare_Prices": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }
