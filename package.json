@@ -20,7 +20,7 @@
     "react-router-dom": "^6.24.1",
     "strapi-plugin-translate": "2.0.0-next.4",
     "strapi-provider-translate-deepl": "1.3.0-next.4",
-    "styled-components": "^6.1.11"
+    "styled-components": "^6.5.2"
   },
   "author": {
     "name": "A Strapi developer"
