@@ -127,6 +127,14 @@
         }
       },
       "type": "string"
+    },
+    "Date_Clear_Button": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }

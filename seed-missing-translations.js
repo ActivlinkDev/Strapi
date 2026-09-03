@@ -86,7 +86,8 @@ const CONTENT = {
       "Promotion_label": "Promotion:",
       "Discount_label": "Discount:",
       "Mode_label": "Mode:",
-      "Recaptcha_notice": "This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply."
+      "Recaptcha_notice": "This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.",
+      "Empty_basket": "Your basket is empty."
     },
     "es": {
       "Continue": "Continuar",
@@ -102,7 +103,8 @@ const CONTENT = {
       "Promotion_label": "Promoción:",
       "Discount_label": "Descuento:",
       "Mode_label": "Modo:",
-      "Recaptcha_notice": "Este sitio está protegido por reCAPTCHA y se aplican la Política de privacidad y las Condiciones del servicio de Google."
+      "Recaptcha_notice": "Este sitio está protegido por reCAPTCHA y se aplican la Política de privacidad y las Condiciones del servicio de Google.",
+      "Empty_basket": "Tu cesta está vacía."
     },
     "it": {
       "Continue": "Continua",
@@ -118,7 +120,8 @@ const CONTENT = {
       "Promotion_label": "Promozione:",
       "Discount_label": "Sconto:",
       "Mode_label": "Modalità:",
-      "Recaptcha_notice": "Questo sito è protetto da reCAPTCHA e si applicano le Norme sulla privacy e i Termini di servizio di Google."
+      "Recaptcha_notice": "Questo sito è protetto da reCAPTCHA e si applicano le Norme sulla privacy e i Termini di servizio di Google.",
+      "Empty_basket": "Il tuo carrello è vuoto."
     },
     "fr": {
       "Continue": "Continuer",
@@ -134,7 +137,8 @@ const CONTENT = {
       "Promotion_label": "Promotion :",
       "Discount_label": "Remise :",
       "Mode_label": "Mode :",
-      "Recaptcha_notice": "Ce site est protégé par reCAPTCHA ; les Règles de confidentialité et les Conditions d'utilisation de Google s'appliquent."
+      "Recaptcha_notice": "Ce site est protégé par reCAPTCHA ; les Règles de confidentialité et les Conditions d'utilisation de Google s'appliquent.",
+      "Empty_basket": "Votre panier est vide."
     },
     "de": {
       "Continue": "Weiter",
@@ -150,7 +154,8 @@ const CONTENT = {
       "Promotion_label": "Aktion:",
       "Discount_label": "Rabatt:",
       "Mode_label": "Modus:",
-      "Recaptcha_notice": "Diese Website ist durch reCAPTCHA geschützt; es gelten die Datenschutzerklärung und die Nutzungsbedingungen von Google."
+      "Recaptcha_notice": "Diese Website ist durch reCAPTCHA geschützt; es gelten die Datenschutzerklärung und die Nutzungsbedingungen von Google.",
+      "Empty_basket": "Ihr Warenkorb ist leer."
     },
     "nl": {
       "Continue": "Doorgaan",
@@ -166,7 +171,8 @@ const CONTENT = {
       "Promotion_label": "Actie:",
       "Discount_label": "Korting:",
       "Mode_label": "Modus:",
-      "Recaptcha_notice": "Deze site wordt beschermd door reCAPTCHA; het privacybeleid en de servicevoorwaarden van Google zijn van toepassing."
+      "Recaptcha_notice": "Deze site wordt beschermd door reCAPTCHA; het privacybeleid en de servicevoorwaarden van Google zijn van toepassing.",
+      "Empty_basket": "Uw winkelmandje is leeg."
     },
     "tr": {
       "Continue": "Devam et",
@@ -182,7 +188,8 @@ const CONTENT = {
       "Promotion_label": "Promosyon:",
       "Discount_label": "İndirim:",
       "Mode_label": "Mod:",
-      "Recaptcha_notice": "Bu site reCAPTCHA ile korunmaktadır; Google Gizlilik Politikası ve Hizmet Şartları geçerlidir."
+      "Recaptcha_notice": "Bu site reCAPTCHA ile korunmaktadır; Google Gizlilik Politikası ve Hizmet Şartları geçerlidir.",
+      "Empty_basket": "Sepetiniz boş."
     },
     "pt": {
       "Continue": "Continuar",
@@ -198,7 +205,8 @@ const CONTENT = {
       "Promotion_label": "Promoção:",
       "Discount_label": "Desconto:",
       "Mode_label": "Modo:",
-      "Recaptcha_notice": "Este site está protegido por reCAPTCHA e aplicam-se a Política de Privacidade e os Termos de Serviço da Google."
+      "Recaptcha_notice": "Este site está protegido por reCAPTCHA e aplicam-se a Política de Privacidade e os Termos de Serviço da Google.",
+      "Empty_basket": "O seu cesto está vazio."
     }
   },
   "display-offer": {
@@ -722,7 +730,16 @@ const CONTENT = {
       "Client": "Client:",
       "Locale": "Locale:",
       "Source": "Source:",
-      "Registered_At": "Registered at:"
+      "Registered_At": "Registered at:",
+      "Verify_phone_header": "Verify your phone",
+      "Contact": "Contact",
+      "Email": "Email:",
+      "Phone": "Phone:",
+      "Address": "Address",
+      "Contracts": "Contracts",
+      "Type": "Type:",
+      "Status": "Status:",
+      "Devices": "Devices"
     },
     "es": {
       "Page_Title": "Área del cliente",
@@ -754,7 +771,16 @@ const CONTENT = {
       "Client": "Cliente:",
       "Locale": "Configuración regional:",
       "Source": "Origen:",
-      "Registered_At": "Registrado el:"
+      "Registered_At": "Registrado el:",
+      "Verify_phone_header": "Verifica tu teléfono",
+      "Contact": "Contacto",
+      "Email": "Correo electrónico:",
+      "Phone": "Teléfono:",
+      "Address": "Dirección",
+      "Contracts": "Contratos",
+      "Type": "Tipo:",
+      "Status": "Estado:",
+      "Devices": "Dispositivos"
     },
     "it": {
       "Page_Title": "Area cliente",
@@ -786,7 +812,16 @@ const CONTENT = {
       "Client": "Cliente:",
       "Locale": "Impostazione locale:",
       "Source": "Origine:",
-      "Registered_At": "Registrato il:"
+      "Registered_At": "Registrato il:",
+      "Verify_phone_header": "Verifica il tuo telefono",
+      "Contact": "Contatti",
+      "Email": "E-mail:",
+      "Phone": "Telefono:",
+      "Address": "Indirizzo",
+      "Contracts": "Contratti",
+      "Type": "Tipo:",
+      "Status": "Stato:",
+      "Devices": "Dispositivi"
     },
     "fr": {
       "Page_Title": "Espace client",
@@ -818,7 +853,16 @@ const CONTENT = {
       "Client": "Client :",
       "Locale": "Langue :",
       "Source": "Source :",
-      "Registered_At": "Enregistré le :"
+      "Registered_At": "Enregistré le :",
+      "Verify_phone_header": "Vérifiez votre téléphone",
+      "Contact": "Contact",
+      "Email": "E-mail :",
+      "Phone": "Téléphone :",
+      "Address": "Adresse",
+      "Contracts": "Contrats",
+      "Type": "Type :",
+      "Status": "Statut :",
+      "Devices": "Appareils"
     },
     "de": {
       "Page_Title": "Kundenbereich",
@@ -850,7 +894,16 @@ const CONTENT = {
       "Client": "Kunde:",
       "Locale": "Sprache:",
       "Source": "Quelle:",
-      "Registered_At": "Registriert am:"
+      "Registered_At": "Registriert am:",
+      "Verify_phone_header": "Telefonnummer bestätigen",
+      "Contact": "Kontakt",
+      "Email": "E-Mail:",
+      "Phone": "Telefon:",
+      "Address": "Adresse",
+      "Contracts": "Verträge",
+      "Type": "Typ:",
+      "Status": "Status:",
+      "Devices": "Geräte"
     },
     "nl": {
       "Page_Title": "Klantenhub",
@@ -882,7 +935,16 @@ const CONTENT = {
       "Client": "Klant:",
       "Locale": "Locale:",
       "Source": "Bron:",
-      "Registered_At": "Geregistreerd op:"
+      "Registered_At": "Geregistreerd op:",
+      "Verify_phone_header": "Verifieer uw telefoon",
+      "Contact": "Contact",
+      "Email": "E-mail:",
+      "Phone": "Telefoon:",
+      "Address": "Adres",
+      "Contracts": "Contracten",
+      "Type": "Type:",
+      "Status": "Status:",
+      "Devices": "Apparaten"
     },
     "tr": {
       "Page_Title": "Müşteri merkezi",
@@ -914,7 +976,16 @@ const CONTENT = {
       "Client": "Müşteri:",
       "Locale": "Yerel ayar:",
       "Source": "Kaynak:",
-      "Registered_At": "Kayıt tarihi:"
+      "Registered_At": "Kayıt tarihi:",
+      "Verify_phone_header": "Telefonunuzu doğrulayın",
+      "Contact": "İletişim",
+      "Email": "E-posta:",
+      "Phone": "Telefon:",
+      "Address": "Adres",
+      "Contracts": "Sözleşmeler",
+      "Type": "Tür:",
+      "Status": "Durum:",
+      "Devices": "Cihazlar"
     },
     "pt": {
       "Page_Title": "Área do cliente",
@@ -946,7 +1017,16 @@ const CONTENT = {
       "Client": "Cliente:",
       "Locale": "Configuração regional:",
       "Source": "Origem:",
-      "Registered_At": "Registado em:"
+      "Registered_At": "Registado em:",
+      "Verify_phone_header": "Verifique o seu telefone",
+      "Contact": "Contacto",
+      "Email": "E-mail:",
+      "Phone": "Telefone:",
+      "Address": "Morada",
+      "Contracts": "Contratos",
+      "Type": "Tipo:",
+      "Status": "Estado:",
+      "Devices": "Dispositivos"
     }
   },
   "checkout-success": {
@@ -1336,7 +1416,8 @@ const CONTENT = {
       "Date_Day": "day",
       "Date_Month": "month",
       "Date_Year": "year",
-      "Date_Clear": "Clear date"
+      "Date_Clear": "Clear date",
+      "Date_Clear_Button": "Clear"
     },
     "es": {
       "Scanner_Heading": "Escanear código de barras",
@@ -1352,7 +1433,8 @@ const CONTENT = {
       "Date_Day": "día",
       "Date_Month": "mes",
       "Date_Year": "año",
-      "Date_Clear": "Borrar la fecha"
+      "Date_Clear": "Borrar la fecha",
+      "Date_Clear_Button": "Borrar"
     },
     "it": {
       "Scanner_Heading": "Scansiona il codice a barre",
@@ -1368,7 +1450,8 @@ const CONTENT = {
       "Date_Day": "giorno",
       "Date_Month": "mese",
       "Date_Year": "anno",
-      "Date_Clear": "Cancella la data"
+      "Date_Clear": "Cancella la data",
+      "Date_Clear_Button": "Cancella"
     },
     "fr": {
       "Scanner_Heading": "Scanner le code-barres",
@@ -1384,7 +1467,8 @@ const CONTENT = {
       "Date_Day": "jour",
       "Date_Month": "mois",
       "Date_Year": "année",
-      "Date_Clear": "Effacer la date"
+      "Date_Clear": "Effacer la date",
+      "Date_Clear_Button": "Effacer"
     },
     "de": {
       "Scanner_Heading": "Barcode scannen",
@@ -1400,7 +1484,8 @@ const CONTENT = {
       "Date_Day": "Tag",
       "Date_Month": "Monat",
       "Date_Year": "Jahr",
-      "Date_Clear": "Datum löschen"
+      "Date_Clear": "Datum löschen",
+      "Date_Clear_Button": "Löschen"
     },
     "nl": {
       "Scanner_Heading": "Barcode scannen",
@@ -1416,7 +1501,8 @@ const CONTENT = {
       "Date_Day": "dag",
       "Date_Month": "maand",
       "Date_Year": "jaar",
-      "Date_Clear": "Datum wissen"
+      "Date_Clear": "Datum wissen",
+      "Date_Clear_Button": "Wissen"
     },
     "tr": {
       "Scanner_Heading": "Barkod tara",
@@ -1432,7 +1518,8 @@ const CONTENT = {
       "Date_Day": "gün",
       "Date_Month": "ay",
       "Date_Year": "yıl",
-      "Date_Clear": "Tarihi temizle"
+      "Date_Clear": "Tarihi temizle",
+      "Date_Clear_Button": "Temizle"
     },
     "pt": {
       "Scanner_Heading": "Ler código de barras",
@@ -1448,11 +1535,11 @@ const CONTENT = {
       "Date_Day": "dia",
       "Date_Month": "mês",
       "Date_Year": "ano",
-      "Date_Clear": "Limpar a data"
+      "Date_Clear": "Limpar a data",
+      "Date_Clear_Button": "Limpar"
     }
   }
 };
-
 
 function valuesFor(singleType, code) {
   const byLang = CONTENT[singleType];
