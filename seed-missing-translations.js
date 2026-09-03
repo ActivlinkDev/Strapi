@@ -728,7 +728,7 @@ const CONTENT = {
       "Client_Ref": "Client ref:",
       "Identifiers_Full": "Identifiers (full)",
       "Client": "Client:",
-      "Locale": "Locale:",
+      "Locale_Label": "Locale:",
       "Source": "Source:",
       "Registered_At": "Registered at:",
       "Verify_phone_header": "Verify your phone",
@@ -769,7 +769,7 @@ const CONTENT = {
       "Client_Ref": "Ref. del cliente:",
       "Identifiers_Full": "Identificadores (completos)",
       "Client": "Cliente:",
-      "Locale": "Configuración regional:",
+      "Locale_Label": "Configuración regional:",
       "Source": "Origen:",
       "Registered_At": "Registrado el:",
       "Verify_phone_header": "Verifica tu teléfono",
@@ -810,7 +810,7 @@ const CONTENT = {
       "Client_Ref": "Rif. cliente:",
       "Identifiers_Full": "Identificativi (completi)",
       "Client": "Cliente:",
-      "Locale": "Impostazione locale:",
+      "Locale_Label": "Impostazione locale:",
       "Source": "Origine:",
       "Registered_At": "Registrato il:",
       "Verify_phone_header": "Verifica il tuo telefono",
@@ -851,7 +851,7 @@ const CONTENT = {
       "Client_Ref": "Réf. client :",
       "Identifiers_Full": "Identifiants (complets)",
       "Client": "Client :",
-      "Locale": "Langue :",
+      "Locale_Label": "Langue :",
       "Source": "Source :",
       "Registered_At": "Enregistré le :",
       "Verify_phone_header": "Vérifiez votre téléphone",
@@ -892,7 +892,7 @@ const CONTENT = {
       "Client_Ref": "Kundenreferenz:",
       "Identifiers_Full": "Kennungen (vollständig)",
       "Client": "Kunde:",
-      "Locale": "Sprache:",
+      "Locale_Label": "Sprache:",
       "Source": "Quelle:",
       "Registered_At": "Registriert am:",
       "Verify_phone_header": "Telefonnummer bestätigen",
@@ -933,7 +933,7 @@ const CONTENT = {
       "Client_Ref": "Klantreferentie:",
       "Identifiers_Full": "Identificatiegegevens (volledig)",
       "Client": "Klant:",
-      "Locale": "Locale:",
+      "Locale_Label": "Locale:",
       "Source": "Bron:",
       "Registered_At": "Geregistreerd op:",
       "Verify_phone_header": "Verifieer uw telefoon",
@@ -974,7 +974,7 @@ const CONTENT = {
       "Client_Ref": "Müşteri referansı:",
       "Identifiers_Full": "Tanımlayıcılar (tam)",
       "Client": "Müşteri:",
-      "Locale": "Yerel ayar:",
+      "Locale_Label": "Yerel ayar:",
       "Source": "Kaynak:",
       "Registered_At": "Kayıt tarihi:",
       "Verify_phone_header": "Telefonunuzu doğrulayın",
@@ -1015,7 +1015,7 @@ const CONTENT = {
       "Client_Ref": "Ref. do cliente:",
       "Identifiers_Full": "Identificadores (completos)",
       "Client": "Cliente:",
-      "Locale": "Configuração regional:",
+      "Locale_Label": "Configuração regional:",
       "Source": "Origem:",
       "Registered_At": "Registado em:",
       "Verify_phone_header": "Verifique o seu telefone",
@@ -1551,6 +1551,10 @@ function isBlank(value) {
   return value === undefined || value === null || (typeof value === 'string' && value.trim() === '');
 }
 
+// Locales skipped because their current entry could not be read; reported at
+// the end so a partial run is not mistaken for a complete one.
+const readFailures = [];
+
 async function seedSingleType(singleType, locales, defaultLocale, token) {
   const cmBase = `/content-manager/single-types/api::${singleType}.${singleType}`;
   const ordered = [defaultLocale, ...locales.filter((l) => l.code !== defaultLocale.code)];
@@ -1561,9 +1565,23 @@ async function seedSingleType(singleType, locales, defaultLocale, token) {
     const translated = values !== CONTENT[singleType].en || String(locale.code).toLowerCase().startsWith('en');
 
     // Read the current entry so we only add what is missing and never drop
-    // fields this script does not know about.
+    // fields this script does not know about. A read that fails for any other
+    // reason than "this localization does not exist yet" must not be treated as
+    // an empty entry: doing so would make every key look blank and the PUT below
+    // would overwrite existing translations, breaking the additive guarantee.
     const current = await request('GET', `${cmBase}?locale=${locale.code}`, null, token);
-    const existing = (current.status >= 200 && current.status < 300 && current.body && current.body.data) || {};
+    let existing;
+    if (current.status >= 200 && current.status < 300) {
+      existing = (current.body && current.body.data) || {};
+    } else if (current.status === 404) {
+      existing = {}; // confirmed: no entry for this locale yet
+    } else if (FORCE) {
+      existing = {}; // --force overwrites regardless, so the read does not matter
+    } else {
+      console.warn(`! ${locale.code} — skipped: could not read the current entry (HTTP ${current.status}). Re-run once it is readable, or pass --force to write anyway.`);
+      readFailures.push(`${singleType}/${locale.code}`);
+      continue;
+    }
 
     const payload = {};
     const skipped = [];
@@ -1631,6 +1649,14 @@ async function main() {
       continue;
     }
     await seedSingleType(singleType, locales, defaultLocale, token);
+  }
+
+  if (readFailures.length) {
+    console.warn(`\nDone, but ${readFailures.length} locale(s) were skipped because their current entry could not be read:`);
+    for (const f of readFailures) console.warn(`  - ${f}`);
+    console.warn('Nothing was overwritten for those. Re-run once they are readable.');
+    process.exitCode = 1;
+    return;
   }
 
   console.log('\nDone.');

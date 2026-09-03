@@ -383,7 +383,7 @@
       },
       "type": "string"
     },
-    "Locale": {
+    "Locale_Label": {
       "pluginOptions": {
         "i18n": {
           "localized": true
