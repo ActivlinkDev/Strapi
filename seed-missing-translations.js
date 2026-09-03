@@ -1551,9 +1551,11 @@ function isBlank(value) {
   return value === undefined || value === null || (typeof value === 'string' && value.trim() === '');
 }
 
-// Locales skipped because their current entry could not be read; reported at
-// the end so a partial run is not mistaken for a complete one.
+// Locales skipped because their current entry could not be read, and locales
+// whose save or publish failed. Both are reported at the end and make the run
+// exit non-zero, so a partial run is not mistaken for a complete one.
 const readFailures = [];
+const writeFailures = [];
 
 async function seedSingleType(singleType, locales, defaultLocale, token) {
   const cmBase = `/content-manager/single-types/api::${singleType}.${singleType}`;
@@ -1601,21 +1603,27 @@ async function seedSingleType(singleType, locales, defaultLocale, token) {
     const label = translated ? 'translated' : 'English fallback';
     console.log(`Writing ${Object.keys(payload).length} ${label} value(s) to ${locale.code}${skipped.length ? ` (keeping ${skipped.length} existing)` : ''}…`);
 
-    const saveRes = await request('PUT', `${cmBase}?locale=${locale.code}`, payload, token);
+    // The locale MUST be in the body for writes. Strapi's content-manager
+    // single-type controllers read it from the query only for the GET above;
+    // update and publish take it from the request body, so a query-only locale
+    // silently writes and publishes the default locale every time.
+    const saveRes = await request('PUT', `${cmBase}?locale=${locale.code}`, { ...payload, locale: locale.code }, token);
     if (saveRes.status >= 200 && saveRes.status < 300) {
       console.log(`✓ ${locale.code} — saved.`);
     } else {
       console.warn(`✗ ${locale.code} save failed:`, JSON.stringify(saveRes.body, null, 2));
+      writeFailures.push(`${singleType}/${locale.code} (save)`);
       continue;
     }
 
-    const pubRes = await request('POST', `${cmBase}/actions/publish?locale=${locale.code}`, {}, token);
+    const pubRes = await request('POST', `${cmBase}/actions/publish?locale=${locale.code}`, { locale: locale.code }, token);
     if (pubRes.status >= 200 && pubRes.status < 300) {
       console.log(`✓ ${locale.code} — published.`);
     } else if (pubRes.body && pubRes.body.error && pubRes.body.error.message === 'already.published') {
       console.log(`✓ ${locale.code} — already published (updated in place).`);
     } else {
       console.warn(`✗ ${locale.code} publish failed:`, JSON.stringify(pubRes.body, null, 2));
+      writeFailures.push(`${singleType}/${locale.code} (publish)`);
     }
   }
 }
@@ -1651,10 +1659,18 @@ async function main() {
     await seedSingleType(singleType, locales, defaultLocale, token);
   }
 
-  if (readFailures.length) {
-    console.warn(`\nDone, but ${readFailures.length} locale(s) were skipped because their current entry could not be read:`);
-    for (const f of readFailures) console.warn(`  - ${f}`);
-    console.warn('Nothing was overwritten for those. Re-run once they are readable.');
+  if (readFailures.length || writeFailures.length) {
+    console.warn('\nDone, but the run was incomplete.');
+    if (readFailures.length) {
+      console.warn(`\n${readFailures.length} locale(s) skipped because their current entry could not be read:`);
+      for (const f of readFailures) console.warn(`  - ${f}`);
+      console.warn('Nothing was overwritten for those. Re-run once they are readable.');
+    }
+    if (writeFailures.length) {
+      console.warn(`\n${writeFailures.length} write(s) failed:`);
+      for (const f of writeFailures) console.warn(`  - ${f}`);
+      console.warn('Those translations are not seeded. Re-run once the cause is fixed.');
+    }
     process.exitCode = 1;
     return;
   }
