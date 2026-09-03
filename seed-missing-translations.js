@@ -222,8 +222,7 @@ const CONTENT = {
       "Cover_option": "Cover option",
       "Selected_plan": "Selected plan",
       "Choose_duration": "Choose your cover duration",
-      "Select": "Select duration",
-      "Adding_short": "Adding…"
+      "Select": "Select duration"
     },
     "es": {
       "No_Offers_Heading": "No hay planes de protección disponibles",
@@ -237,8 +236,7 @@ const CONTENT = {
       "Cover_option": "Opción de cobertura",
       "Selected_plan": "Plan seleccionado",
       "Choose_duration": "Elige la duración de tu cobertura",
-      "Select": "Seleccionar duración",
-      "Adding_short": "Añadiendo…"
+      "Select": "Seleccionar duración"
     },
     "it": {
       "No_Offers_Heading": "Nessun piano di protezione disponibile",
@@ -252,8 +250,7 @@ const CONTENT = {
       "Cover_option": "Opzione di copertura",
       "Selected_plan": "Piano selezionato",
       "Choose_duration": "Scegli la durata della copertura",
-      "Select": "Seleziona la durata",
-      "Adding_short": "Aggiunta…"
+      "Select": "Seleziona la durata"
     },
     "fr": {
       "No_Offers_Heading": "Aucune formule de protection disponible",
@@ -267,8 +264,7 @@ const CONTENT = {
       "Cover_option": "Option de couverture",
       "Selected_plan": "Formule sélectionnée",
       "Choose_duration": "Choisissez la durée de votre couverture",
-      "Select": "Choisir la durée",
-      "Adding_short": "Ajout…"
+      "Select": "Choisir la durée"
     },
     "de": {
       "No_Offers_Heading": "Keine Schutzpakete verfügbar",
@@ -282,8 +278,7 @@ const CONTENT = {
       "Cover_option": "Schutzoption",
       "Selected_plan": "Ausgewähltes Paket",
       "Choose_duration": "Wählen Sie die Laufzeit Ihres Schutzes",
-      "Select": "Laufzeit wählen",
-      "Adding_short": "Wird hinzugefügt…"
+      "Select": "Laufzeit wählen"
     },
     "nl": {
       "No_Offers_Heading": "Geen beschermingsplannen beschikbaar",
@@ -297,8 +292,7 @@ const CONTENT = {
       "Cover_option": "Dekkingsoptie",
       "Selected_plan": "Geselecteerd plan",
       "Choose_duration": "Kies de duur van uw dekking",
-      "Select": "Duur selecteren",
-      "Adding_short": "Toevoegen…"
+      "Select": "Duur selecteren"
     },
     "tr": {
       "No_Offers_Heading": "Uygun koruma planı yok",
@@ -312,8 +306,7 @@ const CONTENT = {
       "Cover_option": "Teminat seçeneği",
       "Selected_plan": "Seçilen plan",
       "Choose_duration": "Teminat sürenizi seçin",
-      "Select": "Süre seç",
-      "Adding_short": "Ekleniyor…"
+      "Select": "Süre seç"
     },
     "pt": {
       "No_Offers_Heading": "Sem planos de proteção disponíveis",
@@ -327,8 +320,7 @@ const CONTENT = {
       "Cover_option": "Opção de cobertura",
       "Selected_plan": "Plano selecionado",
       "Choose_duration": "Escolha a duração da sua cobertura",
-      "Select": "Selecionar duração",
-      "Adding_short": "A adicionar…"
+      "Select": "Selecionar duração"
     }
   },
   "display-device": {

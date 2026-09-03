@@ -375,14 +375,6 @@
         }
       },
       "type": "string"
-    },
-    "Adding_short": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
     }
   }
 }
