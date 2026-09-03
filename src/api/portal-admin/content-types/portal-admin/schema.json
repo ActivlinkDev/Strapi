@@ -163,6 +163,30 @@
     "Create_User_Button": {
       "pluginOptions": { "i18n": { "localized": true } },
       "type": "string"
+    },
+    "Active_Users_Heading": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "Refresh_Button": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "Edit_Button": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "Delete_User_Button": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "All_Locales_Label": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "Add_Pricing_Label": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
     }
   }
 }

@@ -1,10 +1,11 @@
 {
   "kind": "singleType",
-  "collectionName": "lookups",
+  "collectionName": "checkout_successes",
   "info": {
-    "singularName": "lookup",
-    "pluralName": "lookups",
-    "displayName": "Lookup"
+    "singularName": "checkout-success",
+    "pluralName": "checkout-successes",
+    "displayName": "Checkout_Success",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,38 +16,6 @@
     }
   },
   "attributes": {
-    "Header": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
-    },
-    "ClientKey": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
-    },
-    "Make_Model": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
-    },
-    "Scan": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
-    },
     "Page_Title": {
       "pluginOptions": {
         "i18n": {
@@ -55,7 +24,7 @@
       },
       "type": "string"
     },
-    "Loading_Branding": {
+    "Payment_Confirmed_Badge": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -63,7 +32,7 @@
       },
       "type": "string"
     },
-    "Client_Input_Placeholder": {
+    "Thank_You_Heading": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -71,55 +40,7 @@
       },
       "type": "string"
     },
-    "Client_Load_Button": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
-    },
-    "SKU_Tab": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
-    },
-    "GTIN_Tab": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
-    },
-    "Placeholder_SKU": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
-    },
-    "Placeholder_GTIN": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
-    },
-    "Placeholder_Model": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
-    },
-    "No_Client_Text": {
+    "Thank_You_Subtext": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -127,7 +48,55 @@
       },
       "type": "text"
     },
-    "Searching_Text": {
+    "Total_Paid_Label": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "Ref_Label": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "No_Basket_Reference": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text"
+    },
+    "Loading_Details": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "Covered_Products_Heading": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "Basket_Id_Label": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "Total_Label": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -143,7 +112,7 @@
       },
       "type": "string"
     },
-    "SKU_Label": {
+    "Need_Help_Heading": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -151,39 +120,7 @@
       },
       "type": "string"
     },
-    "GTIN_Label": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
-    },
-    "Category_Label": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
-    },
-    "Select_Button": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
-    },
-    "Confirm_Heading": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
-    },
-    "Confirm_Subtext": {
+    "Need_Help_Body": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -191,15 +128,7 @@
       },
       "type": "text"
     },
-    "Search_Again_Button": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
-    },
-    "Continue_Button": {
+    "Home_Button": {
       "pluginOptions": {
         "i18n": {
           "localized": true
