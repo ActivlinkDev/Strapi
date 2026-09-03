@@ -217,8 +217,13 @@ const CONTENT = {
       "Working": "Updating…",
       "View_options": "View options",
       "Loading_offers": "Loading offers…",
-      "Adding_short": "Adding…",
-      "Back_to_registration": "Back to registration"
+      "Back_to_registration": "Back to registration",
+      "Protection_plans": "Protection plans",
+      "Cover_option": "Cover option",
+      "Selected_plan": "Selected plan",
+      "Choose_duration": "Choose your cover duration",
+      "Select": "Select duration",
+      "Adding_short": "Adding…"
     },
     "es": {
       "No_Offers_Heading": "No hay planes de protección disponibles",
@@ -227,8 +232,13 @@ const CONTENT = {
       "Working": "Actualizando…",
       "View_options": "Ver opciones",
       "Loading_offers": "Cargando ofertas…",
-      "Adding_short": "Añadiendo…",
-      "Back_to_registration": "Volver al registro"
+      "Back_to_registration": "Volver al registro",
+      "Protection_plans": "Planes de protección",
+      "Cover_option": "Opción de cobertura",
+      "Selected_plan": "Plan seleccionado",
+      "Choose_duration": "Elige la duración de tu cobertura",
+      "Select": "Seleccionar duración",
+      "Adding_short": "Añadiendo…"
     },
     "it": {
       "No_Offers_Heading": "Nessun piano di protezione disponibile",
@@ -237,8 +247,13 @@ const CONTENT = {
       "Working": "Aggiornamento…",
       "View_options": "Vedi le opzioni",
       "Loading_offers": "Caricamento delle offerte…",
-      "Adding_short": "Aggiunta…",
-      "Back_to_registration": "Torna alla registrazione"
+      "Back_to_registration": "Torna alla registrazione",
+      "Protection_plans": "Piani di protezione",
+      "Cover_option": "Opzione di copertura",
+      "Selected_plan": "Piano selezionato",
+      "Choose_duration": "Scegli la durata della copertura",
+      "Select": "Seleziona la durata",
+      "Adding_short": "Aggiunta…"
     },
     "fr": {
       "No_Offers_Heading": "Aucune formule de protection disponible",
@@ -247,8 +262,13 @@ const CONTENT = {
       "Working": "Mise à jour…",
       "View_options": "Voir les options",
       "Loading_offers": "Chargement des offres…",
-      "Adding_short": "Ajout…",
-      "Back_to_registration": "Retour à l'enregistrement"
+      "Back_to_registration": "Retour à l'enregistrement",
+      "Protection_plans": "Formules de protection",
+      "Cover_option": "Option de couverture",
+      "Selected_plan": "Formule sélectionnée",
+      "Choose_duration": "Choisissez la durée de votre couverture",
+      "Select": "Choisir la durée",
+      "Adding_short": "Ajout…"
     },
     "de": {
       "No_Offers_Heading": "Keine Schutzpakete verfügbar",
@@ -257,8 +277,13 @@ const CONTENT = {
       "Working": "Wird aktualisiert…",
       "View_options": "Optionen ansehen",
       "Loading_offers": "Angebote werden geladen…",
-      "Adding_short": "Wird hinzugefügt…",
-      "Back_to_registration": "Zurück zur Registrierung"
+      "Back_to_registration": "Zurück zur Registrierung",
+      "Protection_plans": "Schutzpakete",
+      "Cover_option": "Schutzoption",
+      "Selected_plan": "Ausgewähltes Paket",
+      "Choose_duration": "Wählen Sie die Laufzeit Ihres Schutzes",
+      "Select": "Laufzeit wählen",
+      "Adding_short": "Wird hinzugefügt…"
     },
     "nl": {
       "No_Offers_Heading": "Geen beschermingsplannen beschikbaar",
@@ -267,8 +292,13 @@ const CONTENT = {
       "Working": "Bijwerken…",
       "View_options": "Opties bekijken",
       "Loading_offers": "Aanbiedingen laden…",
-      "Adding_short": "Toevoegen…",
-      "Back_to_registration": "Terug naar registratie"
+      "Back_to_registration": "Terug naar registratie",
+      "Protection_plans": "Beschermingsplannen",
+      "Cover_option": "Dekkingsoptie",
+      "Selected_plan": "Geselecteerd plan",
+      "Choose_duration": "Kies de duur van uw dekking",
+      "Select": "Duur selecteren",
+      "Adding_short": "Toevoegen…"
     },
     "tr": {
       "No_Offers_Heading": "Uygun koruma planı yok",
@@ -277,8 +307,13 @@ const CONTENT = {
       "Working": "Güncelleniyor…",
       "View_options": "Seçenekleri gör",
       "Loading_offers": "Teklifler yükleniyor…",
-      "Adding_short": "Ekleniyor…",
-      "Back_to_registration": "Kayda geri dön"
+      "Back_to_registration": "Kayda geri dön",
+      "Protection_plans": "Koruma planları",
+      "Cover_option": "Teminat seçeneği",
+      "Selected_plan": "Seçilen plan",
+      "Choose_duration": "Teminat sürenizi seçin",
+      "Select": "Süre seç",
+      "Adding_short": "Ekleniyor…"
     },
     "pt": {
       "No_Offers_Heading": "Sem planos de proteção disponíveis",
@@ -287,8 +322,13 @@ const CONTENT = {
       "Working": "A atualizar…",
       "View_options": "Ver opções",
       "Loading_offers": "A carregar as ofertas…",
-      "Adding_short": "A adicionar…",
-      "Back_to_registration": "Voltar ao registo"
+      "Back_to_registration": "Voltar ao registo",
+      "Protection_plans": "Planos de proteção",
+      "Cover_option": "Opção de cobertura",
+      "Selected_plan": "Plano selecionado",
+      "Choose_duration": "Escolha a duração da sua cobertura",
+      "Select": "Selecionar duração",
+      "Adding_short": "A adicionar…"
     }
   },
   "display-device": {

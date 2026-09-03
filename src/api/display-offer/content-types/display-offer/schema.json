@@ -320,7 +320,7 @@
       },
       "type": "string"
     },
-    "Adding_short": {
+    "Back_to_registration": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -328,7 +328,55 @@
       },
       "type": "string"
     },
-    "Back_to_registration": {
+    "Protection_plans": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "Pricing_reassurance": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text"
+    },
+    "Cover_option": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "Selected_plan": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "Choose_duration": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "Select": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "Adding_short": {
       "pluginOptions": {
         "i18n": {
           "localized": true
