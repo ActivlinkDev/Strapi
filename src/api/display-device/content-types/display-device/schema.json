@@ -320,6 +320,22 @@
       },
       "type": "string"
     },
+    "Estimated_Replacement_Value": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "Estimated_Replacement_Value_Info": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
     "Compare_Prices": {
       "pluginOptions": {
         "i18n": {
@@ -327,6 +343,14 @@
         }
       },
       "type": "string"
+    },
+    "Compare_Prices_Explainer": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text"
     }
   }
 }
