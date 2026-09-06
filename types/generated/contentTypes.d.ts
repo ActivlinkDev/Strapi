@@ -2310,6 +2310,12 @@ export interface ApiLookupLookup extends Struct.SingleTypeSchema {
           localized: true;
         };
       }>;
+    Heading: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     Help_Heading: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
@@ -2335,6 +2341,12 @@ export interface ApiLookupLookup extends Struct.SingleTypeSchema {
         };
       }>;
     Item_Fallback: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Landing_Subtitle: Schema.Attribute.Text &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -2421,6 +2433,12 @@ export interface ApiLookupLookup extends Struct.SingleTypeSchema {
           localized: true;
         };
       }>;
+    Search_Placeholder: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     Searching_Text: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
@@ -2490,7 +2508,6 @@ export interface ApiLookupLookup extends Struct.SingleTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-
   };
 }
 
@@ -3862,7 +3879,6 @@ export interface ApiStartPageStartPage extends Struct.SingleTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-
   };
 }
 
