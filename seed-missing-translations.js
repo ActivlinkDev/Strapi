@@ -480,7 +480,10 @@ const CONTENT = {
       "Loading_Client": "Loading client configuration",
       "Item_Fallback": "Item",
       "SKU_Label": "SKU:",
-      "GTIN_Label": "GTIN:"
+      "GTIN_Label": "GTIN:",
+      "Page_Title": "Product lookup",
+      "Heading": "Find your product",
+      "Search_Placeholder": "Your make or model"
     },
     "es": {
       "Search_Label": "Introduce la marca o el modelo",
@@ -490,7 +493,10 @@ const CONTENT = {
       "Loading_Client": "Cargando la configuración del cliente",
       "Item_Fallback": "Artículo",
       "SKU_Label": "SKU:",
-      "GTIN_Label": "GTIN:"
+      "GTIN_Label": "GTIN:",
+      "Page_Title": "Búsqueda de productos",
+      "Heading": "Encuentra tu producto",
+      "Search_Placeholder": "Tu marca o modelo"
     },
     "it": {
       "Search_Label": "Inserisci la marca o il modello",
@@ -500,7 +506,10 @@ const CONTENT = {
       "Loading_Client": "Caricamento della configurazione del cliente",
       "Item_Fallback": "Articolo",
       "SKU_Label": "SKU:",
-      "GTIN_Label": "GTIN:"
+      "GTIN_Label": "GTIN:",
+      "Page_Title": "Ricerca prodotto",
+      "Heading": "Trova il tuo prodotto",
+      "Search_Placeholder": "La tua marca o modello"
     },
     "fr": {
       "Search_Label": "Saisissez la marque ou le modèle",
@@ -510,7 +519,10 @@ const CONTENT = {
       "Loading_Client": "Chargement de la configuration du client",
       "Item_Fallback": "Article",
       "SKU_Label": "SKU :",
-      "GTIN_Label": "GTIN :"
+      "GTIN_Label": "GTIN :",
+      "Page_Title": "Recherche de produit",
+      "Heading": "Trouvez votre produit",
+      "Search_Placeholder": "Votre marque ou modèle"
     },
     "de": {
       "Search_Label": "Marke oder Modell eingeben",
@@ -520,7 +532,10 @@ const CONTENT = {
       "Loading_Client": "Kundenkonfiguration wird geladen",
       "Item_Fallback": "Artikel",
       "SKU_Label": "SKU:",
-      "GTIN_Label": "GTIN:"
+      "GTIN_Label": "GTIN:",
+      "Page_Title": "Produktsuche",
+      "Heading": "Finden Sie Ihr Produkt",
+      "Search_Placeholder": "Ihre Marke oder Ihr Modell"
     },
     "nl": {
       "Search_Label": "Voer merk of model in",
@@ -530,7 +545,10 @@ const CONTENT = {
       "Loading_Client": "Klantconfiguratie laden",
       "Item_Fallback": "Item",
       "SKU_Label": "SKU:",
-      "GTIN_Label": "GTIN:"
+      "GTIN_Label": "GTIN:",
+      "Page_Title": "Product opzoeken",
+      "Heading": "Vind uw product",
+      "Search_Placeholder": "Uw merk of model"
     },
     "tr": {
       "Search_Label": "Marka veya model girin",
@@ -540,7 +558,10 @@ const CONTENT = {
       "Loading_Client": "Müşteri yapılandırması yükleniyor",
       "Item_Fallback": "Ürün",
       "SKU_Label": "SKU:",
-      "GTIN_Label": "GTIN:"
+      "GTIN_Label": "GTIN:",
+      "Page_Title": "Ürün arama",
+      "Heading": "Ürününüzü bulun",
+      "Search_Placeholder": "Markanız veya modeliniz"
     },
     "pt": {
       "Search_Label": "Introduza a marca ou o modelo",
@@ -550,7 +571,10 @@ const CONTENT = {
       "Loading_Client": "A carregar a configuração do cliente",
       "Item_Fallback": "Artigo",
       "SKU_Label": "SKU:",
-      "GTIN_Label": "GTIN:"
+      "GTIN_Label": "GTIN:",
+      "Page_Title": "Pesquisa de produto",
+      "Heading": "Encontre o seu produto",
+      "Search_Placeholder": "A sua marca ou modelo"
     }
   },
   "lookup": {
@@ -574,7 +598,11 @@ const CONTENT = {
       "Confirm_Heading": "Confirm selection",
       "Confirm_Subtext": "Please check make, model and identifiers before continuing.",
       "Search_Again_Button": "Search again",
-      "Continue_Button": "Yes — Continue"
+      "Continue_Button": "Yes — Continue",
+      "Heading": "Find your product",
+      "Landing_Subtitle": "Scan a barcode or search by make and model to get started.",
+      "Search_Label": "Enter make or model",
+      "Search_Placeholder": "Your make or model"
     },
     "es": {
       "Page_Title": "Búsqueda de productos",
@@ -596,7 +624,11 @@ const CONTENT = {
       "Confirm_Heading": "Confirmar selección",
       "Confirm_Subtext": "Comprueba la marca, el modelo y los identificadores antes de continuar.",
       "Search_Again_Button": "Buscar de nuevo",
-      "Continue_Button": "Sí – Continuar"
+      "Continue_Button": "Sí – Continuar",
+      "Heading": "Encuentra tu producto",
+      "Landing_Subtitle": "Escanea un código de barras o busca por marca y modelo para empezar.",
+      "Search_Label": "Introduce la marca o el modelo",
+      "Search_Placeholder": "Tu marca o modelo"
     },
     "it": {
       "Page_Title": "Ricerca prodotto",
@@ -618,7 +650,11 @@ const CONTENT = {
       "Confirm_Heading": "Conferma la selezione",
       "Confirm_Subtext": "Controlla marca, modello e identificativi prima di continuare.",
       "Search_Again_Button": "Cerca di nuovo",
-      "Continue_Button": "Sì – Continua"
+      "Continue_Button": "Sì – Continua",
+      "Heading": "Trova il tuo prodotto",
+      "Landing_Subtitle": "Scansiona un codice a barre oppure cerca per marca e modello per iniziare.",
+      "Search_Label": "Inserisci la marca o il modello",
+      "Search_Placeholder": "La tua marca o modello"
     },
     "fr": {
       "Page_Title": "Recherche de produit",
@@ -640,7 +676,11 @@ const CONTENT = {
       "Confirm_Heading": "Confirmer la sélection",
       "Confirm_Subtext": "Vérifiez la marque, le modèle et les identifiants avant de continuer.",
       "Search_Again_Button": "Nouvelle recherche",
-      "Continue_Button": "Oui – Continuer"
+      "Continue_Button": "Oui – Continuer",
+      "Heading": "Trouvez votre produit",
+      "Landing_Subtitle": "Scannez un code-barres ou recherchez par marque et modèle pour commencer.",
+      "Search_Label": "Saisissez la marque ou le modèle",
+      "Search_Placeholder": "Votre marque ou modèle"
     },
     "de": {
       "Page_Title": "Produktsuche",
@@ -662,7 +702,11 @@ const CONTENT = {
       "Confirm_Heading": "Auswahl bestätigen",
       "Confirm_Subtext": "Bitte prüfen Sie Marke, Modell und Kennungen, bevor Sie fortfahren.",
       "Search_Again_Button": "Erneut suchen",
-      "Continue_Button": "Ja – Weiter"
+      "Continue_Button": "Ja – Weiter",
+      "Heading": "Finden Sie Ihr Produkt",
+      "Landing_Subtitle": "Scannen Sie einen Barcode oder suchen Sie nach Marke und Modell, um zu starten.",
+      "Search_Label": "Marke oder Modell eingeben",
+      "Search_Placeholder": "Ihre Marke oder Ihr Modell"
     },
     "nl": {
       "Page_Title": "Product opzoeken",
@@ -684,7 +728,11 @@ const CONTENT = {
       "Confirm_Heading": "Selectie bevestigen",
       "Confirm_Subtext": "Controleer merk, model en identificatiegegevens voordat u doorgaat.",
       "Search_Again_Button": "Opnieuw zoeken",
-      "Continue_Button": "Ja – Doorgaan"
+      "Continue_Button": "Ja – Doorgaan",
+      "Heading": "Vind uw product",
+      "Landing_Subtitle": "Scan een barcode of zoek op merk en model om te beginnen.",
+      "Search_Label": "Voer merk of model in",
+      "Search_Placeholder": "Uw merk of model"
     },
     "tr": {
       "Page_Title": "Ürün arama",
@@ -706,7 +754,11 @@ const CONTENT = {
       "Confirm_Heading": "Seçimi onayla",
       "Confirm_Subtext": "Devam etmeden önce lütfen marka, model ve tanımlayıcıları kontrol edin.",
       "Search_Again_Button": "Tekrar ara",
-      "Continue_Button": "Evet – Devam et"
+      "Continue_Button": "Evet – Devam et",
+      "Heading": "Ürününüzü bulun",
+      "Landing_Subtitle": "Başlamak için bir barkod tarayın ya da marka ve modele göre arayın.",
+      "Search_Label": "Marka veya model girin",
+      "Search_Placeholder": "Markanız veya modeliniz"
     },
     "pt": {
       "Page_Title": "Pesquisa de produto",
@@ -728,7 +780,11 @@ const CONTENT = {
       "Confirm_Heading": "Confirmar seleção",
       "Confirm_Subtext": "Verifique a marca, o modelo e os identificadores antes de continuar.",
       "Search_Again_Button": "Pesquisar novamente",
-      "Continue_Button": "Sim – Continuar"
+      "Continue_Button": "Sim – Continuar",
+      "Heading": "Encontre o seu produto",
+      "Landing_Subtitle": "Leia um código de barras ou pesquise por marca e modelo para começar.",
+      "Search_Label": "Introduza a marca ou o modelo",
+      "Search_Placeholder": "A sua marca ou modelo"
     }
   },
   "customer-hub": {
