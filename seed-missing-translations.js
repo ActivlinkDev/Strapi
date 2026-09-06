@@ -504,7 +504,9 @@ const CONTENT = {
       "Benefit_2_Title": "Easier support",
       "Benefit_2_Text": "Having the details to hand makes warranty and service requests simpler.",
       "Benefit_3_Title": "Protection options",
-      "Benefit_3_Text": "Once your product is registered you can see the protection available for it."
+      "Benefit_3_Text": "Once your product is registered you can see the protection available for it.",
+      "Heading": "Find your product",
+      "Search_Placeholder": "Your make or model"
     },
     "es": {
       "Search_Label": "Introduce la marca o el modelo",
@@ -538,7 +540,9 @@ const CONTENT = {
       "Benefit_2_Title": "Asistencia más sencilla",
       "Benefit_2_Text": "Tener los datos a mano facilita las solicitudes de garantía y de servicio técnico.",
       "Benefit_3_Title": "Opciones de protección",
-      "Benefit_3_Text": "Una vez registrado tu producto, puedes ver la protección disponible para él."
+      "Benefit_3_Text": "Una vez registrado tu producto, puedes ver la protección disponible para él.",
+      "Heading": "Encuentra tu producto",
+      "Search_Placeholder": "Tu marca o modelo"
     },
     "it": {
       "Search_Label": "Inserisci la marca o il modello",
@@ -572,7 +576,9 @@ const CONTENT = {
       "Benefit_2_Title": "Assistenza più semplice",
       "Benefit_2_Text": "Avere i dati a portata di mano semplifica le richieste di garanzia e assistenza.",
       "Benefit_3_Title": "Opzioni di protezione",
-      "Benefit_3_Text": "Una volta registrato il prodotto puoi vedere la protezione disponibile."
+      "Benefit_3_Text": "Una volta registrato il prodotto puoi vedere la protezione disponibile.",
+      "Heading": "Trova il tuo prodotto",
+      "Search_Placeholder": "La tua marca o modello"
     },
     "fr": {
       "Search_Label": "Saisissez la marque ou le modèle",
@@ -606,7 +612,9 @@ const CONTENT = {
       "Benefit_2_Title": "Une assistance facilitée",
       "Benefit_2_Text": "Avoir ces informations sous la main simplifie les demandes de garantie et de service.",
       "Benefit_3_Title": "Options de protection",
-      "Benefit_3_Text": "Une fois votre produit enregistré, vous pouvez voir les protections disponibles."
+      "Benefit_3_Text": "Une fois votre produit enregistré, vous pouvez voir les protections disponibles.",
+      "Heading": "Trouvez votre produit",
+      "Search_Placeholder": "Votre marque ou modèle"
     },
     "de": {
       "Search_Label": "Marke oder Modell eingeben",
@@ -640,7 +648,9 @@ const CONTENT = {
       "Benefit_2_Title": "Einfacherer Support",
       "Benefit_2_Text": "Wenn die Daten vorliegen, sind Garantie- und Serviceanfragen einfacher.",
       "Benefit_3_Title": "Schutzoptionen",
-      "Benefit_3_Text": "Sobald Ihr Produkt registriert ist, sehen Sie den dafür verfügbaren Schutz."
+      "Benefit_3_Text": "Sobald Ihr Produkt registriert ist, sehen Sie den dafür verfügbaren Schutz.",
+      "Heading": "Finden Sie Ihr Produkt",
+      "Search_Placeholder": "Ihre Marke oder Ihr Modell"
     },
     "nl": {
       "Search_Label": "Voer merk of model in",
@@ -674,7 +684,9 @@ const CONTENT = {
       "Benefit_2_Title": "Eenvoudiger ondersteuning",
       "Benefit_2_Text": "Met de gegevens bij de hand zijn garantie- en serviceaanvragen eenvoudiger.",
       "Benefit_3_Title": "Beschermingsopties",
-      "Benefit_3_Text": "Zodra uw product is geregistreerd, ziet u welke bescherming beschikbaar is."
+      "Benefit_3_Text": "Zodra uw product is geregistreerd, ziet u welke bescherming beschikbaar is.",
+      "Heading": "Vind uw product",
+      "Search_Placeholder": "Uw merk of model"
     },
     "tr": {
       "Search_Label": "Marka veya model girin",
@@ -708,7 +720,9 @@ const CONTENT = {
       "Benefit_2_Title": "Daha kolay destek",
       "Benefit_2_Text": "Bilgiler elinizin altında olduğunda garanti ve servis talepleri daha kolaydır.",
       "Benefit_3_Title": "Koruma seçenekleri",
-      "Benefit_3_Text": "Ürününüz kaydedildikten sonra sunulan korumayı görebilirsiniz."
+      "Benefit_3_Text": "Ürününüz kaydedildikten sonra sunulan korumayı görebilirsiniz.",
+      "Heading": "Ürününüzü bulun",
+      "Search_Placeholder": "Markanız veya modeliniz"
     },
     "pt": {
       "Search_Label": "Introduza a marca ou o modelo",
@@ -742,7 +756,9 @@ const CONTENT = {
       "Benefit_2_Title": "Apoio mais simples",
       "Benefit_2_Text": "Ter os dados à mão simplifica os pedidos de garantia e de assistência.",
       "Benefit_3_Title": "Opções de proteção",
-      "Benefit_3_Text": "Depois de registar o produto pode ver a proteção disponível para ele."
+      "Benefit_3_Text": "Depois de registar o produto pode ver a proteção disponível para ele.",
+      "Heading": "Encontre o seu produto",
+      "Search_Placeholder": "A sua marca ou modelo"
     }
   },
   "lookup": {
@@ -783,7 +799,10 @@ const CONTENT = {
       "Step_3_Text": "Review the protection available for your product and choose what suits you.",
       "Help_Heading": "Cannot find your product?",
       "Help_Text": "The barcode is usually on the back of the product or on its packaging. You can also search using the model number printed on the rating label.",
-      "Close_Button": "Close"
+      "Close_Button": "Close",
+      "Heading": "Find your product",
+      "Landing_Subtitle": "Scan a barcode or search by make and model to get started.",
+      "Search_Placeholder": "Your make or model"
     },
     "es": {
       "Page_Title": "Búsqueda de productos",
@@ -822,7 +841,10 @@ const CONTENT = {
       "Step_3_Text": "Revisa la protección disponible para tu producto y elige la que más te convenga.",
       "Help_Heading": "¿No encuentras tu producto?",
       "Help_Text": "El código de barras suele estar en la parte trasera del producto o en su embalaje. También puedes buscar con el número de modelo que aparece en la etiqueta de características.",
-      "Close_Button": "Cerrar"
+      "Close_Button": "Cerrar",
+      "Heading": "Encuentra tu producto",
+      "Landing_Subtitle": "Escanea un código de barras o busca por marca y modelo para empezar.",
+      "Search_Placeholder": "Tu marca o modelo"
     },
     "it": {
       "Page_Title": "Ricerca prodotto",
@@ -861,7 +883,10 @@ const CONTENT = {
       "Step_3_Text": "Consulta la protezione disponibile per il tuo prodotto e scegli quella più adatta a te.",
       "Help_Heading": "Non trovi il tuo prodotto?",
       "Help_Text": "Il codice a barre si trova di solito sul retro del prodotto o sulla confezione. Puoi anche cercare con il numero di modello riportato sull'etichetta dei dati tecnici.",
-      "Close_Button": "Chiudi"
+      "Close_Button": "Chiudi",
+      "Heading": "Trova il tuo prodotto",
+      "Landing_Subtitle": "Scansiona un codice a barre oppure cerca per marca e modello per iniziare.",
+      "Search_Placeholder": "La tua marca o modello"
     },
     "fr": {
       "Page_Title": "Recherche de produit",
@@ -900,7 +925,10 @@ const CONTENT = {
       "Step_3_Text": "Consultez la protection disponible pour votre produit et choisissez celle qui vous convient.",
       "Help_Heading": "Vous ne trouvez pas votre produit ?",
       "Help_Text": "Le code-barres se trouve généralement à l'arrière du produit ou sur son emballage. Vous pouvez aussi rechercher avec le numéro de modèle inscrit sur la plaque signalétique.",
-      "Close_Button": "Fermer"
+      "Close_Button": "Fermer",
+      "Heading": "Trouvez votre produit",
+      "Landing_Subtitle": "Scannez un code-barres ou recherchez par marque et modèle pour commencer.",
+      "Search_Placeholder": "Votre marque ou modèle"
     },
     "de": {
       "Page_Title": "Produktsuche",
@@ -939,7 +967,10 @@ const CONTENT = {
       "Step_3_Text": "Sehen Sie sich den verfügbaren Schutz für Ihr Produkt an und wählen Sie, was zu Ihnen passt.",
       "Help_Heading": "Sie finden Ihr Produkt nicht?",
       "Help_Text": "Der Barcode befindet sich meist auf der Rückseite des Produkts oder auf der Verpackung. Sie können auch mit der Modellnummer vom Typenschild suchen.",
-      "Close_Button": "Schließen"
+      "Close_Button": "Schließen",
+      "Heading": "Finden Sie Ihr Produkt",
+      "Landing_Subtitle": "Scannen Sie einen Barcode oder suchen Sie nach Marke und Modell, um zu starten.",
+      "Search_Placeholder": "Ihre Marke oder Ihr Modell"
     },
     "nl": {
       "Page_Title": "Product opzoeken",
@@ -978,7 +1009,10 @@ const CONTENT = {
       "Step_3_Text": "Bekijk de beschikbare bescherming voor uw product en kies wat bij u past.",
       "Help_Heading": "Kunt u uw product niet vinden?",
       "Help_Text": "De barcode staat meestal op de achterkant van het product of op de verpakking. U kunt ook zoeken met het modelnummer op het typeplaatje.",
-      "Close_Button": "Sluiten"
+      "Close_Button": "Sluiten",
+      "Heading": "Vind uw product",
+      "Landing_Subtitle": "Scan een barcode of zoek op merk en model om te beginnen.",
+      "Search_Placeholder": "Uw merk of model"
     },
     "tr": {
       "Page_Title": "Ürün arama",
@@ -1017,7 +1051,10 @@ const CONTENT = {
       "Step_3_Text": "Ürününüz için sunulan korumayı inceleyin ve size uygun olanı seçin.",
       "Help_Heading": "Ürününüzü bulamıyor musunuz?",
       "Help_Text": "Barkod genellikle ürünün arkasında veya ambalajında bulunur. Ayrıca etiketteki model numarasıyla da arama yapabilirsiniz.",
-      "Close_Button": "Kapat"
+      "Close_Button": "Kapat",
+      "Heading": "Ürününüzü bulun",
+      "Landing_Subtitle": "Başlamak için bir barkod tarayın ya da marka ve modele göre arayın.",
+      "Search_Placeholder": "Markanız veya modeliniz"
     },
     "pt": {
       "Page_Title": "Pesquisa de produto",
@@ -1056,7 +1093,10 @@ const CONTENT = {
       "Step_3_Text": "Consulte a proteção disponível para o seu produto e escolha o que lhe convém.",
       "Help_Heading": "Não encontra o seu produto?",
       "Help_Text": "O código de barras está normalmente na parte de trás do produto ou na embalagem. Também pode pesquisar com o número de modelo indicado na etiqueta de características.",
-      "Close_Button": "Fechar"
+      "Close_Button": "Fechar",
+      "Heading": "Encontre o seu produto",
+      "Landing_Subtitle": "Leia um código de barras ou pesquise por marca e modelo para começar.",
+      "Search_Placeholder": "A sua marca ou modelo"
     }
   },
   "customer-hub": {
