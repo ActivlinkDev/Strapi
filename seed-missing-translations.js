@@ -1411,7 +1411,13 @@ const CONTENT = {
       "Actions_Aria_Label": "Error actions",
       "Timestamp_Label": "Timestamp:",
       "Status_Label": "Status:",
-      "Status_Not_Available": "N/A"
+      "Status_Not_Available": "N/A",
+      "Missing_Client_Key_Heading": "This Link Is Incomplete",
+      "Missing_Client_Key_Description": "The link you followed is missing the code that tells us which retailer or brand you came from, so we cannot start your registration.",
+      "Missing_Client_Key_Hint": "Open the link from your retailer or brand again, or contact them for a new one.",
+      "Client_Not_Found_Heading": "This Link Is Not Valid",
+      "Client_Not_Found_Description": "We could not find the retailer or brand this link belongs to.",
+      "Client_Not_Found_Hint": "The link may have expired. Open it again from your retailer or brand, or contact them for a new one."
     },
     "es": {
       "Page_Title": "Algo ha salido mal",
@@ -1440,7 +1446,13 @@ const CONTENT = {
       "Actions_Aria_Label": "Acciones de error",
       "Timestamp_Label": "Marca de tiempo:",
       "Status_Label": "Estado:",
-      "Status_Not_Available": "N/D"
+      "Status_Not_Available": "N/D",
+      "Missing_Client_Key_Heading": "Este enlace está incompleto",
+      "Missing_Client_Key_Description": "Al enlace que has abierto le falta el código que nos indica de qué tienda o marca vienes, así que no podemos iniciar tu registro.",
+      "Missing_Client_Key_Hint": "Vuelve a abrir el enlace de tu tienda o marca, o pídeles uno nuevo.",
+      "Client_Not_Found_Heading": "Este enlace no es válido",
+      "Client_Not_Found_Description": "No hemos encontrado la tienda o la marca a la que pertenece este enlace.",
+      "Client_Not_Found_Hint": "Puede que el enlace haya caducado. Vuelve a abrirlo desde tu tienda o marca, o pídeles uno nuevo."
     },
     "it": {
       "Page_Title": "Qualcosa è andato storto",
@@ -1469,7 +1481,13 @@ const CONTENT = {
       "Actions_Aria_Label": "Azioni per l'errore",
       "Timestamp_Label": "Data e ora:",
       "Status_Label": "Stato:",
-      "Status_Not_Available": "N/D"
+      "Status_Not_Available": "N/D",
+      "Missing_Client_Key_Heading": "Questo link è incompleto",
+      "Missing_Client_Key_Description": "Al link che hai aperto manca il codice che ci indica da quale rivenditore o marca arrivi, quindi non possiamo avviare la registrazione.",
+      "Missing_Client_Key_Hint": "Riapri il link del tuo rivenditore o della marca, oppure chiedine uno nuovo.",
+      "Client_Not_Found_Heading": "Questo link non è valido",
+      "Client_Not_Found_Description": "Non abbiamo trovato il rivenditore o la marca a cui appartiene questo link.",
+      "Client_Not_Found_Hint": "Il link potrebbe essere scaduto. Riaprilo dal tuo rivenditore o dalla marca, oppure chiedine uno nuovo."
     },
     "fr": {
       "Page_Title": "Une erreur est survenue",
@@ -1498,7 +1516,13 @@ const CONTENT = {
       "Actions_Aria_Label": "Actions liées à l'erreur",
       "Timestamp_Label": "Horodatage :",
       "Status_Label": "Statut :",
-      "Status_Not_Available": "N/D"
+      "Status_Not_Available": "N/D",
+      "Missing_Client_Key_Heading": "Ce lien est incomplet",
+      "Missing_Client_Key_Description": "Il manque au lien que vous avez suivi le code qui nous indique de quel distributeur ou de quelle marque vous venez : nous ne pouvons pas démarrer votre enregistrement.",
+      "Missing_Client_Key_Hint": "Ouvrez à nouveau le lien de votre distributeur ou de votre marque, ou demandez-leur un nouveau lien.",
+      "Client_Not_Found_Heading": "Ce lien n'est pas valide",
+      "Client_Not_Found_Description": "Nous n'avons pas trouvé le distributeur ou la marque auquel ce lien appartient.",
+      "Client_Not_Found_Hint": "Le lien a peut-être expiré. Ouvrez-le à nouveau depuis votre distributeur ou votre marque, ou demandez-leur un nouveau lien."
     },
     "de": {
       "Page_Title": "Etwas ist schiefgelaufen",
@@ -1527,7 +1551,13 @@ const CONTENT = {
       "Actions_Aria_Label": "Fehleraktionen",
       "Timestamp_Label": "Zeitstempel:",
       "Status_Label": "Status:",
-      "Status_Not_Available": "k. A."
+      "Status_Not_Available": "k. A.",
+      "Missing_Client_Key_Heading": "Dieser Link ist unvollständig",
+      "Missing_Client_Key_Description": "Dem Link, dem Sie gefolgt sind, fehlt der Code, der uns sagt, von welchem Händler oder welcher Marke Sie kommen. Deshalb können wir Ihre Registrierung nicht starten.",
+      "Missing_Client_Key_Hint": "Öffnen Sie den Link Ihres Händlers oder Ihrer Marke erneut oder fordern Sie dort einen neuen an.",
+      "Client_Not_Found_Heading": "Dieser Link ist ungültig",
+      "Client_Not_Found_Description": "Wir konnten den Händler oder die Marke zu diesem Link nicht finden.",
+      "Client_Not_Found_Hint": "Der Link ist möglicherweise abgelaufen. Öffnen Sie ihn erneut über Ihren Händler oder Ihre Marke oder fordern Sie dort einen neuen an."
     },
     "nl": {
       "Page_Title": "Er is iets misgegaan",
@@ -1556,7 +1586,13 @@ const CONTENT = {
       "Actions_Aria_Label": "Foutacties",
       "Timestamp_Label": "Tijdstempel:",
       "Status_Label": "Status:",
-      "Status_Not_Available": "N.v.t."
+      "Status_Not_Available": "N.v.t.",
+      "Missing_Client_Key_Heading": "Deze link is onvolledig",
+      "Missing_Client_Key_Description": "In de link die u hebt geopend ontbreekt de code die aangeeft van welke winkel of welk merk u komt, dus we kunnen uw registratie niet starten.",
+      "Missing_Client_Key_Hint": "Open de link van uw winkel of merk opnieuw, of vraag daar een nieuwe link aan.",
+      "Client_Not_Found_Heading": "Deze link is niet geldig",
+      "Client_Not_Found_Description": "We konden de winkel of het merk waar deze link bij hoort niet vinden.",
+      "Client_Not_Found_Hint": "De link is mogelijk verlopen. Open hem opnieuw via uw winkel of merk, of vraag daar een nieuwe aan."
     },
     "tr": {
       "Page_Title": "Bir şeyler ters gitti",
@@ -1585,7 +1621,13 @@ const CONTENT = {
       "Actions_Aria_Label": "Hata işlemleri",
       "Timestamp_Label": "Zaman damgası:",
       "Status_Label": "Durum:",
-      "Status_Not_Available": "Yok"
+      "Status_Not_Available": "Yok",
+      "Missing_Client_Key_Heading": "Bu bağlantı eksik",
+      "Missing_Client_Key_Description": "Açtığınız bağlantıda hangi satıcıdan veya markadan geldiğinizi bize bildiren kod yok, bu yüzden kaydınızı başlatamıyoruz.",
+      "Missing_Client_Key_Hint": "Satıcınızın veya markanızın bağlantısını yeniden açın ya da onlardan yeni bir bağlantı isteyin.",
+      "Client_Not_Found_Heading": "Bu bağlantı geçerli değil",
+      "Client_Not_Found_Description": "Bu bağlantının ait olduğu satıcıyı veya markayı bulamadık.",
+      "Client_Not_Found_Hint": "Bağlantının süresi dolmuş olabilir. Satıcınız veya markanız üzerinden yeniden açın ya da yeni bir bağlantı isteyin."
     },
     "pt": {
       "Page_Title": "Algo correu mal",
@@ -1614,7 +1656,13 @@ const CONTENT = {
       "Actions_Aria_Label": "Ações de erro",
       "Timestamp_Label": "Data e hora:",
       "Status_Label": "Estado:",
-      "Status_Not_Available": "N/D"
+      "Status_Not_Available": "N/D",
+      "Missing_Client_Key_Heading": "Esta ligação está incompleta",
+      "Missing_Client_Key_Description": "À ligação que abriu falta o código que nos indica de que retalhista ou marca vem, por isso não podemos iniciar o seu registo.",
+      "Missing_Client_Key_Hint": "Abra novamente a ligação do seu retalhista ou da sua marca, ou peça-lhes uma nova.",
+      "Client_Not_Found_Heading": "Esta ligação não é válida",
+      "Client_Not_Found_Description": "Não encontrámos o retalhista ou a marca a que esta ligação pertence.",
+      "Client_Not_Found_Hint": "A ligação pode ter expirado. Abra-a novamente através do seu retalhista ou da sua marca, ou peça-lhes uma nova."
     }
   },
   "shared-ui": {
