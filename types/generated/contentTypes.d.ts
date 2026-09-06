@@ -1355,6 +1355,12 @@ export interface ApiDisplayDeviceDisplayDevice extends Struct.SingleTypeSchema {
           localized: true;
         };
       }>;
+    Close: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     Compare_Prices: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
@@ -1382,7 +1388,19 @@ export interface ApiDisplayDeviceDisplayDevice extends Struct.SingleTypeSchema {
           localized: true;
         };
       }>;
+    Delivery: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     Device_ready_confirmation: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Document: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -1430,6 +1448,12 @@ export interface ApiDisplayDeviceDisplayDevice extends Struct.SingleTypeSchema {
           localized: true;
         };
       }>;
+    In_stock: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     Instruction_manual: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
@@ -1437,6 +1461,12 @@ export interface ApiDisplayDeviceDisplayDevice extends Struct.SingleTypeSchema {
         };
       }>;
     Labour: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Link: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -1598,6 +1628,12 @@ export interface ApiDisplayDeviceDisplayDevice extends Struct.SingleTypeSchema {
           localized: true;
         };
       }>;
+    Reviews: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     Select_date_placeholder: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
@@ -1616,7 +1652,25 @@ export interface ApiDisplayDeviceDisplayDevice extends Struct.SingleTypeSchema {
           localized: true;
         };
       }>;
+    Shop: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Show_all_specifications: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     Show_details: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Show_fewer_specifications: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -1628,10 +1682,22 @@ export interface ApiDisplayDeviceDisplayDevice extends Struct.SingleTypeSchema {
           localized: true;
         };
       }>;
+    Specifications: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     Warranty: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Where_to_buy: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
