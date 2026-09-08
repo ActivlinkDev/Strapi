@@ -4364,6 +4364,11 @@ function valuesFor(singleType, code) {
   return byLang[base] || byLang.en;
 }
 
+// Basket redesign copy uses the same additive locale seeding as existing fields.
+for (const [language, values] of Object.entries(require('./content/basket-translations.json'))) {
+  CONTENT.basket[language] = { ...CONTENT.basket[language], ...values };
+}
+
 function isBlank(value) {
   return value === undefined || value === null || (typeof value === 'string' && value.trim() === '');
 }
