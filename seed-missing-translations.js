@@ -4357,6 +4357,7 @@ const CONTENT = {
     }
   }
 };
+CONTENT['my-registrations'] = require('./translations/my-registrations.json');
 
 function valuesFor(singleType, code) {
   const byLang = CONTENT[singleType];
