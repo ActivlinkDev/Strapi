@@ -997,7 +997,9 @@ const CONTENT = {
       "Categories_Error": "We could not load the list of product types.",
       "Retry_Button": "Try again",
       "Back_Button": "Back to search",
-      "Submit_Error": "We could not add this device. Please check the details and try again."
+      "Submit_Error": "We could not add this device. Please check the details and try again.",
+      "Guarantee_Label": "Manufacturer guarantee",
+      "Guarantee_Placeholder": "Select the guarantee length"
     },
     "es": {
       "Make": "Marca",
@@ -1019,7 +1021,9 @@ const CONTENT = {
       "Categories_Error": "No hemos podido cargar la lista de tipos de producto.",
       "Retry_Button": "Inténtalo de nuevo",
       "Back_Button": "Volver a la búsqueda",
-      "Submit_Error": "No hemos podido añadir este dispositivo. Revisa los datos e inténtalo de nuevo."
+      "Submit_Error": "No hemos podido añadir este dispositivo. Revisa los datos e inténtalo de nuevo.",
+      "Guarantee_Label": "Garantía del fabricante",
+      "Guarantee_Placeholder": "Selecciona la duración de la garantía"
     },
     "it": {
       "Make": "Marca",
@@ -1041,7 +1045,9 @@ const CONTENT = {
       "Categories_Error": "Non siamo riusciti a caricare l'elenco dei tipi di prodotto.",
       "Retry_Button": "Riprova",
       "Back_Button": "Torna alla ricerca",
-      "Submit_Error": "Non siamo riusciti ad aggiungere questo dispositivo. Controlla i dati e riprova."
+      "Submit_Error": "Non siamo riusciti ad aggiungere questo dispositivo. Controlla i dati e riprova.",
+      "Guarantee_Label": "Garanzia del produttore",
+      "Guarantee_Placeholder": "Seleziona la durata della garanzia"
     },
     "fr": {
       "Make": "Marque",
@@ -1063,7 +1069,9 @@ const CONTENT = {
       "Categories_Error": "Nous n'avons pas pu charger la liste des types de produit.",
       "Retry_Button": "Réessayer",
       "Back_Button": "Retour à la recherche",
-      "Submit_Error": "Nous n'avons pas pu ajouter cet appareil. Vérifiez les informations et réessayez."
+      "Submit_Error": "Nous n'avons pas pu ajouter cet appareil. Vérifiez les informations et réessayez.",
+      "Guarantee_Label": "Garantie du fabricant",
+      "Guarantee_Placeholder": "Sélectionnez la durée de la garantie"
     },
     "de": {
       "Make": "Marke",
@@ -1085,7 +1093,9 @@ const CONTENT = {
       "Categories_Error": "Die Liste der Produktarten konnte nicht geladen werden.",
       "Retry_Button": "Erneut versuchen",
       "Back_Button": "Zurück zur Suche",
-      "Submit_Error": "Dieses Gerät konnte nicht hinzugefügt werden. Bitte prüfen Sie die Angaben und versuchen Sie es erneut."
+      "Submit_Error": "Dieses Gerät konnte nicht hinzugefügt werden. Bitte prüfen Sie die Angaben und versuchen Sie es erneut.",
+      "Guarantee_Label": "Herstellergarantie",
+      "Guarantee_Placeholder": "Garantiedauer auswählen"
     },
     "nl": {
       "Make": "Merk",
@@ -1107,7 +1117,9 @@ const CONTENT = {
       "Categories_Error": "We konden de lijst met producttypen niet laden.",
       "Retry_Button": "Opnieuw proberen",
       "Back_Button": "Terug naar zoeken",
-      "Submit_Error": "We konden dit apparaat niet toevoegen. Controleer de gegevens en probeer het opnieuw."
+      "Submit_Error": "We konden dit apparaat niet toevoegen. Controleer de gegevens en probeer het opnieuw.",
+      "Guarantee_Label": "Fabrieksgarantie",
+      "Guarantee_Placeholder": "Kies de garantieduur"
     },
     "tr": {
       "Make": "Marka",
@@ -1129,7 +1141,9 @@ const CONTENT = {
       "Categories_Error": "Ürün türleri listesi yüklenemedi.",
       "Retry_Button": "Tekrar deneyin",
       "Back_Button": "Aramaya dön",
-      "Submit_Error": "Bu cihazı ekleyemedik. Bilgileri kontrol edip tekrar deneyin."
+      "Submit_Error": "Bu cihazı ekleyemedik. Bilgileri kontrol edip tekrar deneyin.",
+      "Guarantee_Label": "Üretici garantisi",
+      "Guarantee_Placeholder": "Garanti süresini seçin"
     },
     "pt": {
       "Make": "Marca",
@@ -1151,7 +1165,9 @@ const CONTENT = {
       "Categories_Error": "Não foi possível carregar a lista de tipos de produto.",
       "Retry_Button": "Tentar novamente",
       "Back_Button": "Voltar à pesquisa",
-      "Submit_Error": "Não foi possível adicionar este dispositivo. Verifique os dados e tente novamente."
+      "Submit_Error": "Não foi possível adicionar este dispositivo. Verifique os dados e tente novamente.",
+      "Guarantee_Label": "Garantia do fabricante",
+      "Guarantee_Placeholder": "Selecione a duração da garantia"
     }
   },
   "display-device": {
