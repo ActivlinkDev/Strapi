@@ -4370,6 +4370,18 @@ for (const [language, values] of Object.entries(require('./content/basket-transl
   CONTENT.basket[language] = { ...CONTENT.basket[language], ...values };
 }
 
+// Manual device entry (/lookup/manual) copy. Those labels had no CMS fields at
+// all, so every locale rendered the English fallbacks compiled into the page.
+for (const [language, values] of Object.entries(require('./content/manual-device-translations.json'))) {
+  CONTENT['device-input'][language] = { ...CONTENT['device-input'][language], ...values };
+  // The catalogue-matched page marks its serial box optional with the same word,
+  // and reads its labels from display-device rather than device-input.
+  CONTENT['display-device'][language] = {
+    ...CONTENT['display-device'][language],
+    Optional_Suffix: values.Optional_Suffix,
+  };
+}
+
 function isBlank(value) {
   return value === undefined || value === null || (typeof value === 'string' && value.trim() === '');
 }

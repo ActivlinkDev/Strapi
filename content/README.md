@@ -15,3 +15,21 @@ Check translation placeholders and frontend/schema coverage:
     node --test tests/basket-translations.test.cjs
 
 Set FRONTEND_ROOT if the frontend is not at C:/frontend (the default sibling checkout layout).
+
+# Manual device entry translations
+
+`content/manual-device-translations.json` carries the copy for the manual device entry page (`/lookup/manual`) and is merged into the `device-input` single type by the additive seed. Those labels — product type, manufacturer guarantee, the placeholders, the serial hint and the page heading — had no CMS fields at all, so every locale rendered the English fallbacks compiled into the page.
+
+The heading and subheading use their own `Manual_*` keys rather than the shared `Heading`, which belongs to the make/model search page and reads "Enter your product details" there.
+
+After deploying/restarting Strapi with the updated schema, populate and publish the localizations:
+
+    node seed-missing-translations.js <adminEmail> <adminPassword> --only=device-input
+
+The seed is additive: it fills empty fields only. Where a live locale already holds a wrong value (for example a machine translation of the key name rather than the copy), the seed leaves it alone — correct it in the admin UI, or re-run that single type with `--force` to overwrite from this file.
+
+Check schema and frontend coverage:
+
+    node --test tests/manual-device-translations.test.cjs
+
+Set FRONTEND_ROOT if the frontend is not a sibling checkout.

@@ -503,6 +503,14 @@
         }
       },
       "type": "string"
+    },
+    "Optional_Suffix": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }
