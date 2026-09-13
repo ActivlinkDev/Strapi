@@ -987,7 +987,19 @@ const CONTENT = {
       "Error_Message": "We could not find that make and model. Check the details and try again.",
       "Searching": "Searching…",
       "or": "or",
-      "Continue_Button": "Continue"
+      "Continue_Button": "Continue",
+      "Subheading": "Tell us what the product is and we will do the rest.",
+      "Make_Placeholder": "e.g. Beko",
+      "Model_Placeholder": "e.g. WTL84151W",
+      "Category_Label": "Product type",
+      "Category_Placeholder": "Select a product type",
+      "Categories_Loading": "Loading product types…",
+      "Categories_Error": "We could not load the list of product types.",
+      "Retry_Button": "Try again",
+      "Back_Button": "Back to search",
+      "Submit_Error": "We could not add this device. Please check the details and try again.",
+      "Guarantee_Label": "Manufacturer guarantee",
+      "Guarantee_Placeholder": "Select the guarantee length"
     },
     "es": {
       "Make": "Marca",
@@ -999,7 +1011,19 @@ const CONTENT = {
       "Error_Message": "No hemos encontrado esa marca y modelo. Revisa los datos e inténtalo de nuevo.",
       "Searching": "Buscando…",
       "or": "o",
-      "Continue_Button": "Continuar"
+      "Continue_Button": "Continuar",
+      "Subheading": "Dinos qué producto es y nosotros nos encargamos del resto.",
+      "Make_Placeholder": "p. ej. Beko",
+      "Model_Placeholder": "p. ej. WTL84151W",
+      "Category_Label": "Tipo de producto",
+      "Category_Placeholder": "Selecciona un tipo de producto",
+      "Categories_Loading": "Cargando tipos de producto…",
+      "Categories_Error": "No hemos podido cargar la lista de tipos de producto.",
+      "Retry_Button": "Inténtalo de nuevo",
+      "Back_Button": "Volver a la búsqueda",
+      "Submit_Error": "No hemos podido añadir este dispositivo. Revisa los datos e inténtalo de nuevo.",
+      "Guarantee_Label": "Garantía del fabricante",
+      "Guarantee_Placeholder": "Selecciona la duración de la garantía"
     },
     "it": {
       "Make": "Marca",
@@ -1011,7 +1035,19 @@ const CONTENT = {
       "Error_Message": "Non abbiamo trovato questa marca e modello. Controlla i dati e riprova.",
       "Searching": "Ricerca in corso…",
       "or": "oppure",
-      "Continue_Button": "Continua"
+      "Continue_Button": "Continua",
+      "Subheading": "Dicci di che prodotto si tratta e pensiamo a tutto noi.",
+      "Make_Placeholder": "es. Beko",
+      "Model_Placeholder": "es. WTL84151W",
+      "Category_Label": "Tipo di prodotto",
+      "Category_Placeholder": "Seleziona un tipo di prodotto",
+      "Categories_Loading": "Caricamento dei tipi di prodotto…",
+      "Categories_Error": "Non siamo riusciti a caricare l'elenco dei tipi di prodotto.",
+      "Retry_Button": "Riprova",
+      "Back_Button": "Torna alla ricerca",
+      "Submit_Error": "Non siamo riusciti ad aggiungere questo dispositivo. Controlla i dati e riprova.",
+      "Guarantee_Label": "Garanzia del produttore",
+      "Guarantee_Placeholder": "Seleziona la durata della garanzia"
     },
     "fr": {
       "Make": "Marque",
@@ -1023,7 +1059,19 @@ const CONTENT = {
       "Error_Message": "Nous n'avons pas trouvé cette marque et ce modèle. Vérifiez les informations et réessayez.",
       "Searching": "Recherche…",
       "or": "ou",
-      "Continue_Button": "Continuer"
+      "Continue_Button": "Continuer",
+      "Subheading": "Dites-nous de quel produit il s'agit et nous nous occupons du reste.",
+      "Make_Placeholder": "ex. Beko",
+      "Model_Placeholder": "ex. WTL84151W",
+      "Category_Label": "Type de produit",
+      "Category_Placeholder": "Sélectionnez un type de produit",
+      "Categories_Loading": "Chargement des types de produit…",
+      "Categories_Error": "Nous n'avons pas pu charger la liste des types de produit.",
+      "Retry_Button": "Réessayer",
+      "Back_Button": "Retour à la recherche",
+      "Submit_Error": "Nous n'avons pas pu ajouter cet appareil. Vérifiez les informations et réessayez.",
+      "Guarantee_Label": "Garantie du fabricant",
+      "Guarantee_Placeholder": "Sélectionnez la durée de la garantie"
     },
     "de": {
       "Make": "Marke",
@@ -1035,7 +1083,19 @@ const CONTENT = {
       "Error_Message": "Wir konnten diese Marke und dieses Modell nicht finden. Prüfen Sie die Angaben und versuchen Sie es erneut.",
       "Searching": "Suche läuft…",
       "or": "oder",
-      "Continue_Button": "Weiter"
+      "Continue_Button": "Weiter",
+      "Subheading": "Sagen Sie uns, um welches Produkt es sich handelt – um den Rest kümmern wir uns.",
+      "Make_Placeholder": "z. B. Beko",
+      "Model_Placeholder": "z. B. WTL84151W",
+      "Category_Label": "Produktart",
+      "Category_Placeholder": "Produktart auswählen",
+      "Categories_Loading": "Produktarten werden geladen…",
+      "Categories_Error": "Die Liste der Produktarten konnte nicht geladen werden.",
+      "Retry_Button": "Erneut versuchen",
+      "Back_Button": "Zurück zur Suche",
+      "Submit_Error": "Dieses Gerät konnte nicht hinzugefügt werden. Bitte prüfen Sie die Angaben und versuchen Sie es erneut.",
+      "Guarantee_Label": "Herstellergarantie",
+      "Guarantee_Placeholder": "Garantiedauer auswählen"
     },
     "nl": {
       "Make": "Merk",
@@ -1047,7 +1107,19 @@ const CONTENT = {
       "Error_Message": "We konden dat merk en model niet vinden. Controleer de gegevens en probeer het opnieuw.",
       "Searching": "Bezig met zoeken…",
       "or": "of",
-      "Continue_Button": "Doorgaan"
+      "Continue_Button": "Doorgaan",
+      "Subheading": "Vertel ons om welk product het gaat, wij doen de rest.",
+      "Make_Placeholder": "bijv. Beko",
+      "Model_Placeholder": "bijv. WTL84151W",
+      "Category_Label": "Producttype",
+      "Category_Placeholder": "Kies een producttype",
+      "Categories_Loading": "Producttypen laden…",
+      "Categories_Error": "We konden de lijst met producttypen niet laden.",
+      "Retry_Button": "Opnieuw proberen",
+      "Back_Button": "Terug naar zoeken",
+      "Submit_Error": "We konden dit apparaat niet toevoegen. Controleer de gegevens en probeer het opnieuw.",
+      "Guarantee_Label": "Fabrieksgarantie",
+      "Guarantee_Placeholder": "Kies de garantieduur"
     },
     "tr": {
       "Make": "Marka",
@@ -1059,7 +1131,19 @@ const CONTENT = {
       "Error_Message": "Bu marka ve modeli bulamadık. Bilgileri kontrol edip tekrar deneyin.",
       "Searching": "Aranıyor…",
       "or": "veya",
-      "Continue_Button": "Devam et"
+      "Continue_Button": "Devam et",
+      "Subheading": "Ürünün ne olduğunu söyleyin, gerisini biz halledelim.",
+      "Make_Placeholder": "örn. Beko",
+      "Model_Placeholder": "örn. WTL84151W",
+      "Category_Label": "Ürün türü",
+      "Category_Placeholder": "Bir ürün türü seçin",
+      "Categories_Loading": "Ürün türleri yükleniyor…",
+      "Categories_Error": "Ürün türleri listesi yüklenemedi.",
+      "Retry_Button": "Tekrar deneyin",
+      "Back_Button": "Aramaya dön",
+      "Submit_Error": "Bu cihazı ekleyemedik. Bilgileri kontrol edip tekrar deneyin.",
+      "Guarantee_Label": "Üretici garantisi",
+      "Guarantee_Placeholder": "Garanti süresini seçin"
     },
     "pt": {
       "Make": "Marca",
@@ -1071,7 +1155,19 @@ const CONTENT = {
       "Error_Message": "Não encontrámos essa marca e modelo. Verifique os dados e tente novamente.",
       "Searching": "A pesquisar…",
       "or": "ou",
-      "Continue_Button": "Continuar"
+      "Continue_Button": "Continuar",
+      "Subheading": "Diga-nos qual é o produto e nós tratamos do resto.",
+      "Make_Placeholder": "p. ex. Beko",
+      "Model_Placeholder": "p. ex. WTL84151W",
+      "Category_Label": "Tipo de produto",
+      "Category_Placeholder": "Selecione um tipo de produto",
+      "Categories_Loading": "A carregar tipos de produto…",
+      "Categories_Error": "Não foi possível carregar a lista de tipos de produto.",
+      "Retry_Button": "Tentar novamente",
+      "Back_Button": "Voltar à pesquisa",
+      "Submit_Error": "Não foi possível adicionar este dispositivo. Verifique os dados e tente novamente.",
+      "Guarantee_Label": "Garantia do fabricante",
+      "Guarantee_Placeholder": "Selecione a duração da garantia"
     }
   },
   "display-device": {
@@ -2285,7 +2381,8 @@ const CONTENT = {
       "Close_Button": "Close",
       "Heading": "Find your product",
       "Landing_Subtitle": "Scan a barcode or search by make and model to get started.",
-      "Search_Placeholder": "Your make or model"
+      "Search_Placeholder": "Your make or model",
+      "Add_Manually_Button": "Add my device manually"
     },
     "es": {
       "Header": "Encuentra tu producto",
@@ -2331,7 +2428,8 @@ const CONTENT = {
       "Close_Button": "Cerrar",
       "Heading": "Encuentra tu producto",
       "Landing_Subtitle": "Escanea un código de barras o busca por marca y modelo para empezar.",
-      "Search_Placeholder": "Tu marca o modelo"
+      "Search_Placeholder": "Tu marca o modelo",
+      "Add_Manually_Button": "Añadir mi dispositivo manualmente"
     },
     "it": {
       "Header": "Trova il tuo prodotto",
@@ -2377,7 +2475,8 @@ const CONTENT = {
       "Close_Button": "Chiudi",
       "Heading": "Trova il tuo prodotto",
       "Landing_Subtitle": "Scansiona un codice a barre oppure cerca per marca e modello per iniziare.",
-      "Search_Placeholder": "La tua marca o modello"
+      "Search_Placeholder": "La tua marca o modello",
+      "Add_Manually_Button": "Aggiungi il mio dispositivo manualmente"
     },
     "fr": {
       "Header": "Trouvez votre produit",
@@ -2423,7 +2522,8 @@ const CONTENT = {
       "Close_Button": "Fermer",
       "Heading": "Trouvez votre produit",
       "Landing_Subtitle": "Scannez un code-barres ou recherchez par marque et modèle pour commencer.",
-      "Search_Placeholder": "Votre marque ou modèle"
+      "Search_Placeholder": "Votre marque ou modèle",
+      "Add_Manually_Button": "Ajouter mon appareil manuellement"
     },
     "de": {
       "Header": "Finden Sie Ihr Produkt",
@@ -2469,7 +2569,8 @@ const CONTENT = {
       "Close_Button": "Schließen",
       "Heading": "Finden Sie Ihr Produkt",
       "Landing_Subtitle": "Scannen Sie einen Barcode oder suchen Sie nach Marke und Modell, um zu starten.",
-      "Search_Placeholder": "Ihre Marke oder Ihr Modell"
+      "Search_Placeholder": "Ihre Marke oder Ihr Modell",
+      "Add_Manually_Button": "Mein Gerät manuell hinzufügen"
     },
     "nl": {
       "Header": "Vind uw product",
@@ -2515,7 +2616,8 @@ const CONTENT = {
       "Close_Button": "Sluiten",
       "Heading": "Vind uw product",
       "Landing_Subtitle": "Scan een barcode of zoek op merk en model om te beginnen.",
-      "Search_Placeholder": "Uw merk of model"
+      "Search_Placeholder": "Uw merk of model",
+      "Add_Manually_Button": "Mijn apparaat handmatig toevoegen"
     },
     "tr": {
       "Header": "Ürününüzü bulun",
@@ -2561,7 +2663,8 @@ const CONTENT = {
       "Close_Button": "Kapat",
       "Heading": "Ürününüzü bulun",
       "Landing_Subtitle": "Başlamak için bir barkod tarayın ya da marka ve modele göre arayın.",
-      "Search_Placeholder": "Markanız veya modeliniz"
+      "Search_Placeholder": "Markanız veya modeliniz",
+      "Add_Manually_Button": "Cihazımı elle ekle"
     },
     "pt": {
       "Header": "Encontre o seu produto",
@@ -2607,7 +2710,8 @@ const CONTENT = {
       "Close_Button": "Fechar",
       "Heading": "Encontre o seu produto",
       "Landing_Subtitle": "Leia um código de barras ou pesquise por marca e modelo para começar.",
-      "Search_Placeholder": "A sua marca ou modelo"
+      "Search_Placeholder": "A sua marca ou modelo",
+      "Add_Manually_Button": "Adicionar o meu dispositivo manualmente"
     }
   },
   "my-contracts": {
