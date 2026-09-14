@@ -18,6 +18,9 @@
     "Client_Name": {
       "type": "string"
     },
+    "Page_Title": {
+      "type": "string"
+    },
     "Client_Primary": {
       "type": "string"
     },
