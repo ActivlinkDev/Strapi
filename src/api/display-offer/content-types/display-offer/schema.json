@@ -248,6 +248,30 @@
       },
       "type": "string"
     },
+    "Apple_Pay_Label": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "Redirecting_to_payment": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "Express_checkout_error": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
     "Selected": {
       "pluginOptions": {
         "i18n": {

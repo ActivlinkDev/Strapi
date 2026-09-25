@@ -2125,6 +2125,12 @@ export interface ApiDisplayOfferDisplayOffer extends Struct.SingleTypeSchema {
           localized: true;
         };
       }>;
+    Apple_Pay_Label: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     Back: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
@@ -2189,6 +2195,12 @@ export interface ApiDisplayOfferDisplayOffer extends Struct.SingleTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     Exclusions: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Express_checkout_error: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -2302,6 +2314,12 @@ export interface ApiDisplayOfferDisplayOffer extends Struct.SingleTypeSchema {
         };
       }>;
     publishedAt: Schema.Attribute.DateTime;
+    Redirecting_to_payment: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     See_details: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
