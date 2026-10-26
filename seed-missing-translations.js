@@ -8,7 +8,7 @@
  * Coverage: all 14 localized single types (basket, checkout-success,
  * cookie-banner, customer-hub, device-input, display-device, display-offer,
  * error-page, lookup, my-contracts, portal-admin, shared-ui, start-page,
- * validate-customer) — 503 fields in 8 languages.
+ * validate-customer) — 523 fields in 8 languages.
  *
  * It is additive and safe to re-run: for every locale it reads the current
  * entry, only writes keys that are currently empty, and leaves everything
@@ -1722,7 +1722,8 @@ const CONTENT = {
       "Cover_option": "Cover option",
       "Selected_plan": "Selected plan",
       "Choose_duration": "Choose your cover duration",
-      "Select": "Select duration"
+      "Select": "Select duration",
+      "Upfront_pricing": "Clear, upfront pricing"
     },
     "es": {
       "Heading": "Tus opciones de protección",
@@ -1769,7 +1770,8 @@ const CONTENT = {
       "Cover_option": "Opción de cobertura",
       "Selected_plan": "Plan seleccionado",
       "Choose_duration": "Elige la duración de tu cobertura",
-      "Select": "Seleccionar duración"
+      "Select": "Seleccionar duración",
+      "Upfront_pricing": "Precios claros desde el principio"
     },
     "it": {
       "Heading": "Le tue opzioni di protezione",
@@ -1816,7 +1818,8 @@ const CONTENT = {
       "Cover_option": "Opzione di copertura",
       "Selected_plan": "Piano selezionato",
       "Choose_duration": "Scegli la durata della copertura",
-      "Select": "Seleziona la durata"
+      "Select": "Seleziona la durata",
+      "Upfront_pricing": "Prezzi chiari fin dall'inizio"
     },
     "fr": {
       "Heading": "Vos options de protection",
@@ -1863,7 +1866,8 @@ const CONTENT = {
       "Cover_option": "Option de couverture",
       "Selected_plan": "Formule sélectionnée",
       "Choose_duration": "Choisissez la durée de votre couverture",
-      "Select": "Choisir la durée"
+      "Select": "Choisir la durée",
+      "Upfront_pricing": "Des prix clairs dès le départ"
     },
     "de": {
       "Heading": "Ihre Schutzoptionen",
@@ -1910,7 +1914,8 @@ const CONTENT = {
       "Cover_option": "Schutzoption",
       "Selected_plan": "Ausgewähltes Paket",
       "Choose_duration": "Wählen Sie die Laufzeit Ihres Schutzes",
-      "Select": "Laufzeit wählen"
+      "Select": "Laufzeit wählen",
+      "Upfront_pricing": "Klare Preise von Anfang an"
     },
     "nl": {
       "Heading": "Uw beschermingsopties",
@@ -1957,7 +1962,8 @@ const CONTENT = {
       "Cover_option": "Dekkingsoptie",
       "Selected_plan": "Geselecteerd plan",
       "Choose_duration": "Kies de duur van uw dekking",
-      "Select": "Duur selecteren"
+      "Select": "Duur selecteren",
+      "Upfront_pricing": "Duidelijke prijzen vooraf"
     },
     "tr": {
       "Heading": "Koruma seçenekleriniz",
@@ -2004,7 +2010,8 @@ const CONTENT = {
       "Cover_option": "Teminat seçeneği",
       "Selected_plan": "Seçilen plan",
       "Choose_duration": "Teminat sürenizi seçin",
-      "Select": "Süre seç"
+      "Select": "Süre seç",
+      "Upfront_pricing": "Baştan net fiyatlar"
     },
     "pt": {
       "Heading": "As suas opções de proteção",
@@ -2051,7 +2058,8 @@ const CONTENT = {
       "Cover_option": "Opção de cobertura",
       "Selected_plan": "Plano selecionado",
       "Choose_duration": "Escolha a duração da sua cobertura",
-      "Select": "Selecionar duração"
+      "Select": "Selecionar duração",
+      "Upfront_pricing": "Preços claros desde o início"
     }
   },
   "error-page": {
@@ -3750,7 +3758,13 @@ const CONTENT = {
       "Date_Month": "month",
       "Date_Year": "year",
       "Date_Clear": "Clear date",
-      "Date_Clear_Button": "Clear"
+      "Date_Clear_Button": "Clear",
+      "Progress_Label": "Progress",
+      "Step_Find": "Find",
+      "Step_Details": "Details",
+      "Step_Cover": "Cover",
+      "Step_Verify": "Verify",
+      "Step_Pay": "Pay"
     },
     "es": {
       "Scanner_Heading": "Escanear código de barras",
@@ -3767,7 +3781,13 @@ const CONTENT = {
       "Date_Month": "mes",
       "Date_Year": "año",
       "Date_Clear": "Borrar la fecha",
-      "Date_Clear_Button": "Borrar"
+      "Date_Clear_Button": "Borrar",
+      "Progress_Label": "Progreso",
+      "Step_Find": "Buscar",
+      "Step_Details": "Datos",
+      "Step_Cover": "Cobertura",
+      "Step_Verify": "Verificar",
+      "Step_Pay": "Pagar"
     },
     "it": {
       "Scanner_Heading": "Scansiona il codice a barre",
@@ -3784,7 +3804,13 @@ const CONTENT = {
       "Date_Month": "mese",
       "Date_Year": "anno",
       "Date_Clear": "Cancella la data",
-      "Date_Clear_Button": "Cancella"
+      "Date_Clear_Button": "Cancella",
+      "Progress_Label": "Avanzamento",
+      "Step_Find": "Trova",
+      "Step_Details": "Dettagli",
+      "Step_Cover": "Copertura",
+      "Step_Verify": "Verifica",
+      "Step_Pay": "Paga"
     },
     "fr": {
       "Scanner_Heading": "Scanner le code-barres",
@@ -3801,7 +3827,13 @@ const CONTENT = {
       "Date_Month": "mois",
       "Date_Year": "année",
       "Date_Clear": "Effacer la date",
-      "Date_Clear_Button": "Effacer"
+      "Date_Clear_Button": "Effacer",
+      "Progress_Label": "Progression",
+      "Step_Find": "Rechercher",
+      "Step_Details": "Détails",
+      "Step_Cover": "Couverture",
+      "Step_Verify": "Vérification",
+      "Step_Pay": "Paiement"
     },
     "de": {
       "Scanner_Heading": "Barcode scannen",
@@ -3818,7 +3850,13 @@ const CONTENT = {
       "Date_Month": "Monat",
       "Date_Year": "Jahr",
       "Date_Clear": "Datum löschen",
-      "Date_Clear_Button": "Löschen"
+      "Date_Clear_Button": "Löschen",
+      "Progress_Label": "Fortschritt",
+      "Step_Find": "Suchen",
+      "Step_Details": "Details",
+      "Step_Cover": "Schutz",
+      "Step_Verify": "Bestätigen",
+      "Step_Pay": "Bezahlen"
     },
     "nl": {
       "Scanner_Heading": "Barcode scannen",
@@ -3835,7 +3873,13 @@ const CONTENT = {
       "Date_Month": "maand",
       "Date_Year": "jaar",
       "Date_Clear": "Datum wissen",
-      "Date_Clear_Button": "Wissen"
+      "Date_Clear_Button": "Wissen",
+      "Progress_Label": "Voortgang",
+      "Step_Find": "Zoeken",
+      "Step_Details": "Gegevens",
+      "Step_Cover": "Dekking",
+      "Step_Verify": "Verifiëren",
+      "Step_Pay": "Betalen"
     },
     "tr": {
       "Scanner_Heading": "Barkod tara",
@@ -3852,7 +3896,13 @@ const CONTENT = {
       "Date_Month": "ay",
       "Date_Year": "yıl",
       "Date_Clear": "Tarihi temizle",
-      "Date_Clear_Button": "Temizle"
+      "Date_Clear_Button": "Temizle",
+      "Progress_Label": "İlerleme",
+      "Step_Find": "Bul",
+      "Step_Details": "Bilgiler",
+      "Step_Cover": "Güvence",
+      "Step_Verify": "Doğrulama",
+      "Step_Pay": "Ödeme"
     },
     "pt": {
       "Scanner_Heading": "Ler código de barras",
@@ -3869,7 +3919,13 @@ const CONTENT = {
       "Date_Month": "mês",
       "Date_Year": "ano",
       "Date_Clear": "Limpar a data",
-      "Date_Clear_Button": "Limpar"
+      "Date_Clear_Button": "Limpar",
+      "Progress_Label": "Progresso",
+      "Step_Find": "Encontrar",
+      "Step_Details": "Dados",
+      "Step_Cover": "Cobertura",
+      "Step_Verify": "Verificar",
+      "Step_Pay": "Pagar"
     }
   },
   "start-page": {

@@ -375,6 +375,14 @@
         }
       },
       "type": "string"
+    },
+    "Upfront_pricing": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }
