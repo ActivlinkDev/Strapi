@@ -8,7 +8,7 @@
  * Coverage: all 14 localized single types (basket, checkout-success,
  * cookie-banner, customer-hub, device-input, display-device, display-offer,
  * error-page, lookup, my-contracts, portal-admin, shared-ui, start-page,
- * validate-customer) — 523 fields in 8 languages.
+ * validate-customer) — 525 fields in 8 languages.
  *
  * It is additive and safe to re-run: for every locale it reads the current
  * entry, only writes keys that are currently empty, and leaves everything
@@ -1723,7 +1723,9 @@ const CONTENT = {
       "Selected_plan": "Selected plan",
       "Choose_duration": "Choose your cover duration",
       "Select": "Select duration",
-      "Upfront_pricing": "Clear, upfront pricing"
+      "Upfront_pricing": "Clear, upfront pricing",
+      "Examples_Heading": "Examples of what's covered",
+      "Examples_Disclaimer": "Examples only – see the policy terms for full cover and exclusions."
     },
     "es": {
       "Heading": "Tus opciones de protección",
@@ -1771,7 +1773,9 @@ const CONTENT = {
       "Selected_plan": "Plan seleccionado",
       "Choose_duration": "Elige la duración de tu cobertura",
       "Select": "Seleccionar duración",
-      "Upfront_pricing": "Precios claros desde el principio"
+      "Upfront_pricing": "Precios claros desde el principio",
+      "Examples_Heading": "Ejemplos de lo que está cubierto",
+      "Examples_Disclaimer": "Solo son ejemplos: consulta las condiciones de la póliza para conocer la cobertura completa y las exclusiones."
     },
     "it": {
       "Heading": "Le tue opzioni di protezione",
@@ -1819,7 +1823,9 @@ const CONTENT = {
       "Selected_plan": "Piano selezionato",
       "Choose_duration": "Scegli la durata della copertura",
       "Select": "Seleziona la durata",
-      "Upfront_pricing": "Prezzi chiari fin dall'inizio"
+      "Upfront_pricing": "Prezzi chiari fin dall'inizio",
+      "Examples_Heading": "Esempi di ciò che è coperto",
+      "Examples_Disclaimer": "Solo esempi: consulta le condizioni di polizza per la copertura completa e le esclusioni."
     },
     "fr": {
       "Heading": "Vos options de protection",
@@ -1867,7 +1873,9 @@ const CONTENT = {
       "Selected_plan": "Formule sélectionnée",
       "Choose_duration": "Choisissez la durée de votre couverture",
       "Select": "Choisir la durée",
-      "Upfront_pricing": "Des prix clairs dès le départ"
+      "Upfront_pricing": "Des prix clairs dès le départ",
+      "Examples_Heading": "Exemples de ce qui est couvert",
+      "Examples_Disclaimer": "Exemples uniquement – consultez les conditions du contrat pour la couverture complète et les exclusions."
     },
     "de": {
       "Heading": "Ihre Schutzoptionen",
@@ -1915,7 +1923,9 @@ const CONTENT = {
       "Selected_plan": "Ausgewähltes Paket",
       "Choose_duration": "Wählen Sie die Laufzeit Ihres Schutzes",
       "Select": "Laufzeit wählen",
-      "Upfront_pricing": "Klare Preise von Anfang an"
+      "Upfront_pricing": "Klare Preise von Anfang an",
+      "Examples_Heading": "Beispiele für den Versicherungsschutz",
+      "Examples_Disclaimer": "Nur Beispiele – den vollständigen Leistungsumfang und die Ausschlüsse finden Sie in den Versicherungsbedingungen."
     },
     "nl": {
       "Heading": "Uw beschermingsopties",
@@ -1963,7 +1973,9 @@ const CONTENT = {
       "Selected_plan": "Geselecteerd plan",
       "Choose_duration": "Kies de duur van uw dekking",
       "Select": "Duur selecteren",
-      "Upfront_pricing": "Duidelijke prijzen vooraf"
+      "Upfront_pricing": "Duidelijke prijzen vooraf",
+      "Examples_Heading": "Voorbeelden van wat gedekt is",
+      "Examples_Disclaimer": "Alleen voorbeelden – zie de polisvoorwaarden voor de volledige dekking en uitsluitingen."
     },
     "tr": {
       "Heading": "Koruma seçenekleriniz",
@@ -2011,7 +2023,9 @@ const CONTENT = {
       "Selected_plan": "Seçilen plan",
       "Choose_duration": "Teminat sürenizi seçin",
       "Select": "Süre seç",
-      "Upfront_pricing": "Baştan net fiyatlar"
+      "Upfront_pricing": "Baştan net fiyatlar",
+      "Examples_Heading": "Kapsanan durumlara örnekler",
+      "Examples_Disclaimer": "Yalnızca örnektir – tam kapsam ve istisnalar için poliçe koşullarına bakın."
     },
     "pt": {
       "Heading": "As suas opções de proteção",
@@ -2059,7 +2073,9 @@ const CONTENT = {
       "Selected_plan": "Plano selecionado",
       "Choose_duration": "Escolha a duração da sua cobertura",
       "Select": "Selecionar duração",
-      "Upfront_pricing": "Preços claros desde o início"
+      "Upfront_pricing": "Preços claros desde o início",
+      "Examples_Heading": "Exemplos do que está coberto",
+      "Examples_Disclaimer": "Apenas exemplos – consulte as condições da apólice para a cobertura completa e as exclusões."
     }
   },
   "error-page": {
