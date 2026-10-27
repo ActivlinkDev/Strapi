@@ -175,7 +175,7 @@ async function main() {
   console.log(`Locales: ${ordered.map((l) => l.code).join(', ')} (default ${defaultLocale.code})`);
 
   const existing = await listGeneric(token, defaultLocale.code);
-  const counts = { created: 0, updated: 0, skipped: 0, failed: 0, published: 0 };
+  const counts = { created: 0, updated: 0, skipped: 0, readFailed: 0, failed: 0, published: 0 };
 
   for (const entry of CONTENT.entries) {
     const key = keyOf(entry.Taxonomy_Name, entry.Level);
@@ -184,7 +184,9 @@ async function main() {
 
     for (const locale of ordered) {
       const { copy, translated } = copyForLocale(locale.code);
-      const body = payloadFor(entry, copy);
+      // The locale MUST be in the body: Strapi's content-manager reads it from the body for
+      // create, update and publish, so a query-only locale writes the default locale every time.
+      const body = { ...payloadFor(entry, copy), locale: locale.code };
       const label = `${locale.code}${translated ? '' : ' (English fallback)'}`;
 
       if (!documentId) {
@@ -202,9 +204,17 @@ async function main() {
       } else {
         let hasCopy = false;
         if (!FORCE) {
+          // Only a confirmed-missing localization may be written: a failed read is not
+          // permission to overwrite, or one 503 would replace an editor's copy.
           const cur = await request('GET', `${CM_BASE}/${documentId}?locale=${locale.code}`, null, token);
           const data = cur.body?.data;
-          hasCopy = cur.status === 200 && data?.locale === locale.code && Boolean(data?.Headline);
+          if (cur.status >= 200 && cur.status < 300) {
+            hasCopy = data?.locale === locale.code && Boolean(data?.Headline);
+          } else if (cur.status !== 404) {
+            counts.readFailed++;
+            console.warn(`  ! ${label} — skipped: could not read the current entry (HTTP ${cur.status}). Re-run, or pass --force.`);
+            continue;
+          }
         }
         if (hasCopy) {
           // Editor copy wins; --publish still publishes it below.
@@ -224,7 +234,7 @@ async function main() {
       }
 
       if (PUBLISH && documentId) {
-        const pub = await request('POST', `${CM_BASE}/${documentId}/actions/publish?locale=${locale.code}`, {}, token);
+        const pub = await request('POST', `${CM_BASE}/${documentId}/actions/publish?locale=${locale.code}`, { locale: locale.code }, token);
         if (pub.status >= 200 && pub.status < 300) counts.published++;
         else console.warn(`  ✗ ${label} publish failed:`, JSON.stringify(pub.body));
       }
@@ -233,12 +243,12 @@ async function main() {
 
   console.log(
     `\nDone: ${counts.created} created, ${counts.updated} saved, ${counts.skipped} skipped, ` +
-      `${counts.failed} failed, ${counts.published} published.`,
+      `${counts.readFailed} unreadable (skipped), ${counts.failed} failed, ${counts.published} published.`,
   );
   if (!PUBLISH) console.log('Entries are drafts. Review them against the IPIDs, then re-run with --publish.');
   console.log('\nLocale coverage:');
   check(ordered.map((l) => l.code));
-  if (counts.failed) process.exit(1);
+  if (counts.failed || counts.readFailed) process.exit(1);
 }
 
 main().catch((err) => {
