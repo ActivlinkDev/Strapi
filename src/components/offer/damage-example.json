@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_offer_damage_examples",
+  "info": {
+    "displayName": "Damage_Example",
+    "description": "One illustrative problem the cover can help with, shown on the offer page"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Cover_Type": {
+      "type": "enumeration",
+      "enum": ["breakdown", "accidental"],
+      "default": "breakdown",
+      "required": true
+    },
+    "Icon": {
+      "type": "enumeration",
+      "enum": ["crack", "liquid", "drop", "power", "motor", "leak", "heat", "screen", "door", "noise", "electrical"]
+    }
+  }
+}

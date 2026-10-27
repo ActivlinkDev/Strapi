@@ -12,10 +12,11 @@ const CONTENT = JSON.parse(seedSource.slice(start, seedSource.indexOf('\n};\n', 
 const schemaFor = (type) => require(`../src/api/${type}/content-types/${type}/schema.json`);
 
 // The customer-journey progress bar (frontend components/journey/ui.tsx,
-// JourneySteps) reads these from shared-ui; the offer page reads Upfront_pricing.
+// JourneySteps) reads these from shared-ui; the offer page reads Upfront_pricing
+// and the category damage-examples heading and disclaimer.
 const JOURNEY_KEYS = {
   'shared-ui': ['Progress_Label', 'Step_Find', 'Step_Details', 'Step_Cover', 'Step_Verify', 'Step_Pay'],
-  'display-offer': ['Upfront_pricing'],
+  'display-offer': ['Upfront_pricing', 'Examples_Heading', 'Examples_Disclaimer'],
 };
 
 test('journey keys are localized fields with a value in every seeded language', () => {

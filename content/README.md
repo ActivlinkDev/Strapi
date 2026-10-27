@@ -15,3 +15,16 @@ Check translation placeholders and frontend/schema coverage:
     node --test tests/basket-translations.test.cjs
 
 Set FRONTEND_ROOT if the frontend is not at C:/frontend (the default sibling checkout layout).
+
+# Category offer copy
+
+`content/category-offers.json` holds the offer-page headline, intro and damage examples for each taxonomy category, plus group- and sector-level fallbacks (`category-offer` collection). `Taxonomy_Name` must match the Mongo `Category` collection's spelling exactly: it is the key the backend's `/category_offer` lookup matches on. Text is keyed by base language and lines up with the shared `entries` by example position.
+
+After deploying Strapi with the new schema, check every supported locale is translated, then seed the entries as drafts:
+
+    node seed-category-offers.js --check
+    node seed-category-offers.js <adminEmail> <adminPassword>
+
+Damage examples describe what the cover pays for, so review each locale against the product IPIDs before publishing (`--publish`, or publish in the admin). Examples marked `accidental` show only for plans whose proposition sets `Covers_Accidental_Damage`; set that flag on every Prop that covers accidental damage. Existing copy is never overwritten without `--force`, and client-specific overrides (entries with `Client` set) are left to editors.
+
+    node --test tests/category-offers.test.cjs

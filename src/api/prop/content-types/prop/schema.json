@@ -104,6 +104,15 @@
       },
       "type": "string"
     },
+    "Covers_Accidental_Damage": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "boolean",
+      "default": false
+    },
     "JSON_Offer": {
       "pluginOptions": {
         "i18n": {
