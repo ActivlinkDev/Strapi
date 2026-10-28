@@ -8,7 +8,7 @@
  * Coverage: all 14 localized single types (basket, checkout-success,
  * cookie-banner, customer-hub, device-input, display-device, display-offer,
  * error-page, lookup, my-contracts, portal-admin, shared-ui, start-page,
- * validate-customer) — 525 fields in 8 languages.
+ * validate-customer) — 536 fields in 8 languages.
  *
  * It is additive and safe to re-run: for every locale it reads the current
  * entry, only writes keys that are currently empty, and leaves everything
@@ -1232,7 +1232,18 @@ const CONTENT = {
       "Reviews": "reviews",
       "Document": "Document",
       "Link": "Link",
-      "Close": "Close"
+      "Close": "Close",
+      "More_about_product": "More about this product",
+      "Overview": "Overview",
+      "Documents": "Documents",
+      "Search_specifications": "Search specifications",
+      "No_matching_specifications": "No specifications match your search.",
+      "Price_guide": "Price guide",
+      "Price_guide_hint": "Not sure?",
+      "Price_guide_link": "See the price guide",
+      "Price_guide_intro": "Enter the amount you actually paid, including any discount. These prices are a guide to help you check.",
+      "Typical_price": "Typical price",
+      "Retailer_prices": "Retailer prices"
     },
     "es": {
       "Header": "Tu producto",
@@ -1295,7 +1306,18 @@ const CONTENT = {
       "Reviews": "opiniones",
       "Document": "Documento",
       "Link": "Enlace",
-      "Close": "Cerrar"
+      "Close": "Cerrar",
+      "More_about_product": "Más sobre este producto",
+      "Overview": "Resumen",
+      "Documents": "Documentos",
+      "Search_specifications": "Buscar especificaciones",
+      "No_matching_specifications": "Ninguna especificación coincide con tu búsqueda.",
+      "Price_guide": "Guía de precios",
+      "Price_guide_hint": "¿No estás seguro?",
+      "Price_guide_link": "Consulta la guía de precios",
+      "Price_guide_intro": "Introduce el importe que pagaste realmente, incluido cualquier descuento. Estos precios son orientativos para ayudarte a comprobarlo.",
+      "Typical_price": "Precio habitual",
+      "Retailer_prices": "Precios en tiendas"
     },
     "it": {
       "Header": "Il tuo prodotto",
@@ -1358,7 +1380,18 @@ const CONTENT = {
       "Reviews": "recensioni",
       "Document": "Documento",
       "Link": "Link",
-      "Close": "Chiudi"
+      "Close": "Chiudi",
+      "More_about_product": "Maggiori informazioni sul prodotto",
+      "Overview": "Panoramica",
+      "Documents": "Documenti",
+      "Search_specifications": "Cerca nelle specifiche",
+      "No_matching_specifications": "Nessuna specifica corrisponde alla tua ricerca.",
+      "Price_guide": "Guida ai prezzi",
+      "Price_guide_hint": "Non sei sicuro?",
+      "Price_guide_link": "Consulta la guida ai prezzi",
+      "Price_guide_intro": "Inserisci l'importo che hai effettivamente pagato, compresi eventuali sconti. Questi prezzi sono indicativi e ti aiutano a verificarlo.",
+      "Typical_price": "Prezzo tipico",
+      "Retailer_prices": "Prezzi dei rivenditori"
     },
     "fr": {
       "Header": "Votre produit",
@@ -1421,7 +1454,18 @@ const CONTENT = {
       "Reviews": "avis",
       "Document": "Document",
       "Link": "Lien",
-      "Close": "Fermer"
+      "Close": "Fermer",
+      "More_about_product": "En savoir plus sur ce produit",
+      "Overview": "Aperçu",
+      "Documents": "Documents",
+      "Search_specifications": "Rechercher dans les caractéristiques",
+      "No_matching_specifications": "Aucune caractéristique ne correspond à votre recherche.",
+      "Price_guide": "Guide des prix",
+      "Price_guide_hint": "Vous hésitez ?",
+      "Price_guide_link": "Voir le guide des prix",
+      "Price_guide_intro": "Saisissez le montant que vous avez réellement payé, remises comprises. Ces prix sont indicatifs et vous aident à le vérifier.",
+      "Typical_price": "Prix habituel",
+      "Retailer_prices": "Prix chez les revendeurs"
     },
     "de": {
       "Header": "Ihr Produkt",
@@ -1484,7 +1528,18 @@ const CONTENT = {
       "Reviews": "Bewertungen",
       "Document": "Dokument",
       "Link": "Link",
-      "Close": "Schließen"
+      "Close": "Schließen",
+      "More_about_product": "Mehr zu diesem Produkt",
+      "Overview": "Übersicht",
+      "Documents": "Dokumente",
+      "Search_specifications": "Technische Daten durchsuchen",
+      "No_matching_specifications": "Keine technischen Daten entsprechen Ihrer Suche.",
+      "Price_guide": "Preisübersicht",
+      "Price_guide_hint": "Nicht sicher?",
+      "Price_guide_link": "Preisübersicht ansehen",
+      "Price_guide_intro": "Geben Sie den Betrag ein, den Sie tatsächlich bezahlt haben, einschließlich Rabatten. Diese Preise dienen Ihnen zur Orientierung.",
+      "Typical_price": "Üblicher Preis",
+      "Retailer_prices": "Händlerpreise"
     },
     "nl": {
       "Header": "Uw product",
@@ -1547,7 +1602,18 @@ const CONTENT = {
       "Reviews": "beoordelingen",
       "Document": "Document",
       "Link": "Link",
-      "Close": "Sluiten"
+      "Close": "Sluiten",
+      "More_about_product": "Meer over dit product",
+      "Overview": "Overzicht",
+      "Documents": "Documenten",
+      "Search_specifications": "Specificaties doorzoeken",
+      "No_matching_specifications": "Geen specificaties komen overeen met uw zoekopdracht.",
+      "Price_guide": "Prijsindicatie",
+      "Price_guide_hint": "Twijfelt u?",
+      "Price_guide_link": "Bekijk de prijsindicatie",
+      "Price_guide_intro": "Vul het bedrag in dat u werkelijk hebt betaald, inclusief eventuele korting. Deze prijzen zijn een richtlijn om u te helpen controleren.",
+      "Typical_price": "Gangbare prijs",
+      "Retailer_prices": "Prijzen bij winkels"
     },
     "tr": {
       "Header": "Ürününüz",
@@ -1610,7 +1676,18 @@ const CONTENT = {
       "Reviews": "değerlendirme",
       "Document": "Belge",
       "Link": "Bağlantı",
-      "Close": "Kapat"
+      "Close": "Kapat",
+      "More_about_product": "Bu ürün hakkında daha fazla bilgi",
+      "Overview": "Genel bakış",
+      "Documents": "Belgeler",
+      "Search_specifications": "Teknik özelliklerde ara",
+      "No_matching_specifications": "Aramanızla eşleşen teknik özellik yok.",
+      "Price_guide": "Fiyat rehberi",
+      "Price_guide_hint": "Emin değil misiniz?",
+      "Price_guide_link": "Fiyat rehberine bakın",
+      "Price_guide_intro": "Varsa indirim dahil, gerçekte ödediğiniz tutarı girin. Bu fiyatlar kontrol etmenize yardımcı olacak bir rehberdir.",
+      "Typical_price": "Ortalama fiyat",
+      "Retailer_prices": "Satıcı fiyatları"
     },
     "pt": {
       "Header": "O seu produto",
@@ -1673,7 +1750,18 @@ const CONTENT = {
       "Reviews": "avaliações",
       "Document": "Documento",
       "Link": "Ligação",
-      "Close": "Fechar"
+      "Close": "Fechar",
+      "More_about_product": "Mais sobre este produto",
+      "Overview": "Visão geral",
+      "Documents": "Documentos",
+      "Search_specifications": "Pesquisar especificações",
+      "No_matching_specifications": "Nenhuma especificação corresponde à sua pesquisa.",
+      "Price_guide": "Guia de preços",
+      "Price_guide_hint": "Não tem a certeza?",
+      "Price_guide_link": "Ver o guia de preços",
+      "Price_guide_intro": "Introduza o valor que pagou realmente, incluindo qualquer desconto. Estes preços servem de referência para ajudar a confirmar.",
+      "Typical_price": "Preço habitual",
+      "Retailer_prices": "Preços nas lojas"
     }
   },
   "display-offer": {
