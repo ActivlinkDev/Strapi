@@ -8,7 +8,7 @@
  * Coverage: all 14 localized single types (basket, checkout-success,
  * cookie-banner, customer-hub, device-input, display-device, display-offer,
  * error-page, lookup, my-contracts, portal-admin, shared-ui, start-page,
- * validate-customer) — 525 fields in 8 languages.
+ * validate-customer) — 529 fields in 8 languages.
  *
  * It is additive and safe to re-run: for every locale it reads the current
  * entry, only writes keys that are currently empty, and leaves everything
@@ -3780,7 +3780,11 @@ const CONTENT = {
       "Step_Details": "Details",
       "Step_Cover": "Cover",
       "Step_Verify": "Verify",
-      "Step_Pay": "Pay"
+      "Step_Pay": "Pay",
+      "Step_Device": "Device",
+      "Step_Fault": "Fault",
+      "Step_Options": "Options",
+      "Step_Date": "Date"
     },
     "es": {
       "Scanner_Heading": "Escanear código de barras",
@@ -3803,7 +3807,11 @@ const CONTENT = {
       "Step_Details": "Datos",
       "Step_Cover": "Cobertura",
       "Step_Verify": "Verificar",
-      "Step_Pay": "Pagar"
+      "Step_Pay": "Pagar",
+      "Step_Device": "Aparato",
+      "Step_Fault": "Avería",
+      "Step_Options": "Opciones",
+      "Step_Date": "Fecha"
     },
     "it": {
       "Scanner_Heading": "Scansiona il codice a barre",
@@ -3826,7 +3834,11 @@ const CONTENT = {
       "Step_Details": "Dettagli",
       "Step_Cover": "Copertura",
       "Step_Verify": "Verifica",
-      "Step_Pay": "Paga"
+      "Step_Pay": "Paga",
+      "Step_Device": "Apparecchio",
+      "Step_Fault": "Guasto",
+      "Step_Options": "Opzioni",
+      "Step_Date": "Data"
     },
     "fr": {
       "Scanner_Heading": "Scanner le code-barres",
@@ -3849,7 +3861,11 @@ const CONTENT = {
       "Step_Details": "Détails",
       "Step_Cover": "Couverture",
       "Step_Verify": "Vérification",
-      "Step_Pay": "Paiement"
+      "Step_Pay": "Paiement",
+      "Step_Device": "Appareil",
+      "Step_Fault": "Panne",
+      "Step_Options": "Options",
+      "Step_Date": "Date"
     },
     "de": {
       "Scanner_Heading": "Barcode scannen",
@@ -3872,7 +3888,11 @@ const CONTENT = {
       "Step_Details": "Details",
       "Step_Cover": "Schutz",
       "Step_Verify": "Bestätigen",
-      "Step_Pay": "Bezahlen"
+      "Step_Pay": "Bezahlen",
+      "Step_Device": "Gerät",
+      "Step_Fault": "Fehler",
+      "Step_Options": "Optionen",
+      "Step_Date": "Termin"
     },
     "nl": {
       "Scanner_Heading": "Barcode scannen",
@@ -3895,7 +3915,11 @@ const CONTENT = {
       "Step_Details": "Gegevens",
       "Step_Cover": "Dekking",
       "Step_Verify": "Verifiëren",
-      "Step_Pay": "Betalen"
+      "Step_Pay": "Betalen",
+      "Step_Device": "Apparaat",
+      "Step_Fault": "Storing",
+      "Step_Options": "Opties",
+      "Step_Date": "Datum"
     },
     "tr": {
       "Scanner_Heading": "Barkod tara",
@@ -3918,7 +3942,11 @@ const CONTENT = {
       "Step_Details": "Bilgiler",
       "Step_Cover": "Güvence",
       "Step_Verify": "Doğrulama",
-      "Step_Pay": "Ödeme"
+      "Step_Pay": "Ödeme",
+      "Step_Device": "Cihaz",
+      "Step_Fault": "Arıza",
+      "Step_Options": "Seçenekler",
+      "Step_Date": "Tarih"
     },
     "pt": {
       "Scanner_Heading": "Ler código de barras",
@@ -3941,7 +3969,11 @@ const CONTENT = {
       "Step_Details": "Dados",
       "Step_Cover": "Cobertura",
       "Step_Verify": "Verificar",
-      "Step_Pay": "Pagar"
+      "Step_Pay": "Pagar",
+      "Step_Device": "Aparelho",
+      "Step_Fault": "Avaria",
+      "Step_Options": "Opções",
+      "Step_Date": "Data"
     }
   },
   "start-page": {

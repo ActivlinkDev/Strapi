@@ -12,10 +12,12 @@ const CONTENT = JSON.parse(seedSource.slice(start, seedSource.indexOf('\n};\n', 
 const schemaFor = (type) => require(`../src/api/${type}/content-types/${type}/schema.json`);
 
 // The customer-journey progress bar (frontend components/journey/ui.tsx,
-// JourneySteps) reads these from shared-ui; the offer page reads Upfront_pricing
+// JourneySteps) and the repair journey's (app/assistance/shell.tsx) read these
+// from shared-ui; the offer page reads Upfront_pricing
 // and the category damage-examples heading and disclaimer.
 const JOURNEY_KEYS = {
-  'shared-ui': ['Progress_Label', 'Step_Find', 'Step_Details', 'Step_Cover', 'Step_Verify', 'Step_Pay'],
+  'shared-ui': ['Progress_Label', 'Step_Find', 'Step_Details', 'Step_Cover', 'Step_Verify', 'Step_Pay',
+    'Step_Device', 'Step_Fault', 'Step_Options', 'Step_Date'],
   'display-offer': ['Upfront_pricing', 'Examples_Heading', 'Examples_Disclaimer'],
 };
 
@@ -32,7 +34,9 @@ test('journey keys are localized fields with a value in every seeded language', 
 });
 
 test('the frontend progress bar asks shared-ui for exactly these keys', { skip: !process.env.FRONTEND_ROOT && 'set FRONTEND_ROOT to check against the frontend' }, () => {
-  const source = fs.readFileSync(path.join(process.env.FRONTEND_ROOT, 'components/journey/ui.tsx'), 'utf8');
+  const source = ['components/journey/ui.tsx', 'app/assistance/shell.tsx']
+    .map((file) => fs.readFileSync(path.join(process.env.FRONTEND_ROOT, file), 'utf8'))
+    .join('\n');
   const asked = new Set([...source.matchAll(/'(Progress_Label|Step_[A-Za-z]+)'/g)].map((m) => m[1]));
   for (const key of asked) assert.ok(JOURNEY_KEYS['shared-ui'].includes(key), `shared-ui is missing ${key}`);
 });
