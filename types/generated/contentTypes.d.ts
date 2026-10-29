@@ -2422,7 +2422,7 @@ export interface ApiDisplayOfferDisplayOffer extends Struct.SingleTypeSchema {
           localized: true;
         };
       }>;
-    Express_checkout_error: Schema.Attribute.Text &
+    Express_checkout_error: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;

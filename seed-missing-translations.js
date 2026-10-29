@@ -1827,6 +1827,9 @@ const CONTENT = {
       "Cancel": "Cancel",
       "Continue": "Continue",
       "Adding_to_basket": "Adding to basket…",
+      "Apple_Pay_Label": "Buy with Apple Pay",
+      "Redirecting_to_payment": "Redirecting to payment…",
+      "Express_checkout_error": "Unable to start Apple Pay checkout. Please try again or continue to the basket.",
       "Selected": "Selected",
       "Terms_Link_Text": "Read terms",
       "IPID": "Insurance product information document",
@@ -1846,9 +1849,6 @@ const CONTENT = {
       "Upfront_pricing": "Clear, upfront pricing",
       "Examples_Heading": "Examples of what's covered",
       "Examples_Disclaimer": "Examples only – see the policy terms for full cover and exclusions.",
-      "Apple_Pay_Label": "Buy with Apple Pay",
-      "Express_checkout_error": "Unable to start Apple Pay checkout. Please try again or continue to the basket.",
-      "Redirecting_to_payment": "Redirecting to payment…",
       "Processing_payment": "Processing payment…"
     },
     "es": {
@@ -1881,6 +1881,9 @@ const CONTENT = {
       "Cancel": "Cancelar",
       "Continue": "Continuar",
       "Adding_to_basket": "Añadiendo a la cesta…",
+      "Apple_Pay_Label": "Comprar con Apple Pay",
+      "Redirecting_to_payment": "Redirigiendo al pago…",
+      "Express_checkout_error": "No se pudo iniciar el pago con Apple Pay. Inténtalo de nuevo o continúa a la cesta.",
       "Selected": "Seleccionado",
       "Terms_Link_Text": "Leer los términos",
       "IPID": "Documento de información sobre el producto de seguro",
@@ -1900,9 +1903,6 @@ const CONTENT = {
       "Upfront_pricing": "Precios claros desde el principio",
       "Examples_Heading": "Ejemplos de lo que está cubierto",
       "Examples_Disclaimer": "Solo son ejemplos: consulta las condiciones de la póliza para conocer la cobertura completa y las exclusiones.",
-      "Apple_Pay_Label": "Comprar con Apple Pay",
-      "Express_checkout_error": "No se ha podido iniciar el pago con Apple Pay. Inténtalo de nuevo o continúa a la cesta.",
-      "Redirecting_to_payment": "Redirigiendo al pago…",
       "Processing_payment": "Procesando el pago…"
     },
     "it": {
@@ -1935,6 +1935,9 @@ const CONTENT = {
       "Cancel": "Annulla",
       "Continue": "Continua",
       "Adding_to_basket": "Aggiunta al carrello…",
+      "Apple_Pay_Label": "Acquista con Apple Pay",
+      "Redirecting_to_payment": "Reindirizzamento al pagamento…",
+      "Express_checkout_error": "Impossibile avviare il pagamento con Apple Pay. Riprova o prosegui al carrello.",
       "Selected": "Selezionato",
       "Terms_Link_Text": "Leggi i termini",
       "IPID": "Documento informativo sul prodotto assicurativo",
@@ -1954,9 +1957,6 @@ const CONTENT = {
       "Upfront_pricing": "Prezzi chiari fin dall'inizio",
       "Examples_Heading": "Esempi di ciò che è coperto",
       "Examples_Disclaimer": "Solo esempi: consulta le condizioni di polizza per la copertura completa e le esclusioni.",
-      "Apple_Pay_Label": "Acquista con Apple Pay",
-      "Express_checkout_error": "Impossibile avviare il pagamento con Apple Pay. Riprova o continua al carrello.",
-      "Redirecting_to_payment": "Reindirizzamento al pagamento…",
       "Processing_payment": "Elaborazione del pagamento…"
     },
     "fr": {
@@ -1989,6 +1989,9 @@ const CONTENT = {
       "Cancel": "Annuler",
       "Continue": "Continuer",
       "Adding_to_basket": "Ajout au panier…",
+      "Apple_Pay_Label": "Acheter avec Apple Pay",
+      "Redirecting_to_payment": "Redirection vers le paiement…",
+      "Express_checkout_error": "Impossible de lancer le paiement Apple Pay. Veuillez réessayer ou continuer vers le panier.",
       "Selected": "Sélectionné",
       "Terms_Link_Text": "Lire les conditions",
       "IPID": "Document d'information sur le produit d'assurance",
@@ -2008,9 +2011,6 @@ const CONTENT = {
       "Upfront_pricing": "Des prix clairs dès le départ",
       "Examples_Heading": "Exemples de ce qui est couvert",
       "Examples_Disclaimer": "Exemples uniquement – consultez les conditions du contrat pour la couverture complète et les exclusions.",
-      "Apple_Pay_Label": "Acheter avec Apple Pay",
-      "Express_checkout_error": "Impossible de lancer le paiement Apple Pay. Réessayez ou passez au panier.",
-      "Redirecting_to_payment": "Redirection vers le paiement…",
       "Processing_payment": "Paiement en cours…"
     },
     "de": {
@@ -2043,6 +2043,9 @@ const CONTENT = {
       "Cancel": "Abbrechen",
       "Continue": "Weiter",
       "Adding_to_basket": "Wird zum Warenkorb hinzugefügt…",
+      "Apple_Pay_Label": "Mit Apple Pay kaufen",
+      "Redirecting_to_payment": "Weiterleitung zur Zahlung…",
+      "Express_checkout_error": "Apple Pay-Zahlung konnte nicht gestartet werden. Bitte versuchen Sie es erneut oder fahren Sie mit dem Warenkorb fort.",
       "Selected": "Ausgewählt",
       "Terms_Link_Text": "Bedingungen lesen",
       "IPID": "Informationsblatt zum Versicherungsprodukt",
@@ -2062,9 +2065,6 @@ const CONTENT = {
       "Upfront_pricing": "Klare Preise von Anfang an",
       "Examples_Heading": "Beispiele für den Versicherungsschutz",
       "Examples_Disclaimer": "Nur Beispiele – den vollständigen Leistungsumfang und die Ausschlüsse finden Sie in den Versicherungsbedingungen.",
-      "Apple_Pay_Label": "Mit Apple Pay kaufen",
-      "Express_checkout_error": "Die Zahlung mit Apple Pay konnte nicht gestartet werden. Bitte versuchen Sie es erneut oder gehen Sie weiter zum Warenkorb.",
-      "Redirecting_to_payment": "Weiterleitung zur Zahlung…",
       "Processing_payment": "Zahlung wird verarbeitet…"
     },
     "nl": {
@@ -2097,6 +2097,9 @@ const CONTENT = {
       "Cancel": "Annuleren",
       "Continue": "Doorgaan",
       "Adding_to_basket": "Toevoegen aan winkelmandje…",
+      "Apple_Pay_Label": "Kopen met Apple Pay",
+      "Redirecting_to_payment": "Doorsturen naar betaling…",
+      "Express_checkout_error": "Kan betalen met Apple Pay niet starten. Probeer het opnieuw of ga verder naar het winkelmandje.",
       "Selected": "Geselecteerd",
       "Terms_Link_Text": "Voorwaarden lezen",
       "IPID": "Informatiedocument over het verzekeringsproduct",
@@ -2116,9 +2119,6 @@ const CONTENT = {
       "Upfront_pricing": "Duidelijke prijzen vooraf",
       "Examples_Heading": "Voorbeelden van wat gedekt is",
       "Examples_Disclaimer": "Alleen voorbeelden – zie de polisvoorwaarden voor de volledige dekking en uitsluitingen.",
-      "Apple_Pay_Label": "Koop met Apple Pay",
-      "Express_checkout_error": "Betalen met Apple Pay kan niet worden gestart. Probeer het opnieuw of ga verder naar uw winkelmandje.",
-      "Redirecting_to_payment": "Doorsturen naar betaling…",
       "Processing_payment": "Betaling wordt verwerkt…"
     },
     "tr": {
@@ -2151,6 +2151,9 @@ const CONTENT = {
       "Cancel": "İptal",
       "Continue": "Devam et",
       "Adding_to_basket": "Sepete ekleniyor…",
+      "Apple_Pay_Label": "Apple Pay ile satın al",
+      "Redirecting_to_payment": "Ödemeye yönlendiriliyor…",
+      "Express_checkout_error": "Apple Pay ödemesi başlatılamadı. Lütfen tekrar deneyin veya sepete devam edin.",
       "Selected": "Seçildi",
       "Terms_Link_Text": "Şartları oku",
       "IPID": "Sigorta ürünü bilgilendirme belgesi",
@@ -2170,9 +2173,6 @@ const CONTENT = {
       "Upfront_pricing": "Baştan net fiyatlar",
       "Examples_Heading": "Kapsanan durumlara örnekler",
       "Examples_Disclaimer": "Yalnızca örnektir – tam kapsam ve istisnalar için poliçe koşullarına bakın.",
-      "Apple_Pay_Label": "Apple Pay ile satın al",
-      "Express_checkout_error": "Apple Pay ile ödeme başlatılamadı. Lütfen tekrar deneyin veya sepete devam edin.",
-      "Redirecting_to_payment": "Ödemeye yönlendiriliyor…",
       "Processing_payment": "Ödeme işleniyor…"
     },
     "pt": {
@@ -2205,6 +2205,9 @@ const CONTENT = {
       "Cancel": "Cancelar",
       "Continue": "Continuar",
       "Adding_to_basket": "A adicionar ao cesto…",
+      "Apple_Pay_Label": "Comprar com Apple Pay",
+      "Redirecting_to_payment": "A redirecionar para o pagamento…",
+      "Express_checkout_error": "Não foi possível iniciar o pagamento com Apple Pay. Tente novamente ou continue para o cesto.",
       "Selected": "Selecionado",
       "Terms_Link_Text": "Ler os termos",
       "IPID": "Documento de informação sobre o produto de seguro",
@@ -2224,9 +2227,6 @@ const CONTENT = {
       "Upfront_pricing": "Preços claros desde o início",
       "Examples_Heading": "Exemplos do que está coberto",
       "Examples_Disclaimer": "Apenas exemplos – consulte as condições da apólice para a cobertura completa e as exclusões.",
-      "Apple_Pay_Label": "Comprar com Apple Pay",
-      "Express_checkout_error": "Não foi possível iniciar o pagamento com Apple Pay. Tente novamente ou continue para o cesto.",
-      "Redirecting_to_payment": "A redirecionar para o pagamento…",
       "Processing_payment": "A processar o pagamento…"
     }
   },
