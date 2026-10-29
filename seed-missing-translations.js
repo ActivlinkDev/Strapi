@@ -21,7 +21,12 @@
  * {products}, {n} and {device} are substituted by the frontend and are kept
  * byte-identical across every language — do not translate or reorder them.
  *
- * Usage: node seed-missing-translations.js <adminEmail> <adminPassword> [--force] [--only=basket,lookup]
+ * Usage: node seed-missing-translations.js <adminEmail> <adminPassword> [--force] [--only=basket,lookup] [--keys=Checkout_text]
+ *
+ * --keys limits the run to the named fields. Combined with --force it rewrites
+ * just those fields in every locale and leaves every other value as it is, e.g.
+ * to roll out reworded copy:
+ *   node seed-missing-translations.js <email> <password> --only=basket --keys=Checkout_text --force
  */
 
 const http = require('http');
@@ -31,12 +36,15 @@ const BASE_URL = process.env.STRAPI_URL || 'http://localhost:1337';
 const args = process.argv.slice(2);
 const FORCE = args.includes('--force');
 const ONLY = (args.find((a) => a.startsWith('--only=')) || '').replace('--only=', '');
+const KEYS = new Set(
+  (args.find((a) => a.startsWith('--keys=')) || '').replace('--keys=', '').split(',').map((s) => s.trim()).filter(Boolean)
+);
 const positional = args.filter((a) => !a.startsWith('--'));
 const EMAIL = positional[0];
 const PASSWORD = positional[1];
 
 if (!EMAIL || !PASSWORD) {
-  console.error('Usage: node seed-missing-translations.js <adminEmail> <adminPassword> [--force] [--only=a,b]');
+  console.error('Usage: node seed-missing-translations.js <adminEmail> <adminPassword> [--force] [--only=a,b] [--keys=x,y]');
   process.exit(1);
 }
 
@@ -90,7 +98,7 @@ const CONTENT = {
       "Sub_total": "Subtotal",
       "Total": "Total",
       "Checking_out": "Starting checkout…",
-      "Checkout_text": "You will be taken to our secure payment provider to complete your purchase.",
+      "Checkout_text": "You'll pay securely by card, Apple Pay or Google Pay on the next step.",
       "No_cover_selected": "Devices without cover",
       "Back": "Back",
       "Empty_basket": "Your basket is empty.",
@@ -118,7 +126,7 @@ const CONTENT = {
       "Sub_total": "Subtotal",
       "Total": "Total",
       "Checking_out": "Iniciando el pago…",
-      "Checkout_text": "Te llevaremos a nuestro proveedor de pago seguro para completar la compra.",
+      "Checkout_text": "En el siguiente paso pagarás de forma segura con tarjeta, Apple Pay o Google Pay.",
       "No_cover_selected": "Dispositivos sin cobertura",
       "Back": "Atrás",
       "Empty_basket": "Tu cesta está vacía.",
@@ -146,7 +154,7 @@ const CONTENT = {
       "Sub_total": "Subtotale",
       "Total": "Totale",
       "Checking_out": "Avvio del pagamento…",
-      "Checkout_text": "Ti porteremo al nostro fornitore di pagamento sicuro per completare l'acquisto.",
+      "Checkout_text": "Nel passaggio successivo pagherai in modo sicuro con carta, Apple Pay o Google Pay.",
       "No_cover_selected": "Dispositivi senza copertura",
       "Back": "Indietro",
       "Empty_basket": "Il tuo carrello è vuoto.",
@@ -174,7 +182,7 @@ const CONTENT = {
       "Sub_total": "Sous-total",
       "Total": "Total",
       "Checking_out": "Démarrage du paiement…",
-      "Checkout_text": "Vous allez être redirigé vers notre prestataire de paiement sécurisé pour finaliser votre achat.",
+      "Checkout_text": "À l'étape suivante, vous paierez en toute sécurité par carte, Apple Pay ou Google Pay.",
       "No_cover_selected": "Appareils sans couverture",
       "Back": "Retour",
       "Empty_basket": "Votre panier est vide.",
@@ -202,7 +210,7 @@ const CONTENT = {
       "Sub_total": "Zwischensumme",
       "Total": "Gesamt",
       "Checking_out": "Bezahlvorgang wird gestartet…",
-      "Checkout_text": "Sie werden zu unserem sicheren Zahlungsanbieter weitergeleitet, um Ihren Kauf abzuschließen.",
+      "Checkout_text": "Im nächsten Schritt bezahlen Sie sicher per Karte, Apple Pay oder Google Pay.",
       "No_cover_selected": "Geräte ohne Schutz",
       "Back": "Zurück",
       "Empty_basket": "Ihr Warenkorb ist leer.",
@@ -230,7 +238,7 @@ const CONTENT = {
       "Sub_total": "Subtotaal",
       "Total": "Totaal",
       "Checking_out": "Afrekenen starten…",
-      "Checkout_text": "U wordt doorgestuurd naar onze beveiligde betaalprovider om uw aankoop af te ronden.",
+      "Checkout_text": "In de volgende stap betaalt u veilig met kaart, Apple Pay of Google Pay.",
       "No_cover_selected": "Apparaten zonder dekking",
       "Back": "Terug",
       "Empty_basket": "Uw winkelmandje is leeg.",
@@ -258,7 +266,7 @@ const CONTENT = {
       "Sub_total": "Ara toplam",
       "Total": "Toplam",
       "Checking_out": "Ödeme başlatılıyor…",
-      "Checkout_text": "Satın alma işlemini tamamlamak için güvenli ödeme sağlayıcımıza yönlendirileceksiniz.",
+      "Checkout_text": "Bir sonraki adımda kart, Apple Pay veya Google Pay ile güvenle ödeme yapacaksınız.",
       "No_cover_selected": "Teminatsız cihazlar",
       "Back": "Geri",
       "Empty_basket": "Sepetiniz boş.",
@@ -286,7 +294,7 @@ const CONTENT = {
       "Sub_total": "Subtotal",
       "Total": "Total",
       "Checking_out": "A iniciar o pagamento…",
-      "Checkout_text": "Será encaminhado para o nosso fornecedor de pagamento seguro para concluir a compra.",
+      "Checkout_text": "No passo seguinte, pagará em segurança com cartão, Apple Pay ou Google Pay.",
       "No_cover_selected": "Dispositivos sem cobertura",
       "Back": "Voltar",
       "Empty_basket": "O seu cesto está vazio.",
@@ -4758,6 +4766,11 @@ async function seedSingleType(singleType, locales, defaultLocale, token) {
     let existing;
     if (current.status >= 200 && current.status < 300) {
       existing = (current.body && current.body.data) || {};
+    } else if (current.status === 404 && KEYS.size) {
+      // --keys updates fields in existing entries; it must not create a locale
+      // holding nothing but those fields. Run without --keys to create it.
+      console.log(`· ${locale.code} — no entry yet; skipped (--keys only updates existing entries).`);
+      continue;
     } else if (current.status === 404) {
       existing = {}; // confirmed: no entry for this locale yet
     } else if (FORCE) {
@@ -4771,6 +4784,7 @@ async function seedSingleType(singleType, locales, defaultLocale, token) {
     const payload = {};
     const skipped = [];
     for (const [key, value] of Object.entries(values)) {
+      if (KEYS.size && !KEYS.has(key)) continue;
       if (!FORCE && !isBlank(existing[key])) {
         skipped.push(key);
         continue;
@@ -4831,7 +4845,8 @@ async function main() {
   const defaultLocale = locales.find((l) => l.isDefault) || locales[0];
   console.log(`Default locale: ${defaultLocale.code}`);
   console.log(`All locales: ${locales.map((l) => l.code).join(', ')}`);
-  if (FORCE) console.log('Running with --force: existing values will be overwritten.');
+  if (KEYS.size) console.log(`Limited to field(s): ${[...KEYS].join(', ')}`);
+  if (FORCE) console.log(`Running with --force: existing values${KEYS.size ? ' of those fields' : ''} will be overwritten.`);
 
   const wanted = ONLY ? ONLY.split(',').map((s) => s.trim()).filter(Boolean) : Object.keys(CONTENT);
   for (const singleType of wanted) {
