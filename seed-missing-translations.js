@@ -8,7 +8,7 @@
  * Coverage: all 14 localized single types (basket, checkout-success,
  * cookie-banner, customer-hub, device-input, display-device, display-offer,
  * error-page, lookup, my-contracts, portal-admin, shared-ui, start-page,
- * validate-customer) — 540 fields in 8 languages.
+ * validate-customer) — 555 fields in 8 languages.
  *
  * It is additive and safe to re-run: for every locale it reads the current
  * entry, only writes keys that are currently empty, and leaves everything
@@ -322,7 +322,11 @@ const CONTENT = {
       "Item_Fallback": "Item",
       "Need_Help_Heading": "Need help?",
       "Need_Help_Body": "Keep your reference handy and contact support if you have any questions about your cover.",
-      "Home_Button": "Home"
+      "Home_Button": "Home",
+      "Not_Paid_Title": "Payment not completed",
+      "Not_Paid_Body": "We couldn't confirm your payment, so you have not been charged for this cover. Please return to your basket and try again.",
+      "Back_To_Basket_Button": "Back to basket",
+      "Payment_Processing": "Your payment is still being processed by your bank."
     },
     "es": {
       "Page_Title": "Pedido confirmado",
@@ -339,7 +343,11 @@ const CONTENT = {
       "Item_Fallback": "Artículo",
       "Need_Help_Heading": "¿Necesitas ayuda?",
       "Need_Help_Body": "Ten tu referencia a mano y ponte en contacto con soporte si tienes alguna duda sobre tu cobertura.",
-      "Home_Button": "Inicio"
+      "Home_Button": "Inicio",
+      "Not_Paid_Title": "Pago no completado",
+      "Not_Paid_Body": "No hemos podido confirmar tu pago, así que no se te ha cobrado esta cobertura. Vuelve a tu cesta e inténtalo de nuevo.",
+      "Back_To_Basket_Button": "Volver a la cesta",
+      "Payment_Processing": "Tu banco todavía está procesando el pago."
     },
     "it": {
       "Page_Title": "Ordine confermato",
@@ -356,7 +364,11 @@ const CONTENT = {
       "Item_Fallback": "Articolo",
       "Need_Help_Heading": "Hai bisogno di aiuto?",
       "Need_Help_Body": "Tieni a portata di mano il tuo riferimento e contatta l'assistenza per qualsiasi domanda sulla copertura.",
-      "Home_Button": "Home"
+      "Home_Button": "Home",
+      "Not_Paid_Title": "Pagamento non completato",
+      "Not_Paid_Body": "Non siamo riusciti a confermare il pagamento, quindi non ti è stato addebitato nulla per questa copertura. Torna al carrello e riprova.",
+      "Back_To_Basket_Button": "Torna al carrello",
+      "Payment_Processing": "La tua banca sta ancora elaborando il pagamento."
     },
     "fr": {
       "Page_Title": "Commande confirmée",
@@ -373,7 +385,11 @@ const CONTENT = {
       "Item_Fallback": "Article",
       "Need_Help_Heading": "Besoin d'aide ?",
       "Need_Help_Body": "Gardez votre référence à portée de main et contactez le support pour toute question sur votre couverture.",
-      "Home_Button": "Accueil"
+      "Home_Button": "Accueil",
+      "Not_Paid_Title": "Paiement non finalisé",
+      "Not_Paid_Body": "Nous n'avons pas pu confirmer votre paiement : rien ne vous a été facturé pour cette couverture. Retournez à votre panier et réessayez.",
+      "Back_To_Basket_Button": "Retour au panier",
+      "Payment_Processing": "Votre paiement est encore en cours de traitement par votre banque."
     },
     "de": {
       "Page_Title": "Bestellung bestätigt",
@@ -390,7 +406,11 @@ const CONTENT = {
       "Item_Fallback": "Artikel",
       "Need_Help_Heading": "Brauchen Sie Hilfe?",
       "Need_Help_Body": "Halten Sie Ihre Referenz bereit und wenden Sie sich bei Fragen zu Ihrem Schutz an den Support.",
-      "Home_Button": "Startseite"
+      "Home_Button": "Startseite",
+      "Not_Paid_Title": "Zahlung nicht abgeschlossen",
+      "Not_Paid_Body": "Wir konnten Ihre Zahlung nicht bestätigen, daher wurde Ihnen für diesen Schutz nichts berechnet. Bitte kehren Sie zu Ihrem Warenkorb zurück und versuchen Sie es erneut.",
+      "Back_To_Basket_Button": "Zurück zum Warenkorb",
+      "Payment_Processing": "Ihre Zahlung wird noch von Ihrer Bank bearbeitet."
     },
     "nl": {
       "Page_Title": "Bestelling bevestigd",
@@ -407,7 +427,11 @@ const CONTENT = {
       "Item_Fallback": "Item",
       "Need_Help_Heading": "Hulp nodig?",
       "Need_Help_Body": "Houd uw referentie bij de hand en neem contact op met support als u vragen hebt over uw dekking.",
-      "Home_Button": "Home"
+      "Home_Button": "Home",
+      "Not_Paid_Title": "Betaling niet voltooid",
+      "Not_Paid_Body": "We konden uw betaling niet bevestigen, dus er is niets in rekening gebracht voor deze dekking. Ga terug naar uw winkelmandje en probeer het opnieuw.",
+      "Back_To_Basket_Button": "Terug naar winkelmandje",
+      "Payment_Processing": "Uw betaling wordt nog door uw bank verwerkt."
     },
     "tr": {
       "Page_Title": "Sipariş onaylandı",
@@ -424,7 +448,11 @@ const CONTENT = {
       "Item_Fallback": "Ürün",
       "Need_Help_Heading": "Yardım mı gerekiyor?",
       "Need_Help_Body": "Referansınızı hazır bulundurun ve teminatınızla ilgili sorularınız için destek ekibiyle iletişime geçin.",
-      "Home_Button": "Ana sayfa"
+      "Home_Button": "Ana sayfa",
+      "Not_Paid_Title": "Ödeme tamamlanmadı",
+      "Not_Paid_Body": "Ödemenizi doğrulayamadık, bu nedenle bu teminat için sizden ücret alınmadı. Lütfen sepetinize dönüp tekrar deneyin.",
+      "Back_To_Basket_Button": "Sepete dön",
+      "Payment_Processing": "Ödemeniz hâlâ bankanız tarafından işleniyor."
     },
     "pt": {
       "Page_Title": "Encomenda confirmada",
@@ -441,7 +469,11 @@ const CONTENT = {
       "Item_Fallback": "Artigo",
       "Need_Help_Heading": "Precisa de ajuda?",
       "Need_Help_Body": "Tenha a sua referência à mão e contacte o suporte se tiver dúvidas sobre a sua cobertura.",
-      "Home_Button": "Início"
+      "Home_Button": "Início",
+      "Not_Paid_Title": "Pagamento não concluído",
+      "Not_Paid_Body": "Não conseguimos confirmar o seu pagamento, por isso não lhe foi cobrado nada por esta cobertura. Volte ao seu cesto e tente novamente.",
+      "Back_To_Basket_Button": "Voltar ao cesto",
+      "Payment_Processing": "O seu pagamento ainda está a ser processado pelo seu banco."
     }
   },
   "cookie-banner": {
@@ -1813,7 +1845,11 @@ const CONTENT = {
       "Select": "Select duration",
       "Upfront_pricing": "Clear, upfront pricing",
       "Examples_Heading": "Examples of what's covered",
-      "Examples_Disclaimer": "Examples only – see the policy terms for full cover and exclusions."
+      "Examples_Disclaimer": "Examples only – see the policy terms for full cover and exclusions.",
+      "Apple_Pay_Label": "Buy with Apple Pay",
+      "Express_checkout_error": "Unable to start Apple Pay checkout. Please try again or continue to the basket.",
+      "Redirecting_to_payment": "Redirecting to payment…",
+      "Processing_payment": "Processing payment…"
     },
     "es": {
       "Heading": "Tus opciones de protección",
@@ -1863,7 +1899,11 @@ const CONTENT = {
       "Select": "Seleccionar duración",
       "Upfront_pricing": "Precios claros desde el principio",
       "Examples_Heading": "Ejemplos de lo que está cubierto",
-      "Examples_Disclaimer": "Solo son ejemplos: consulta las condiciones de la póliza para conocer la cobertura completa y las exclusiones."
+      "Examples_Disclaimer": "Solo son ejemplos: consulta las condiciones de la póliza para conocer la cobertura completa y las exclusiones.",
+      "Apple_Pay_Label": "Comprar con Apple Pay",
+      "Express_checkout_error": "No se ha podido iniciar el pago con Apple Pay. Inténtalo de nuevo o continúa a la cesta.",
+      "Redirecting_to_payment": "Redirigiendo al pago…",
+      "Processing_payment": "Procesando el pago…"
     },
     "it": {
       "Heading": "Le tue opzioni di protezione",
@@ -1913,7 +1953,11 @@ const CONTENT = {
       "Select": "Seleziona la durata",
       "Upfront_pricing": "Prezzi chiari fin dall'inizio",
       "Examples_Heading": "Esempi di ciò che è coperto",
-      "Examples_Disclaimer": "Solo esempi: consulta le condizioni di polizza per la copertura completa e le esclusioni."
+      "Examples_Disclaimer": "Solo esempi: consulta le condizioni di polizza per la copertura completa e le esclusioni.",
+      "Apple_Pay_Label": "Acquista con Apple Pay",
+      "Express_checkout_error": "Impossibile avviare il pagamento con Apple Pay. Riprova o continua al carrello.",
+      "Redirecting_to_payment": "Reindirizzamento al pagamento…",
+      "Processing_payment": "Elaborazione del pagamento…"
     },
     "fr": {
       "Heading": "Vos options de protection",
@@ -1963,7 +2007,11 @@ const CONTENT = {
       "Select": "Choisir la durée",
       "Upfront_pricing": "Des prix clairs dès le départ",
       "Examples_Heading": "Exemples de ce qui est couvert",
-      "Examples_Disclaimer": "Exemples uniquement – consultez les conditions du contrat pour la couverture complète et les exclusions."
+      "Examples_Disclaimer": "Exemples uniquement – consultez les conditions du contrat pour la couverture complète et les exclusions.",
+      "Apple_Pay_Label": "Acheter avec Apple Pay",
+      "Express_checkout_error": "Impossible de lancer le paiement Apple Pay. Réessayez ou passez au panier.",
+      "Redirecting_to_payment": "Redirection vers le paiement…",
+      "Processing_payment": "Paiement en cours…"
     },
     "de": {
       "Heading": "Ihre Schutzoptionen",
@@ -2013,7 +2061,11 @@ const CONTENT = {
       "Select": "Laufzeit wählen",
       "Upfront_pricing": "Klare Preise von Anfang an",
       "Examples_Heading": "Beispiele für den Versicherungsschutz",
-      "Examples_Disclaimer": "Nur Beispiele – den vollständigen Leistungsumfang und die Ausschlüsse finden Sie in den Versicherungsbedingungen."
+      "Examples_Disclaimer": "Nur Beispiele – den vollständigen Leistungsumfang und die Ausschlüsse finden Sie in den Versicherungsbedingungen.",
+      "Apple_Pay_Label": "Mit Apple Pay kaufen",
+      "Express_checkout_error": "Die Zahlung mit Apple Pay konnte nicht gestartet werden. Bitte versuchen Sie es erneut oder gehen Sie weiter zum Warenkorb.",
+      "Redirecting_to_payment": "Weiterleitung zur Zahlung…",
+      "Processing_payment": "Zahlung wird verarbeitet…"
     },
     "nl": {
       "Heading": "Uw beschermingsopties",
@@ -2063,7 +2115,11 @@ const CONTENT = {
       "Select": "Duur selecteren",
       "Upfront_pricing": "Duidelijke prijzen vooraf",
       "Examples_Heading": "Voorbeelden van wat gedekt is",
-      "Examples_Disclaimer": "Alleen voorbeelden – zie de polisvoorwaarden voor de volledige dekking en uitsluitingen."
+      "Examples_Disclaimer": "Alleen voorbeelden – zie de polisvoorwaarden voor de volledige dekking en uitsluitingen.",
+      "Apple_Pay_Label": "Koop met Apple Pay",
+      "Express_checkout_error": "Betalen met Apple Pay kan niet worden gestart. Probeer het opnieuw of ga verder naar uw winkelmandje.",
+      "Redirecting_to_payment": "Doorsturen naar betaling…",
+      "Processing_payment": "Betaling wordt verwerkt…"
     },
     "tr": {
       "Heading": "Koruma seçenekleriniz",
@@ -2113,7 +2169,11 @@ const CONTENT = {
       "Select": "Süre seç",
       "Upfront_pricing": "Baştan net fiyatlar",
       "Examples_Heading": "Kapsanan durumlara örnekler",
-      "Examples_Disclaimer": "Yalnızca örnektir – tam kapsam ve istisnalar için poliçe koşullarına bakın."
+      "Examples_Disclaimer": "Yalnızca örnektir – tam kapsam ve istisnalar için poliçe koşullarına bakın.",
+      "Apple_Pay_Label": "Apple Pay ile satın al",
+      "Express_checkout_error": "Apple Pay ile ödeme başlatılamadı. Lütfen tekrar deneyin veya sepete devam edin.",
+      "Redirecting_to_payment": "Ödemeye yönlendiriliyor…",
+      "Processing_payment": "Ödeme işleniyor…"
     },
     "pt": {
       "Heading": "As suas opções de proteção",
@@ -2163,7 +2223,11 @@ const CONTENT = {
       "Select": "Selecionar duração",
       "Upfront_pricing": "Preços claros desde o início",
       "Examples_Heading": "Exemplos do que está coberto",
-      "Examples_Disclaimer": "Apenas exemplos – consulte as condições da apólice para a cobertura completa e as exclusões."
+      "Examples_Disclaimer": "Apenas exemplos – consulte as condições da apólice para a cobertura completa e as exclusões.",
+      "Apple_Pay_Label": "Comprar com Apple Pay",
+      "Express_checkout_error": "Não foi possível iniciar o pagamento com Apple Pay. Tente novamente ou continue para o cesto.",
+      "Redirecting_to_payment": "A redirecionar para o pagamento…",
+      "Processing_payment": "A processar o pagamento…"
     }
   },
   "error-page": {

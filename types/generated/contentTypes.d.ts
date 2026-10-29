@@ -565,6 +565,12 @@ export interface ApiBasketBasket extends Struct.SingleTypeSchema {
           localized: true;
         };
       }>;
+    Close: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     Confirm_remove: Schema.Attribute.Text &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
@@ -617,6 +623,12 @@ export interface ApiBasketBasket extends Struct.SingleTypeSchema {
         };
       }>;
     Documents_emailed: Schema.Attribute.Text &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Email: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -732,7 +744,25 @@ export interface ApiBasketBasket extends Struct.SingleTypeSchema {
           localized: true;
         };
       }>;
+    Or_pay_by_card: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     Order_summary: Schema.Attribute.Text &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Pay_button: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Payment_error: Schema.Attribute.Text &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -762,6 +792,12 @@ export interface ApiBasketBasket extends Struct.SingleTypeSchema {
           localized: true;
         };
       }>;
+    Payment_sheet_title: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     Per_month_suffix: Schema.Attribute.Text &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
@@ -781,6 +817,12 @@ export interface ApiBasketBasket extends Struct.SingleTypeSchema {
         };
       }>;
     Processing_checkout: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Processing_payment: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -1039,6 +1081,12 @@ export interface ApiCheckoutSuccessCheckoutSuccess
     };
   };
   attributes: {
+    Back_To_Basket_Button: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     Basket_Id_Label: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
@@ -1095,6 +1143,18 @@ export interface ApiCheckoutSuccessCheckoutSuccess
           localized: true;
         };
       }>;
+    Not_Paid_Body: Schema.Attribute.Text &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Not_Paid_Title: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     Page_Title: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
@@ -1102,6 +1162,12 @@ export interface ApiCheckoutSuccessCheckoutSuccess
         };
       }>;
     Payment_Confirmed_Badge: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Payment_Processing: Schema.Attribute.Text &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -2269,6 +2335,12 @@ export interface ApiDisplayOfferDisplayOffer extends Struct.SingleTypeSchema {
           localized: true;
         };
       }>;
+    Apple_Pay_Label: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     Back: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
@@ -2345,6 +2417,12 @@ export interface ApiDisplayOfferDisplayOffer extends Struct.SingleTypeSchema {
         };
       }>;
     Exclusions: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Express_checkout_error: Schema.Attribute.Text &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -2451,6 +2529,12 @@ export interface ApiDisplayOfferDisplayOffer extends Struct.SingleTypeSchema {
           localized: true;
         };
       }>;
+    Processing_payment: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     Protection_plans: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
@@ -2458,6 +2542,12 @@ export interface ApiDisplayOfferDisplayOffer extends Struct.SingleTypeSchema {
         };
       }>;
     publishedAt: Schema.Attribute.DateTime;
+    Redirecting_to_payment: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     See_details: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {

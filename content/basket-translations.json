@@ -64,7 +64,14 @@
       "Laptop": "Laptop",
       "Smartphone": "Smartphone",
       "Tablet": "Tablet"
-    }
+    },
+    "Pay_button": "Pay {amount}",
+    "Processing_payment": "Processing payment…",
+    "Payment_error": "Your payment could not be taken. Please check your details and try again.",
+    "Payment_sheet_title": "Payment",
+    "Or_pay_by_card": "or pay by card",
+    "Email": "Email",
+    "Close": "Close"
   },
   "es": {
     "Step_device": "Tu dispositivo",
@@ -131,7 +138,14 @@
       "Laptop": "Portátil",
       "Smartphone": "Teléfono inteligente",
       "Tablet": "Tableta"
-    }
+    },
+    "Pay_button": "Pagar {amount}",
+    "Processing_payment": "Procesando el pago…",
+    "Payment_error": "No se ha podido realizar el pago. Revisa tus datos e inténtalo de nuevo.",
+    "Payment_sheet_title": "Pago",
+    "Or_pay_by_card": "o paga con tarjeta",
+    "Email": "Correo electrónico",
+    "Close": "Cerrar"
   },
   "it": {
     "Step_device": "Il tuo dispositivo",
@@ -198,7 +212,14 @@
       "Laptop": "Portatile",
       "Smartphone": "Smartphone",
       "Tablet": "Tablet"
-    }
+    },
+    "Pay_button": "Paga {amount}",
+    "Processing_payment": "Elaborazione del pagamento…",
+    "Payment_error": "Non è stato possibile effettuare il pagamento. Controlla i tuoi dati e riprova.",
+    "Payment_sheet_title": "Pagamento",
+    "Or_pay_by_card": "oppure paga con carta",
+    "Email": "Email",
+    "Close": "Chiudi"
   },
   "fr": {
     "Step_device": "Votre appareil",
@@ -265,7 +286,14 @@
       "Laptop": "Ordinateur portable",
       "Smartphone": "Smartphone",
       "Tablet": "Tablette"
-    }
+    },
+    "Pay_button": "Payer {amount}",
+    "Processing_payment": "Paiement en cours…",
+    "Payment_error": "Votre paiement n'a pas pu être effectué. Vérifiez vos informations et réessayez.",
+    "Payment_sheet_title": "Paiement",
+    "Or_pay_by_card": "ou payez par carte",
+    "Email": "E-mail",
+    "Close": "Fermer"
   },
   "de": {
     "Step_device": "Ihr Gerät",
@@ -332,7 +360,14 @@
       "Laptop": "Laptop",
       "Smartphone": "Smartphone",
       "Tablet": "Tablet"
-    }
+    },
+    "Pay_button": "{amount} bezahlen",
+    "Processing_payment": "Zahlung wird verarbeitet…",
+    "Payment_error": "Ihre Zahlung konnte nicht durchgeführt werden. Bitte prüfen Sie Ihre Angaben und versuchen Sie es erneut.",
+    "Payment_sheet_title": "Zahlung",
+    "Or_pay_by_card": "oder mit Karte bezahlen",
+    "Email": "E-Mail",
+    "Close": "Schließen"
   },
   "nl": {
     "Step_device": "Uw apparaat",
@@ -399,7 +434,14 @@
       "Laptop": "Laptop",
       "Smartphone": "Smartphone",
       "Tablet": "Tablet"
-    }
+    },
+    "Pay_button": "{amount} betalen",
+    "Processing_payment": "Betaling wordt verwerkt…",
+    "Payment_error": "Uw betaling kon niet worden voltooid. Controleer uw gegevens en probeer het opnieuw.",
+    "Payment_sheet_title": "Betaling",
+    "Or_pay_by_card": "of betaal met kaart",
+    "Email": "E-mail",
+    "Close": "Sluiten"
   },
   "tr": {
     "Step_device": "Cihazınız",
@@ -466,7 +508,14 @@
       "Laptop": "Dizüstü bilgisayar",
       "Smartphone": "Akıllı telefon",
       "Tablet": "Tablet"
-    }
+    },
+    "Pay_button": "{amount} öde",
+    "Processing_payment": "Ödeme işleniyor…",
+    "Payment_error": "Ödemeniz alınamadı. Lütfen bilgilerinizi kontrol edip tekrar deneyin.",
+    "Payment_sheet_title": "Ödeme",
+    "Or_pay_by_card": "veya kartla ödeyin",
+    "Email": "E-posta",
+    "Close": "Kapat"
   },
   "pt": {
     "Step_device": "O seu dispositivo",
@@ -533,6 +582,13 @@
       "Laptop": "Portátil",
       "Smartphone": "Smartphone",
       "Tablet": "Tablet"
-    }
+    },
+    "Pay_button": "Pagar {amount}",
+    "Processing_payment": "A processar o pagamento…",
+    "Payment_error": "Não foi possível concluir o pagamento. Verifique os seus dados e tente novamente.",
+    "Payment_sheet_title": "Pagamento",
+    "Or_pay_by_card": "ou pague com cartão",
+    "Email": "E-mail",
+    "Close": "Fechar"
   }
 }
