@@ -4718,6 +4718,8 @@ const CONTENT = {
   }
 };
 CONTENT['my-registrations'] = require('./translations/my-registrations.json');
+CONTENT['email-copy'] = require('./translations/email-copy.json');
+CONTENT['cloud-page'] = require('./translations/cloud-page.json');
 
 function valuesFor(singleType, code) {
   const byLang = CONTENT[singleType];
