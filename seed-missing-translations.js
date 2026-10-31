@@ -2971,7 +2971,14 @@ const CONTENT = {
       "Fallback_covered_device": "Covered device {n}",
       "Fallback_protection_plan": "Protection plan",
       "Fallback_device_protection": "{device} protection",
-      "Use_different_number": "Use a different number"
+      "Use_different_number": "Use a different number",
+      "Use_email_instead": "Use email instead",
+      "Use_phone_instead": "Use phone instead",
+      "Email_label": "Email address",
+      "Email_code_to": "We'll email a code to {email}.",
+      "Change_email_or_phone": "Use a different email or phone",
+      "Use_different_email": "Use a different email",
+      "Error_rate_limited": "Too many codes requested. Please try again later."
     },
     "es": {
       "Page_Title": "Mis contratos",
@@ -3053,7 +3060,14 @@ const CONTENT = {
       "Fallback_covered_device": "Dispositivo cubierto {n}",
       "Fallback_protection_plan": "Plan de protección",
       "Fallback_device_protection": "Protección de {device}",
-      "Use_different_number": "Usar otro número"
+      "Use_different_number": "Usar otro número",
+      "Use_email_instead": "Usar el correo electrónico",
+      "Use_phone_instead": "Usar el teléfono",
+      "Email_label": "Correo electrónico",
+      "Email_code_to": "Te enviaremos un código a {email}.",
+      "Change_email_or_phone": "Usar otro correo o teléfono",
+      "Use_different_email": "Usar otro correo electrónico",
+      "Error_rate_limited": "Se han solicitado demasiados códigos. Inténtalo más tarde."
     },
     "it": {
       "Page_Title": "I miei contratti",
@@ -3135,7 +3149,14 @@ const CONTENT = {
       "Fallback_covered_device": "Dispositivo coperto {n}",
       "Fallback_protection_plan": "Piano di protezione",
       "Fallback_device_protection": "Protezione {device}",
-      "Use_different_number": "Usa un altro numero"
+      "Use_different_number": "Usa un altro numero",
+      "Use_email_instead": "Usa l'email",
+      "Use_phone_instead": "Usa il telefono",
+      "Email_label": "Indirizzo email",
+      "Email_code_to": "Invieremo un codice a {email}.",
+      "Change_email_or_phone": "Usa un'altra email o un altro telefono",
+      "Use_different_email": "Usa un'altra email",
+      "Error_rate_limited": "Sono stati richiesti troppi codici. Riprova più tardi."
     },
     "fr": {
       "Page_Title": "Mes contrats",
@@ -3217,7 +3238,14 @@ const CONTENT = {
       "Fallback_covered_device": "Appareil couvert {n}",
       "Fallback_protection_plan": "Formule de protection",
       "Fallback_device_protection": "Protection {device}",
-      "Use_different_number": "Utiliser un autre numéro"
+      "Use_different_number": "Utiliser un autre numéro",
+      "Use_email_instead": "Utiliser l'e-mail",
+      "Use_phone_instead": "Utiliser le téléphone",
+      "Email_label": "Adresse e-mail",
+      "Email_code_to": "Nous enverrons un code à {email}.",
+      "Change_email_or_phone": "Utiliser un autre e-mail ou téléphone",
+      "Use_different_email": "Utiliser un autre e-mail",
+      "Error_rate_limited": "Trop de codes demandés. Veuillez réessayer plus tard."
     },
     "de": {
       "Page_Title": "Meine Verträge",
@@ -3299,7 +3327,14 @@ const CONTENT = {
       "Fallback_covered_device": "Geschütztes Gerät {n}",
       "Fallback_protection_plan": "Schutztarif",
       "Fallback_device_protection": "{device}-Schutz",
-      "Use_different_number": "Andere Nummer verwenden"
+      "Use_different_number": "Andere Nummer verwenden",
+      "Use_email_instead": "Stattdessen E-Mail verwenden",
+      "Use_phone_instead": "Stattdessen Telefon verwenden",
+      "Email_label": "E-Mail-Adresse",
+      "Email_code_to": "Wir senden einen Code an {email}.",
+      "Change_email_or_phone": "Andere E-Mail oder Telefonnummer verwenden",
+      "Use_different_email": "Andere E-Mail verwenden",
+      "Error_rate_limited": "Zu viele Codes angefordert. Bitte versuchen Sie es später erneut."
     },
     "nl": {
       "Page_Title": "Mijn contracten",
@@ -3381,7 +3416,14 @@ const CONTENT = {
       "Fallback_covered_device": "Gedekt apparaat {n}",
       "Fallback_protection_plan": "Beschermingsplan",
       "Fallback_device_protection": "Bescherming voor {device}",
-      "Use_different_number": "Een ander nummer gebruiken"
+      "Use_different_number": "Een ander nummer gebruiken",
+      "Use_email_instead": "E-mail gebruiken",
+      "Use_phone_instead": "Telefoon gebruiken",
+      "Email_label": "E-mailadres",
+      "Email_code_to": "We sturen een code naar {email}.",
+      "Change_email_or_phone": "Ander e-mailadres of telefoonnummer gebruiken",
+      "Use_different_email": "Ander e-mailadres gebruiken",
+      "Error_rate_limited": "Te veel codes aangevraagd. Probeer het later opnieuw."
     },
     "tr": {
       "Page_Title": "Sözleşmelerim",
@@ -3463,7 +3505,14 @@ const CONTENT = {
       "Fallback_covered_device": "Kapsanan cihaz {n}",
       "Fallback_protection_plan": "Koruma planı",
       "Fallback_device_protection": "{device} koruması",
-      "Use_different_number": "Farklı bir numara kullan"
+      "Use_different_number": "Farklı bir numara kullan",
+      "Use_email_instead": "Bunun yerine e-posta kullan",
+      "Use_phone_instead": "Bunun yerine telefon kullan",
+      "Email_label": "E-posta adresi",
+      "Email_code_to": "{email} adresine bir kod göndereceğiz.",
+      "Change_email_or_phone": "Farklı bir e-posta veya telefon kullan",
+      "Use_different_email": "Farklı bir e-posta kullan",
+      "Error_rate_limited": "Çok fazla kod istendi. Lütfen daha sonra tekrar deneyin."
     },
     "pt": {
       "Page_Title": "Os meus contratos",
@@ -3545,7 +3594,14 @@ const CONTENT = {
       "Fallback_covered_device": "Dispositivo coberto {n}",
       "Fallback_protection_plan": "Plano de proteção",
       "Fallback_device_protection": "Proteção {device}",
-      "Use_different_number": "Utilizar outro número"
+      "Use_different_number": "Utilizar outro número",
+      "Use_email_instead": "Usar e-mail",
+      "Use_phone_instead": "Usar telefone",
+      "Email_label": "Endereço de e-mail",
+      "Email_code_to": "Vamos enviar um código para {email}.",
+      "Change_email_or_phone": "Utilizar outro e-mail ou telefone",
+      "Use_different_email": "Utilizar outro e-mail",
+      "Error_rate_limited": "Foram pedidos demasiados códigos. Tente novamente mais tarde."
     }
   },
   "portal-admin": {
@@ -4718,6 +4774,7 @@ const CONTENT = {
   }
 };
 CONTENT['my-registrations'] = require('./translations/my-registrations.json');
+CONTENT['email-copy'] = require('./translations/email-copy.json');
 
 function valuesFor(singleType, code) {
   const byLang = CONTENT[singleType];
