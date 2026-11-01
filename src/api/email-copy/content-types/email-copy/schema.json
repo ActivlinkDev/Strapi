@@ -1,0 +1,220 @@
+{
+  "kind": "singleType",
+  "collectionName": "email_copies",
+  "info": {
+    "singularName": "email-copy",
+    "pluralName": "email-copy-pages",
+    "displayName": "Email copy",
+    "description": "Wording for Brevo confirmation and verification emails. Passed to the email templates as params.copy."
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Greeting": {
+      "type": "string",
+      "required": true,
+      "minLength": 1,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Greeting_No_Name": {
+      "type": "string",
+      "required": true,
+      "minLength": 1,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Registration_Subject": {
+      "type": "string",
+      "required": true,
+      "minLength": 1,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Registration_Preheader": {
+      "type": "text",
+      "required": true,
+      "minLength": 1,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Registration_Heading": {
+      "type": "string",
+      "required": true,
+      "minLength": 1,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Registration_Intro": {
+      "type": "text",
+      "required": true,
+      "minLength": 1,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Registration_Cta": {
+      "type": "string",
+      "required": true,
+      "minLength": 1,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Plan_Subject": {
+      "type": "string",
+      "required": true,
+      "minLength": 1,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Plan_Preheader": {
+      "type": "text",
+      "required": true,
+      "minLength": 1,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Plan_Heading": {
+      "type": "string",
+      "required": true,
+      "minLength": 1,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Plan_Intro": {
+      "type": "text",
+      "required": true,
+      "minLength": 1,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Plan_Cta": {
+      "type": "string",
+      "required": true,
+      "minLength": 1,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Otp_Subject": {
+      "type": "string",
+      "required": true,
+      "minLength": 1,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Otp_Heading": {
+      "type": "string",
+      "required": true,
+      "minLength": 1,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Otp_Intro": {
+      "type": "text",
+      "required": true,
+      "minLength": 1,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Label_Reference": {
+      "type": "string",
+      "required": true,
+      "minLength": 1,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Label_Cover": {
+      "type": "string",
+      "required": true,
+      "minLength": 1,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Label_Start_Date": {
+      "type": "string",
+      "required": true,
+      "minLength": 1,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Label_End_Date": {
+      "type": "string",
+      "required": true,
+      "minLength": 1,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Footer": {
+      "type": "text",
+      "required": true,
+      "minLength": 1,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}
