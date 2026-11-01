@@ -215,6 +215,14 @@
         }
       },
       "type": "string"
+    },
+    "Date_Done": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }
