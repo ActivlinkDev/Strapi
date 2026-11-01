@@ -28,3 +28,15 @@ After deploying Strapi with the new schema, check every supported locale is tran
 Damage examples describe what the cover pays for, so review each locale against the product IPIDs before publishing (`--publish`, or publish in the admin). Examples marked `accidental` show only for plans whose proposition sets `Covers_Accidental_Damage`; set that flag on every Prop that covers accidental damage. Existing copy is never overwritten without `--force`, and client-specific overrides (entries with `Client` set) are left to editors.
 
     node --test tests/category-offers.test.cjs
+
+# Frontend labels
+
+`content/frontend-labels.json` holds the labels the frontend asks for that had no Strapi field: the repair journey (`assistance`, `service-schedule`), the quote page (`quotebuy-page`) and additions to the existing single types. It is keyed by single type, then base language, and `seed-missing-translations.js` merges it into its content.
+
+After deploying Strapi with the new schemas, give the frontend's API token `find` on `assistance`, `service-schedule` and `quotebuy-page` if it has custom permissions, then run the additive seed:
+
+    node seed-missing-translations.js <adminEmail> <adminPassword>
+
+Check the labels against the schemas and the frontend:
+
+    FRONTEND_ROOT=<path to frontend> node --test tests/frontend-labels.test.cjs

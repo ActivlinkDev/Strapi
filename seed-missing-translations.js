@@ -5,10 +5,11 @@
  * so no page falls back to the hard-coded English in the React code and no
  * locale is left with an empty value.
  *
- * Coverage: all 14 localized single types (basket, checkout-success,
- * cookie-banner, customer-hub, device-input, display-device, display-offer,
- * error-page, lookup, my-contracts, portal-admin, shared-ui, start-page,
- * validate-customer) — 555 fields in 8 languages.
+ * Coverage: all 18 localized single types (assistance, basket,
+ * checkout-success, cookie-banner, customer-hub, device-input, display-device,
+ * display-offer, error-page, lookup, my-contracts, my-registrations,
+ * portal-admin, quotebuy-page, service-schedule, shared-ui, start-page,
+ * validate-customer) in 8 languages.
  *
  * It is additive and safe to re-run: for every locale it reads the current
  * entry, only writes keys that are currently empty, and leaves everything
@@ -4728,6 +4729,15 @@ function valuesFor(singleType, code) {
 // Basket redesign copy uses the same additive locale seeding as existing fields.
 for (const [language, values] of Object.entries(require('./content/basket-translations.json'))) {
   CONTENT.basket[language] = { ...CONTENT.basket[language], ...values };
+}
+
+// Labels the frontend reads but no earlier seed covered, including the three
+// single types behind the repair journey and the quote page.
+for (const [singleType, byLanguage] of Object.entries(require('./content/frontend-labels.json'))) {
+  CONTENT[singleType] = CONTENT[singleType] || {};
+  for (const [language, values] of Object.entries(byLanguage)) {
+    CONTENT[singleType][language] = { ...CONTENT[singleType][language], ...values };
+  }
 }
 
 function isBlank(value) {

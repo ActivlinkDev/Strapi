@@ -191,6 +191,22 @@
     "Add_Pricing_Label": {
       "pluginOptions": { "i18n": { "localized": true } },
       "type": "string"
+    },
+    "Currency_Label": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "Generate_Offers_Label": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }
