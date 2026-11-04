@@ -112,3 +112,12 @@ exports
 *.cache
 build
 .strapi-updater.json
+
+############################
+# Credentials — never commit
+############################
+
+key
+key.pub
+id_*
+*.pem
