@@ -26,6 +26,6 @@ test('every basket translation has a localized CMS field and matching placeholde
 test('every frontend basket CMS reference is present in the Strapi schema', () => {
   const frontend = process.env.FRONTEND_ROOT || path.resolve(__dirname, '../../../../frontend');
   const source = fs.readFileSync(path.join(frontend, 'app/basket/BasketContent.tsx'), 'utf8');
-  const keys = [...source.matchAll(/(?:cms\.|cmsRef\.current\.)([A-Za-z_]+)/g)].map((m) => m[1]);
+  const keys = [...source.matchAll(/(?:cms\.|cmsRef\.current\.)([A-Za-z0-9_]+)/g)].map((m) => m[1]);
   for (const key of keys) assert.ok(schema.attributes[key], `Missing CMS field: ${key}`);
 });
