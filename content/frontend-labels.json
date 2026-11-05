@@ -48,7 +48,10 @@
       "Unavailable_Body": "Get in touch and we will sort it out with you directly. Your report has been saved, so you will not need to describe it again.",
       "Unavailable_Reference": "Your reference",
       "Unavailable_Retry": "Try another device",
-      "Unavailable_Home": "Back to the website"
+      "Unavailable_Home": "Back to the website",
+      "Offer_Initial_Then_Monthly": "today, then {monthly} a month from month 2 · cancel anytime",
+      "Pay_Due_Today": "Due today",
+      "Pay_Then_Monthly": "Includes your first month. Then {amount} a month from month 2."
     },
     "es": {
       "Loading": "Cargando…",
@@ -98,7 +101,10 @@
       "Unavailable_Body": "Ponte en contacto con nosotros y lo resolveremos directamente contigo. Tu aviso se ha guardado, así que no tendrás que describirlo de nuevo.",
       "Unavailable_Reference": "Tu referencia",
       "Unavailable_Retry": "Probar con otro dispositivo",
-      "Unavailable_Home": "Volver al sitio web"
+      "Unavailable_Home": "Volver al sitio web",
+      "Offer_Initial_Then_Monthly": "hoy y después {monthly} al mes desde el segundo mes · cancela cuando quieras",
+      "Pay_Due_Today": "A pagar hoy",
+      "Pay_Then_Monthly": "Incluye tu primer mes. Después, {amount} al mes a partir del segundo mes."
     },
     "it": {
       "Loading": "Caricamento…",
@@ -148,7 +154,10 @@
       "Unavailable_Body": "Contattaci e risolveremo direttamente con te. La tua segnalazione è stata salvata, quindi non dovrai descriverla di nuovo.",
       "Unavailable_Reference": "Il tuo riferimento",
       "Unavailable_Retry": "Prova con un altro dispositivo",
-      "Unavailable_Home": "Torna al sito web"
+      "Unavailable_Home": "Torna al sito web",
+      "Offer_Initial_Then_Monthly": "oggi, poi {monthly} al mese dal secondo mese · disdici quando vuoi",
+      "Pay_Due_Today": "Da pagare oggi",
+      "Pay_Then_Monthly": "Include il primo mese. Poi {amount} al mese dal secondo mese."
     },
     "fr": {
       "Loading": "Chargement…",
@@ -198,7 +207,10 @@
       "Unavailable_Body": "Contactez-nous et nous réglerons cela directement avec vous. Votre signalement a été enregistré : vous n'aurez pas besoin de le décrire à nouveau.",
       "Unavailable_Reference": "Votre référence",
       "Unavailable_Retry": "Essayer un autre appareil",
-      "Unavailable_Home": "Retour au site web"
+      "Unavailable_Home": "Retour au site web",
+      "Offer_Initial_Then_Monthly": "aujourd'hui, puis {monthly} par mois dès le 2e mois · résiliable à tout moment",
+      "Pay_Due_Today": "À payer aujourd'hui",
+      "Pay_Then_Monthly": "Comprend votre premier mois. Ensuite {amount} par mois à partir du 2e mois."
     },
     "de": {
       "Loading": "Wird geladen…",
@@ -248,7 +260,10 @@
       "Unavailable_Body": "Kontaktieren Sie uns, dann klären wir das direkt mit Ihnen. Ihre Meldung wurde gespeichert, Sie müssen sie also nicht noch einmal beschreiben.",
       "Unavailable_Reference": "Ihre Referenz",
       "Unavailable_Retry": "Anderes Gerät versuchen",
-      "Unavailable_Home": "Zurück zur Website"
+      "Unavailable_Home": "Zurück zur Website",
+      "Offer_Initial_Then_Monthly": "heute, danach {monthly} monatlich ab dem 2. Monat · jederzeit kündbar",
+      "Pay_Due_Today": "Heute fällig",
+      "Pay_Then_Monthly": "Enthält Ihren ersten Monat. Danach {amount} monatlich ab dem 2. Monat."
     },
     "nl": {
       "Loading": "Laden…",
@@ -298,7 +313,10 @@
       "Unavailable_Body": "Neem contact met ons op, dan lossen we het rechtstreeks met u op. Uw melding is opgeslagen, dus u hoeft deze niet opnieuw te beschrijven.",
       "Unavailable_Reference": "Uw referentie",
       "Unavailable_Retry": "Probeer een ander apparaat",
-      "Unavailable_Home": "Terug naar de website"
+      "Unavailable_Home": "Terug naar de website",
+      "Offer_Initial_Then_Monthly": "vandaag, daarna {monthly} per maand vanaf maand 2 · altijd opzegbaar",
+      "Pay_Due_Today": "Vandaag te betalen",
+      "Pay_Then_Monthly": "Inclusief je eerste maand. Daarna {amount} per maand vanaf maand 2."
     },
     "tr": {
       "Loading": "Yükleniyor…",
@@ -348,7 +366,10 @@
       "Unavailable_Body": "Bizimle iletişime geçin, bu konuyu doğrudan sizinle çözelim. Bildiriminiz kaydedildi, tekrar anlatmanız gerekmeyecek.",
       "Unavailable_Reference": "Referansınız",
       "Unavailable_Retry": "Başka bir cihaz deneyin",
-      "Unavailable_Home": "Web sitesine dön"
+      "Unavailable_Home": "Web sitesine dön",
+      "Offer_Initial_Then_Monthly": "bugün, ardından 2. aydan itibaren ayda {monthly} · istediğiniz zaman iptal",
+      "Pay_Due_Today": "Bugün ödenecek",
+      "Pay_Then_Monthly": "İlk ayınızı içerir. Ardından 2. aydan itibaren ayda {amount}."
     },
     "pt": {
       "Loading": "A carregar…",
@@ -398,7 +419,10 @@
       "Unavailable_Body": "Contacte-nos e resolvemos diretamente consigo. A sua comunicação foi guardada, por isso não terá de a descrever novamente.",
       "Unavailable_Reference": "A sua referência",
       "Unavailable_Retry": "Experimentar outro dispositivo",
-      "Unavailable_Home": "Voltar ao site"
+      "Unavailable_Home": "Voltar ao site",
+      "Offer_Initial_Then_Monthly": "hoje e depois {monthly} por mês a partir do 2.º mês · cancele quando quiser",
+      "Pay_Due_Today": "A pagar hoje",
+      "Pay_Then_Monthly": "Inclui o seu primeiro mês. Depois {amount} por mês a partir do 2.º mês."
     }
   },
   "display-device": {
@@ -659,56 +683,64 @@
       "Loading": "Pricing your repair…",
       "Subheading": "Pick the option that suits you, then choose a date.",
       "Continue_Hint": "Select an option to continue.",
-      "Cover": "Cover"
+      "Cover": "Cover",
+      "Then_monthly_from_month_2": "today, then {monthly} a month from month 2"
     },
     "es": {
       "Load_Error": "No hemos podido cargar tus opciones de reparación.",
       "Loading": "Calculando el precio de la reparación…",
       "Subheading": "Elige la opción que más te convenga y luego selecciona una fecha.",
       "Continue_Hint": "Selecciona una opción para continuar.",
-      "Cover": "Cobertura"
+      "Cover": "Cobertura",
+      "Then_monthly_from_month_2": "hoy y después {monthly} al mes a partir del segundo mes"
     },
     "it": {
       "Load_Error": "Non è stato possibile caricare le opzioni di riparazione.",
       "Loading": "Calcolo del prezzo della riparazione…",
       "Subheading": "Scegli l'opzione più adatta a te, poi seleziona una data.",
       "Continue_Hint": "Seleziona un'opzione per continuare.",
-      "Cover": "Copertura"
+      "Cover": "Copertura",
+      "Then_monthly_from_month_2": "oggi, poi {monthly} al mese dal secondo mese"
     },
     "fr": {
       "Load_Error": "Nous n'avons pas pu charger vos options de réparation.",
       "Loading": "Chiffrage de votre réparation…",
       "Subheading": "Choisissez l'option qui vous convient, puis sélectionnez une date.",
       "Continue_Hint": "Sélectionnez une option pour continuer.",
-      "Cover": "Couverture"
+      "Cover": "Couverture",
+      "Then_monthly_from_month_2": "aujourd'hui, puis {monthly} par mois à partir du 2e mois"
     },
     "de": {
       "Load_Error": "Ihre Reparaturoptionen konnten nicht geladen werden.",
       "Loading": "Der Preis Ihrer Reparatur wird kalkuliert…",
       "Subheading": "Wählen Sie die passende Option aus und dann einen Termin.",
       "Continue_Hint": "Wählen Sie eine Option aus, um fortzufahren.",
-      "Cover": "Schutz"
+      "Cover": "Schutz",
+      "Then_monthly_from_month_2": "heute, danach {monthly} monatlich ab dem 2. Monat"
     },
     "nl": {
       "Load_Error": "We konden uw reparatieopties niet laden.",
       "Loading": "De prijs van uw reparatie wordt bepaald…",
       "Subheading": "Kies de optie die bij u past en kies daarna een datum.",
       "Continue_Hint": "Selecteer een optie om verder te gaan.",
-      "Cover": "Dekking"
+      "Cover": "Dekking",
+      "Then_monthly_from_month_2": "vandaag, daarna {monthly} per maand vanaf maand 2"
     },
     "tr": {
       "Load_Error": "Onarım seçeneklerinizi yükleyemedik.",
       "Loading": "Onarımınız fiyatlandırılıyor…",
       "Subheading": "Size uygun seçeneği belirleyin, ardından bir tarih seçin.",
       "Continue_Hint": "Devam etmek için bir seçenek belirleyin.",
-      "Cover": "Teminat"
+      "Cover": "Teminat",
+      "Then_monthly_from_month_2": "bugün, ardından 2. aydan itibaren ayda {monthly}"
     },
     "pt": {
       "Load_Error": "Não foi possível carregar as suas opções de reparação.",
       "Loading": "A calcular o preço da sua reparação…",
       "Subheading": "Escolha a opção que lhe convém e depois selecione uma data.",
       "Continue_Hint": "Selecione uma opção para continuar.",
-      "Cover": "Cobertura"
+      "Cover": "Cobertura",
+      "Then_monthly_from_month_2": "hoje e depois {monthly} por mês a partir do 2.º mês"
     }
   },
   "service-schedule": {
@@ -1257,6 +1289,64 @@
     "pt": {
       "Currency_Label": "Moeda",
       "Generate_Offers_Label": "Gerar ofertas"
+    }
+  },
+  "basket": {
+    "en": {
+      "Monthly_subtotal": "Monthly subtotal",
+      "Due_today": "Due today",
+      "Today_suffix": "today",
+      "Then_monthly_from_month_2_short": "then {amount}/month from month 2",
+      "Payment_initial_then_monthly": "Includes your first month. Then {amount} a month from month 2, until you cancel."
+    },
+    "es": {
+      "Monthly_subtotal": "Subtotal mensual",
+      "Due_today": "A pagar hoy",
+      "Today_suffix": "hoy",
+      "Then_monthly_from_month_2_short": "después {amount}/mes desde el 2.º mes",
+      "Payment_initial_then_monthly": "Incluye tu primer mes. Después, {amount} al mes a partir del segundo mes, hasta que canceles."
+    },
+    "it": {
+      "Monthly_subtotal": "Subtotale mensile",
+      "Due_today": "Da pagare oggi",
+      "Today_suffix": "oggi",
+      "Then_monthly_from_month_2_short": "poi {amount}/mese dal 2° mese",
+      "Payment_initial_then_monthly": "Include il primo mese. Poi {amount} al mese dal secondo mese, fino alla disdetta."
+    },
+    "fr": {
+      "Monthly_subtotal": "Sous-total mensuel",
+      "Due_today": "À payer aujourd'hui",
+      "Today_suffix": "aujourd'hui",
+      "Then_monthly_from_month_2_short": "puis {amount}/mois dès le 2e mois",
+      "Payment_initial_then_monthly": "Comprend votre premier mois. Ensuite {amount} par mois à partir du 2e mois, jusqu'à résiliation."
+    },
+    "de": {
+      "Monthly_subtotal": "Monatliche Zwischensumme",
+      "Due_today": "Heute fällig",
+      "Today_suffix": "heute",
+      "Then_monthly_from_month_2_short": "danach {amount}/Monat ab dem 2. Monat",
+      "Payment_initial_then_monthly": "Enthält Ihren ersten Monat. Danach {amount} monatlich ab dem 2. Monat, bis Sie kündigen."
+    },
+    "nl": {
+      "Monthly_subtotal": "Maandelijks subtotaal",
+      "Due_today": "Vandaag te betalen",
+      "Today_suffix": "vandaag",
+      "Then_monthly_from_month_2_short": "daarna {amount}/maand vanaf maand 2",
+      "Payment_initial_then_monthly": "Inclusief je eerste maand. Daarna {amount} per maand vanaf maand 2, tot je opzegt."
+    },
+    "tr": {
+      "Monthly_subtotal": "Aylık ara toplam",
+      "Due_today": "Bugün ödenecek",
+      "Today_suffix": "bugün",
+      "Then_monthly_from_month_2_short": "ardından 2. aydan itibaren {amount}/ay",
+      "Payment_initial_then_monthly": "İlk ayınızı içerir. Ardından iptal edene kadar 2. aydan itibaren ayda {amount}."
+    },
+    "pt": {
+      "Monthly_subtotal": "Subtotal mensal",
+      "Due_today": "A pagar hoje",
+      "Today_suffix": "hoje",
+      "Then_monthly_from_month_2_short": "depois {amount}/mês a partir do 2.º mês",
+      "Payment_initial_then_monthly": "Inclui o seu primeiro mês. Depois {amount} por mês a partir do 2.º mês, até cancelar."
     }
   }
 }

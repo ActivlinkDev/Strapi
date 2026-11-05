@@ -471,6 +471,14 @@
         }
       },
       "type": "string"
+    },
+    "Then_monthly_from_month_2": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }
